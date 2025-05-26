@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 
@@ -23,21 +22,19 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-    <!-- 추가 CSS/JS를 삽입할 위치 -->
-    
 </head>
 
 <body>
     <header class="header">
         <div class="wrapper">
             <a href="/" class="logo">
-        <img src="img/logo_white.svg" id="logo" alt="자동차테크맵" />
-    </a>
+                <img src="img/logo_white.svg" id="logo" alt="자동차테크맵" />
+            </a>
             <div class="menu_wrap">
                 <div class="menu_head">
                     <a href="/" class="logo">
-        <img src="img/logo.svg" alt="자동차테크맵" />
-    </a>
+                        <img src="img/logo.svg" alt="자동차테크맵" />
+                    </a>
                     <button type="button" class="menu_close">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M18 6L6 18M18 18L6 6" stroke="black" stroke-width="2" stroke-linecap="round" />
@@ -45,34 +42,33 @@
                     </button>
                 </div>
                 <div class="gnb">
-        <ul>
-            <li>
-                <a href="/about/overview">소개</a>
-                <ul class="depth_02">
-                    <li><a href="/about/overview">개요</a></li>
-                    <li><a href="/about/organization">조직 및 멤버</a></li>
-                    <li><a href="/about/license">라이선스 정책</a></li>
-                    <li><a href="/about/faq">FAQ</a></li>
-                </ul>
-            </li>
-            <li><a href="/techmap">자동차 테크맵</a></li>
-            <li><a href="/contribute">기여하기</a></li>
-            <li>
-                <a href="/use/api">활용하기</a>
-                <ul class="depth_02">
-                    <li><a href="/use/api">API 활용</a></li>
-                    <li><a href="/use/data">데이터 신청</a></li>
-                </ul>
-            </li>
-            <li><a href="/news">주요소식</a></li>
-        </ul>
-    </div>
+                    <ul>
+                        <li>
+                            <a href="/about/overview" data-i18n="menu.about">소개</a>
+                            <ul class="depth_02">
+                                <li><a href="/overview" data-i18n="section.overview.title">개요</a></li>
+                                <li><a href="/about/organization">조직 및 멤버</a></li>
+                                <li><a href="/about/license">라이선스 정책</a></li>
+                                <li><a href="/about/faq">FAQ</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="/techmap" data-i18n="menu.techmap">자동차 테크맵</a></li>
+                        <li><a href="/contribute" data-i18n="menu.contribute">기여하기</a></li>
+                        <li>
+                            <a href="/use/api" data-i18n="menu.use">활용하기</a>
+                            <ul class="depth_02">
+                                <li><a href="/use/api">API 활용</a></li>
+                                <li><a href="/use/data">데이터 신청</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
                 <div class="lang_wrap">
-        <ul>
-            <li><a href="#" class="on">Korean</a></li>
-            <li><a href="#">English</a></li>
-        </ul>
-    </div>
+                    <ul>
+                        <li><a onclick="switchLanguage('ko')" style="cursor: pointer;" class="on korean">Korean</a></li>
+                        <li><a onclick="switchLanguage('en')" style="cursor: pointer;" class="english">English</a></li>
+                    </ul>
+                </div>
             </div>
             <button type="button" class="menu_open">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -93,59 +89,61 @@
                 </div>
 
                 <div class="wrapper">
-                    <div class="tit" data-aos="fade-up" data-aos-duration="1400" data-aos-delay="200">
+                    <div class="tit" data-aos="fade-up" data-aos-duration="1400" data-aos-delay="200"
+                        data-i18n="hero.slogan">
                         <img src="img/index_01_tit1.png" alt="Mobility TechMap" /><br class="only_mb" />
                         오픈소스로 그리는 <strong>새로운 길</strong>
                     </div>
                     <div class="cont">
                         <div class="list">
-                            <div class="category-item" onclick="location.href='https://www.techmap.kr/techmap?category=%ED%8C%8C%EC%9B%8C%ED%8A%B8%EB%A0%88%EC%9D%B8&sortBy=updated_at&page=1&keyword='">
-                                <div class="icon" >
+                            <div class="category-item"
+                                onclick="location.href='https://www.techmap.kr/techmap?category=%ED%8C%8C%EC%9B%8C%ED%8A%B8%EB%A0%88%EC%9D%B8&sortBy=updated_at&page=1&keyword='">
+                                <div class="icon">
                                     <img src="img/index_01_01.svg" alt="아이콘" />
                                 </div>
-                                <span>파워트레인</span>
+                                <span data-i18n="category.powertrain">파워트레인</span>
                             </div>
                             <div>
                                 <div class="icon">
                                     <img src="img/index_01_02.svg" alt="아이콘" />
                                 </div>
-                                <span>샤시</span>
+                                <span data-i18n="category.chassis">샤시</span>
                             </div>
                             <div>
                                 <div class="icon">
                                     <img src="img/index_01_03.svg" alt="아이콘" />
                                 </div>
-                                <span>전장시스템</span>
+                                <span data-i18n="category.electric">전장시스템</span>
                             </div>
                             <div>
                                 <div class="icon">
                                     <img src="img/index_01_04.svg" alt="아이콘" />
                                 </div>
-                                <span>차체 및 의장</span>
+                                <span data-i18n="category.body">차체 및 의장</span>
                             </div>
                             <div>
                                 <div class="icon">
                                     <img src="img/index_01_05.svg" alt="아이콘" />
                                 </div>
-                                <span>스마트 팩토리</span>
+                                <span data-i18n="category.smart_factory">스마트 팩토리</span>
                             </div>
                             <div>
                                 <div class="icon">
                                     <img src="img/index_01_06.svg" alt="아이콘" />
                                 </div>
-                                <span>연료</span>
+                                <span data-i18n="category.smart_factory">연료</span>
                             </div>
                             <div>
                                 <div class="icon">
                                     <img src="img/index_01_07.svg" alt="아이콘" />
                                 </div>
-                                <span>자율주행</span>
+                                <span data-i18n="category.autonomous">자율주행</span>
                             </div>
                             <div>
                                 <div class="icon">
                                     <img src="img/index_01_08.svg" alt="아이콘" />
                                 </div>
-                                <span>커넥티드카</span>
+                                <span data-i18n="category.connected">커넥티드카</span>
                             </div>
                         </div>
                     </div>
@@ -154,16 +152,16 @@
 
             <section class="sec sec_02">
                 <div class="wrapper">
-                    <p class="tit" data-aos="fade-up" data-aos-duration="1400" data-aos-delay="200"
-                        data-aos-once="true">
+                    <p class="tit" data-aos="fade-up" data-aos-duration="1400" data-aos-delay="200" data-aos-once="true"
+                        data-i18n="description.techmap">
                         <strong class="blue">자동차 테크맵</strong>은 자동차 분야 <br class="only_mb" />오픈소스 기술 정보를 서로 공유하여 <br />
                         <strong>모빌리티 공급망내 모든기업들이 <br class="only_mb" />함께 활용하고 기여하며 성장하는 <br class="only_mb" />에코
                             시스템</strong> 입니다
                     </p>
                     <div class="img_wrap" data-aos="fade-up" data-aos-duration="1400" data-aos-delay="300"
                         data-aos-once="true">
-                        <img src="img/index_02_01.jpg" class="only_pc" alt="이미지" />
-                        <img src="img/index_02_01_mb.jpg" class="only_mb" alt="이미지" />
+                        <img id="img-overview-pc" src="img/index_02_01.jpg" class="only_pc" alt="이미지" />
+                        <img id="img-overview-mb" src="img/index_02_01_mb.jpg" class="only_mb" alt="이미지" />
                     </div>
                 </div>
             </section>
@@ -178,7 +176,7 @@
                         data-aos-once="true">
                         <a href="#">
                             <img src="img/index_03_01.png" alt="아이콘" />
-                            <span>기여하기</span>
+                            <span data-i18n="menu.contribute">기여하기</span>
                             <span class="arrow">
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -189,7 +187,7 @@
                         </a>
                         <a href="#">
                             <img src="img/index_03_02.png" alt="아이콘" />
-                            <span>활용하기</span>
+                            <span data-i18n="menu.use">활용하기</span>
                             <span class="arrow">
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -206,7 +204,7 @@
                 <div class="wrapper">
                     <div class="title_box">
                         <h2 class="tit" data-aos="fade-up" data-aos-duration="1400" data-aos-delay="200"
-                            data-aos-once="true">주요 오픈소스 프로젝트</h2>
+                            data-aos-once="true" data-i18n="section.projects.title">주요 오픈소스 프로젝트</h2>
                     </div>
                     <div class="cont" data-aos="fade-up" data-aos-duration="1400" data-aos-delay="400"
                         data-aos-once="true">
@@ -222,32 +220,32 @@
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
                                     <div class="inner">
-                                        <img src="img/index_04_04.png" alt="로고" />
+                                        <img src="img/index_04_03 (2).png" alt="로고" />
                                         <span class="tit">Android Automotive</span>
-                                        <p> 차량 내 하드웨어에서 직접 실행되는 운영체제 및 오픈소스 플랫폼</p>
+                                        <p data-i18n="project.description.1"> 차량 내 하드웨어에서 직접 실행되는 운영체제 및 오픈소스 플랫폼</p>
                                     </div>
                                 </div>
-                                
+
                                 <div class="swiper-slide">
                                     <div class="inner">
                                         <img src="img/index_04_05.png" alt="로고" />
-                                        <span class="tit">Autoware 프로젝트</span>
-                                        <p>자율주행차 개발을 위한 오픈소스 자율주행 소프트웨어 스택 프로젝트</p>
+                                        <span class="tit">Autoware <span data-i18n="section.projects.desc">프로젝트</span></span>
+                                        <p data-i18n="project.description.2">자율주행차 개발을 위한 오픈소스 자율주행 소프트웨어 스택 프로젝트</p>
                                     </div>
                                 </div>
 
                                 <div class="swiper-slide">
                                     <div class="inner">
                                         <img src="img/index_04_02.png" alt="로고" />
-                                        <span class="tit">Zephyr 프로젝트</span>
-                                        <p>	IoT 및 임베디드 시스템을 위한 <br/> 경량 실시간 운영체제(RTOS) <br>오픈소스 프로젝트</p>
+                                        <span class="tit">Zephyr <span data-i18n="section.projects.desc">프로젝트</span></span>
+                                        <p  data-i18n="project.description.3"> IoT 및 임베디드 시스템을 위한 <br /> 경량 실시간 운영체제(RTOS) <br>오픈소스 프로젝트</p>
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="inner">
-                                        <img src="img/index_04_06.png" alt="로고" class="yocto"/>
-                                        <span class="tit">Yocto 프로젝트</span>
-                                        <p>임베디드 리눅스 배포판을 <br />맞춤 제작하기 위한 <br />오픈소스 빌드 시스템</p>
+                                        <img src="img/index_04_06.png" alt="로고" class="yocto" />
+                                        <span class="tit">Yocto <span data-i18n="section.projects.desc">프로젝트</span></span>
+                                        <p data-i18n="project.description.4">임베디드 리눅스 배포판을 <br />맞춤 제작하기 위한 <br />오픈소스 빌드 시스템</p>
                                     </div>
                                 </div>
 
@@ -255,17 +253,17 @@
                                     <div class="inner">
                                         <img src="img/index_04_08.png" alt="로고" />
                                         <span class="tit">Embedded Linux</span>
-                                        <p>다양한 임베디드 환경에서 사용되는 오픈소스 리눅스 운영체제</p>
+                                        <p data-i18n="project.description.5">다양한 임베디드 환경에서 사용되는 오픈소스 리눅스 운영체제</p>
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="inner">
                                         <img src="img/index_04_07.png" alt="로고" />
-                                        <span class="tit">COVESA 프로젝트</span>
-                                        <p>	커넥티드 차량 소프트웨어의 상호운용성 향상을 위한<br> 오픈소스 연합 프로젝트.</p>
+                                        <span class="tit">COVESA <span data-i18n="section.projects.desc">프로젝트</span></span>
+                                        <p data-i18n="project.description.6"> 커넥티드 차량 소프트웨어의 상호운용성 향상을 위한<br> 오픈소스 연합 프로젝트</p>
                                     </div>
                                 </div>
-                                
+
                             </div>
                         </div>
                         <div class="btn_next">
@@ -299,9 +297,16 @@
     </section>
 
     <footer class="footer">
-        <div class="wrapper">
-            <p class="copyright">COPYRIGHT © 2025 OSS.KR & TECHMAP. ALL RIGHTS RESERVED.</p>
-            <img src="img/logo_nipa.svg" alt="로고" />
+        <div class="footer-wrapper">
+            <div class="footer-bottom">
+                <p>COPYRIGHT © 2025 OSS.KR & TECHMAP.KR ALL RIGHTS RESERVED.</p>
+                <p> Contact Us : <a href="mailto:techmap@oss.kr">techmap@oss.kr</a></p>
+            </div>
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <img src="img/logo_nipa.svg" alt="nipa 로고" />
+                </div>
+            </div>
         </div>
     </footer>
 
@@ -474,6 +479,113 @@
                 },
             },
         });
+
+        // 다국어 변경
+        function switchLanguage(lang) {
+            document.querySelectorAll('[data-i18n]').forEach((el) => {
+                const key = el.getAttribute('data-i18n');
+                const value = translations[lang]?.[key];
+                if (value) el.innerHTML = value;
+            });
+
+            const koreanBtn = document.querySelector('.korean');
+            const englishBtn = document.querySelector('.english');
+
+            if (lang === 'ko') {
+                koreanBtn.classList.add('on');
+                englishBtn.classList.remove('on');
+            } else {
+                koreanBtn.classList.remove('on');
+                englishBtn.classList.add('on');
+            }
+
+            // 이미지 교체
+            const pcImg = document.getElementById('img-overview-pc');
+            const mbImg = document.getElementById('img-overview-mb');
+
+              if (lang === 'en') {
+                pcImg.src = 'img/index_02_01_en.jpg';
+                mbImg.src = 'img/index_02_01_mb_en.jpg';
+            } else {
+                pcImg.src = 'img/index_02_01.jpg';
+                mbImg.src = 'img/index_02_01_mb.jpg';
+            }
+        }
+        const translations = {
+            ko: {
+                "menu.about": "소개",
+                "menu.techmap": "자동차 테크맵",
+                "menu.contribute": "기여하기",
+                "section.overview.title": "개요",
+                "menu.use": "활용하기",
+                "menu.news": "주요소식",
+                "hero.slogan": '<img src="img/index_01_tit1.png" alt="Mobility TechMap"/><br class="only_mb"/>오픈소스로 그리는 <strong>새로운 길</strong>',
+
+                "category.powertrain": "파워트레인",
+                "category.chassis": "샤시",
+                "category.electric": "전장시스템",
+                "category.body": "차체 및 의장",
+                "category.smart_factory": "스마트 팩토리",
+                "category.fuel": "연료",
+                "category.autonomous": "자율주행",
+                "category.connected": "커넥티드카",
+                "description.techmap": `
+                    <strong class="blue">자동차 테크맵</strong>은 자동차 분야 
+                    <br class="only_mb" />오픈소스 기술 정보를 서로 공유하여 
+                    <br />
+                    <strong>
+                        모빌리티 공급망내 모든기업들이 
+                        <br class="only_mb" />함께 활용하고 기여하며 성장하는 
+                        <br class="only_mb" />에코 시스템
+                    </strong> 입니다
+                    `,
+                "section.projects.desc": "프로젝트",
+                "section.projects.title": "주요 오픈소스 프로젝트",
+"project.description.1": "차량 내 하드웨어에서 직접 실행되는 운영체제 및 오픈소스 플랫폼",
+"project.description.2": "자율주행차 개발을 위한 오픈소스 자율주행 소프트웨어 스택 프로젝트",
+"project.description.3": "IoT 및 임베디드 시스템을 위한 <br /> 경량 실시간 운영체제(RTOS) <br />오픈소스 프로젝트",
+"project.description.4": "임베디드 리눅스 배포판을 <br />맞춤 제작하기 위한 <br />오픈소스 빌드 시스템",
+"project.description.5": "다양한 임베디드 환경에서 사용되는 오픈소스 리눅스 운영체제",
+"project.description.6": "커넥티드 차량 소프트웨어의 상호운용성 향상을 위한<br />오픈소스 연합 프로젝트",
+
+            },
+            en: {
+                "menu.about": "About",
+                "menu.techmap": "Mobility Techmap",
+                "section.overview.title": "Overview",
+                "menu.contribute": "contribute",
+                "menu.use": "Utilization",
+                "menu.news": "News",
+                "hero.slogan": '<img src="img/index_01_tit1.png" alt="Mobility TechMap"/><br class="only_mb"/>A New Path Drawn with <strong>Open Source</strong>',
+                "category.powertrain": "Powertrain",
+                "category.chassis": "Chassis",
+                "category.electric": "Electrical System",
+                "category.body": "Body & Trim",
+                "category.smart_factory": "Smart Factory",
+                "category.fuel": "Fuel",
+                "category.autonomous": "Autonomous Driving",
+                "category.connected": "Connected Car",
+                "description.techmap": `
+                    <strong class="blue">Mobility Techmap</strong> is an open-source initiative in the automotive field, 
+                    <br class="only_mb" />designed to share technical information 
+                    <br />
+                    <strong>
+                        and help all players in the mobility supply chain 
+                        <br class="only_mb" />collaborate, contribute, and grow together 
+                        <br class="only_mb" />as an open ecosystem
+                    </strong>.
+                    `, "section.projects.title": "Major Open Source Projects",
+                "section.projects.desc": "Project",
+                "section.projects.title": "Major Open Source Projects",
+"project.description.1": "Operating systems and open-source platforms running directly on in-vehicle hardware",
+"project.description.2": "Open-source autonomous driving software stack projects for developing self-driving cars",
+"project.description.3": "Lightweight real-time operating system (RTOS) open-source projects for IoT and embedded systems",
+"project.description.4": "Open-source build systems for customizing embedded Linux distributions",
+"project.description.5": "Open-source Linux operating systems used across various embedded environments",
+"project.description.6": "Open-source consortium projects to enhance interoperability in connected vehicle software",
+            }
+        };
+
     </script>
 </body>
 
