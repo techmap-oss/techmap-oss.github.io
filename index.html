@@ -1,0 +1,480 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>자동차테크맵</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no">
+
+    <link rel="stylesheet" href="css/jquery-ui.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style_v2.css" />
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/script.js"></script>
+
+    <link rel="stylesheet" href="plugin/aos/aos.css" />
+    <script src="plugin/aos/aos.js"></script>
+    <link rel="stylesheet" href="plugin/swiper/swiper-bundle.min.css" />
+    <script src="plugin/swiper/swiper-bundle.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- 추가 CSS/JS를 삽입할 위치 -->
+    
+</head>
+
+<body>
+    <header class="header">
+        <div class="wrapper">
+            <a href="/" class="logo">
+        <img src="img/logo_white.svg" id="logo" alt="자동차테크맵" />
+    </a>
+            <div class="menu_wrap">
+                <div class="menu_head">
+                    <a href="/" class="logo">
+        <img src="img/logo.svg" alt="자동차테크맵" />
+    </a>
+                    <button type="button" class="menu_close">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18 6L6 18M18 18L6 6" stroke="black" stroke-width="2" stroke-linecap="round" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="gnb">
+        <ul>
+            <li>
+                <a href="/about/overview">소개</a>
+                <ul class="depth_02">
+                    <li><a href="/about/overview">개요</a></li>
+                    <li><a href="/about/organization">조직 및 멤버</a></li>
+                    <li><a href="/about/license">라이선스 정책</a></li>
+                    <li><a href="/about/faq">FAQ</a></li>
+                </ul>
+            </li>
+            <li><a href="/techmap">자동차 테크맵</a></li>
+            <li><a href="/contribute">기여하기</a></li>
+            <li>
+                <a href="/use/api">활용하기</a>
+                <ul class="depth_02">
+                    <li><a href="/use/api">API 활용</a></li>
+                    <li><a href="/use/data">데이터 신청</a></li>
+                </ul>
+            </li>
+            <li><a href="/news">주요소식</a></li>
+        </ul>
+    </div>
+                <div class="lang_wrap">
+        <ul>
+            <li><a href="#" class="on">Korean</a></li>
+            <li><a href="#">English</a></li>
+        </ul>
+    </div>
+            </div>
+            <button type="button" class="menu_open">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="3" y="5" width="18" height="2" rx="1" fill="#343434" />
+                    <rect x="3" y="11" width="9" height="2" rx="1" fill="#343434" />
+                    <rect x="3" y="17" width="18" height="2" rx="1" fill="#343434" />
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <section class="container">
+        <div class="index">
+            <section class="sec sec_01">
+                <div class="scroll_down">
+                    <span>scroll down</span>
+                    <img src="img/index_01_scroll.svg" alt="아이콘" />
+                </div>
+
+                <div class="wrapper">
+                    <div class="tit" data-aos="fade-up" data-aos-duration="1400" data-aos-delay="200">
+                        <img src="img/index_01_tit1.png" alt="Mobility TechMap" /><br class="only_mb" />
+                        오픈소스로 그리는 <strong>새로운 길</strong>
+                    </div>
+                    <div class="cont">
+                        <div class="list">
+                            <div class="category-item" onclick="location.href='https://www.techmap.kr/techmap?category=%ED%8C%8C%EC%9B%8C%ED%8A%B8%EB%A0%88%EC%9D%B8&sortBy=updated_at&page=1&keyword='">
+                                <div class="icon" >
+                                    <img src="img/index_01_01.svg" alt="아이콘" />
+                                </div>
+                                <span>파워트레인</span>
+                            </div>
+                            <div>
+                                <div class="icon">
+                                    <img src="img/index_01_02.svg" alt="아이콘" />
+                                </div>
+                                <span>샤시</span>
+                            </div>
+                            <div>
+                                <div class="icon">
+                                    <img src="img/index_01_03.svg" alt="아이콘" />
+                                </div>
+                                <span>전장시스템</span>
+                            </div>
+                            <div>
+                                <div class="icon">
+                                    <img src="img/index_01_04.svg" alt="아이콘" />
+                                </div>
+                                <span>차체 및 의장</span>
+                            </div>
+                            <div>
+                                <div class="icon">
+                                    <img src="img/index_01_05.svg" alt="아이콘" />
+                                </div>
+                                <span>스마트 팩토리</span>
+                            </div>
+                            <div>
+                                <div class="icon">
+                                    <img src="img/index_01_06.svg" alt="아이콘" />
+                                </div>
+                                <span>연료</span>
+                            </div>
+                            <div>
+                                <div class="icon">
+                                    <img src="img/index_01_07.svg" alt="아이콘" />
+                                </div>
+                                <span>자율주행</span>
+                            </div>
+                            <div>
+                                <div class="icon">
+                                    <img src="img/index_01_08.svg" alt="아이콘" />
+                                </div>
+                                <span>커넥티드카</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="sec sec_02">
+                <div class="wrapper">
+                    <p class="tit" data-aos="fade-up" data-aos-duration="1400" data-aos-delay="200"
+                        data-aos-once="true">
+                        <strong class="blue">자동차 테크맵</strong>은 자동차 분야 <br class="only_mb" />오픈소스 기술 정보를 서로 공유하여 <br />
+                        <strong>모빌리티 공급망내 모든기업들이 <br class="only_mb" />함께 활용하고 기여하며 성장하는 <br class="only_mb" />에코
+                            시스템</strong> 입니다
+                    </p>
+                    <div class="img_wrap" data-aos="fade-up" data-aos-duration="1400" data-aos-delay="300"
+                        data-aos-once="true">
+                        <img src="img/index_02_01.jpg" class="only_pc" alt="이미지" />
+                        <img src="img/index_02_01_mb.jpg" class="only_mb" alt="이미지" />
+                    </div>
+                </div>
+            </section>
+
+            <section class="sec sec_03">
+                <div class="wrapper">
+                    <div class="title_box">
+                        <h2 class="tit" data-aos="fade-up" data-aos-duration="1400" data-aos-delay="200"
+                            data-aos-once="true">Mobility Open Source TechMap</h2>
+                    </div>
+                    <div class="list" data-aos="fade-up" data-aos-duration="1400" data-aos-delay="400"
+                        data-aos-once="true">
+                        <a href="#">
+                            <img src="img/index_03_01.png" alt="아이콘" />
+                            <span>기여하기</span>
+                            <span class="arrow">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10 7L15 12L10 17" stroke="white" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </span>
+                        </a>
+                        <a href="#">
+                            <img src="img/index_03_02.png" alt="아이콘" />
+                            <span>활용하기</span>
+                            <span class="arrow">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10 7L15 12L10 17" stroke="white" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="sec sec_04">
+                <div class="wrapper">
+                    <div class="title_box">
+                        <h2 class="tit" data-aos="fade-up" data-aos-duration="1400" data-aos-delay="200"
+                            data-aos-once="true">주요 오픈소스 프로젝트</h2>
+                    </div>
+                    <div class="cont" data-aos="fade-up" data-aos-duration="1400" data-aos-delay="400"
+                        data-aos-once="true">
+                        <div class="btn_prev">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12.2057 15.4651C12.5239 15.1469 12.5239 14.631 12.2057 14.3128L7.89295 10L12.2057 5.6873C12.5239 5.3691 12.5239 4.85319 12.2057 4.53498C11.8875 4.21678 11.3716 4.21678 11.0534 4.53498L6.16447 9.42387C5.84627 9.74208 5.84627 10.258 6.16447 10.5762L11.0534 15.4651C11.3716 15.7833 11.8875 15.7833 12.2057 15.4651Z"
+                                    fill="#747474" />
+                            </svg>
+                        </div>
+                        <div class="swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="inner">
+                                        <img src="img/index_04_04.png" alt="로고" />
+                                        <span class="tit">Android Automotive</span>
+                                        <p> 차량 내 하드웨어에서 직접 실행되는 운영체제 및 오픈소스 플랫폼</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="swiper-slide">
+                                    <div class="inner">
+                                        <img src="img/index_04_05.png" alt="로고" />
+                                        <span class="tit">Autoware 프로젝트</span>
+                                        <p>자율주행차 개발을 위한 오픈소스 자율주행 소프트웨어 스택 프로젝트</p>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="inner">
+                                        <img src="img/index_04_02.png" alt="로고" />
+                                        <span class="tit">Zephyr 프로젝트</span>
+                                        <p>	IoT 및 임베디드 시스템을 위한 <br/> 경량 실시간 운영체제(RTOS) <br>오픈소스 프로젝트</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="inner">
+                                        <img src="img/index_04_06.png" alt="로고" class="yocto"/>
+                                        <span class="tit">Yocto 프로젝트</span>
+                                        <p>임베디드 리눅스 배포판을 <br />맞춤 제작하기 위한 <br />오픈소스 빌드 시스템</p>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="inner">
+                                        <img src="img/index_04_08.png" alt="로고" />
+                                        <span class="tit">Embedded Linux</span>
+                                        <p>다양한 임베디드 환경에서 사용되는 오픈소스 리눅스 운영체제</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="inner">
+                                        <img src="img/index_04_07.png" alt="로고" />
+                                        <span class="tit">COVESA 프로젝트</span>
+                                        <p>	커넥티드 차량 소프트웨어의 상호운용성 향상을 위한<br> 오픈소스 연합 프로젝트.</p>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="btn_next">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M7.79432 15.4651C7.47611 15.1469 7.47611 14.631 7.79432 14.3128L12.107 10L7.79432 5.6873C7.47611 5.3691 7.47611 4.85319 7.79432 4.53498C8.11252 4.21678 8.62844 4.21678 8.94664 4.53498L13.8355 9.42387C14.1537 9.74208 14.1537 10.258 13.8355 10.5762L8.94664 15.4651C8.62844 15.7833 8.11252 15.7833 7.79432 15.4651Z"
+                                    fill="#747474" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="sec sec_05">
+                <div class="wrapper">
+                    <div class="title_box">
+                        <h2 class="tit" data-aos="fade-up" data-aos-duration="1400" data-aos-delay="200"
+                            data-aos-once="true">Member</h2>
+                    </div>
+                    <div class="cont" data-aos="fade-up" data-aos-duration="1400" data-aos-delay="400"
+                        data-aos-once="true">
+                        <div><img src="img/index_05_01.jpg" alt="이미지" /></div>
+                        <div><img src="img/index_05_02.jpg" alt="이미지" /></div>
+                        <div><img src="img/index_05_03.jpg" alt="이미지" /></div>
+                        <div><img src="img/index_05_04.jpg" alt="이미지" /></div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="wrapper">
+            <p class="copyright">COPYRIGHT © 2025 OSS.KR & TECHMAP. ALL RIGHTS RESERVED.</p>
+            <img src="img/logo_nipa.svg" alt="로고" />
+        </div>
+    </footer>
+
+    <script>
+        //sec_01에서 이동되는 슬라이드 효과let isScrolling = false;
+        // 모바일 기기에서 가로모드 여부 확인 (모바일 화면에서 가로모드인 경우)
+        function isMobileLandscape() {
+            return window.innerWidth <= 1024 && window.innerWidth > window.innerHeight;
+        }
+
+        let isScrolling = false;
+        let touchStartY = 0;
+        let touchCurrentY = 0;
+
+        // 공통 스크롤 위치 가져오기
+        function getScrollTop() {
+            return window.scrollY || document.documentElement.scrollTop;
+        }
+
+        // 부드러운 스크롤
+        function smoothScrollTo(toY, duration = 800) {
+            const startY = getScrollTop();
+            const diff = toY - startY;
+            const startTime = performance.now();
+
+            function scrollStep(currentTime) {
+                const elapsed = currentTime - startTime;
+                const progress = Math.min(elapsed / duration, 1);
+                const ease = easeInOutCubic(progress);
+                window.scrollTo(0, startY + diff * ease);
+
+                if (progress < 1) {
+                    requestAnimationFrame(scrollStep);
+                } else {
+                    isScrolling = false;
+                }
+            }
+
+            isScrolling = true;
+            requestAnimationFrame(scrollStep);
+        }
+
+        function easeInOutCubic(t) {
+            return t < 0.5
+                ? 4 * t * t * t
+                : 1 - Math.pow(-2 * t + 2, 3) / 2;
+        }
+
+        function scrollToSection(selector) {
+            const target = document.querySelector(selector);
+            if (target) {
+                const targetTop = target.offsetTop;
+                smoothScrollTo(targetTop, 800);
+            }
+        }
+
+        function updateHeaderClass() {
+            const header = document.querySelector('.header');
+            const sec01 = document.querySelector('.sec_01');
+            const scrollTop = getScrollTop();
+            const sec01Height = sec01.offsetHeight;
+
+            const logo = document.querySelector('#logo');
+
+            if (scrollTop >= sec01Height) {
+                header.classList.remove('black');
+                logo.src = 'img/logo.svg';  // 검정 배경용 로고
+            } else {
+                header.classList.add('black');
+                logo.src = 'img/logo_white.svg';  // 흰 배경용 로고
+            }
+        }
+
+        // PC: wheel 이벤트
+        function handleWheel(e) {
+            if (isScrolling || isMobileLandscape()) return; // 모바일 가로모드일 때 이벤트 차단
+
+            const sec01 = document.querySelector('.sec_01');
+            const sec02 = document.querySelector('.sec_02');
+
+            const scrollTop = getScrollTop();
+            const sec01Height = sec01.offsetHeight;
+            const sec02Top = sec02.offsetTop;
+
+            if (scrollTop < sec01Height && e.deltaY > 0) {
+                scrollToSection('.sec_02');
+            }
+
+            const nearTop = Math.abs(scrollTop - sec02Top) < 100;
+            if (nearTop && e.deltaY < 0) {
+                scrollToSection('.sec_01');
+            }
+
+            updateHeaderClass();
+        }
+
+        // 모바일: touch 이벤트
+        function handleTouchStart(e) {
+            if (isMobileLandscape()) return; // 모바일 가로모드일 때 이벤트 차단
+            touchStartY = e.touches[0].clientY;
+            touchCurrentY = touchStartY;
+        }
+
+        function handleTouchMove(e) {
+            if (isMobileLandscape()) return; // 모바일 가로모드일 때 이벤트 차단
+            touchCurrentY = e.touches[0].clientY;
+        }
+
+        function handleTouchEnd() {
+            if (isScrolling || isMobileLandscape()) return; // 모바일 가로모드일 때 이벤트 차단
+
+            const deltaY = touchStartY - touchCurrentY;
+
+            const sec01 = document.querySelector('.sec_01');
+            const sec02 = document.querySelector('.sec_02');
+            const scrollTop = getScrollTop();
+            const sec01Height = sec01.offsetHeight;
+            const sec02Top = sec02.offsetTop;
+
+            // 터치 감도 기준 20px 이상이면 동작
+            if (scrollTop < sec01Height && deltaY > 20) {
+                scrollToSection('.sec_02');
+            }
+
+            const nearTop = Math.abs(scrollTop - sec02Top) < 100;
+            if (nearTop && deltaY < -20) {
+                scrollToSection('.sec_01');
+            }
+
+            updateHeaderClass();
+        }
+
+        // 이벤트 연결
+        window.addEventListener('wheel', handleWheel, { passive: true });
+        window.addEventListener('touchstart', handleTouchStart, { passive: true });
+        window.addEventListener('touchmove', handleTouchMove, { passive: true });
+        window.addEventListener('touchend', handleTouchEnd, { passive: true });
+        window.addEventListener('scroll', updateHeaderClass);
+        window.addEventListener('DOMContentLoaded', updateHeaderClass);
+
+
+        //sec_04
+        const sec04swiper = new Swiper('.sec_04 .swiper', {
+            loop: true,
+            navigation: {
+                nextEl: '.sec_04 .btn_next',
+                prevEl: '.sec_04 .btn_prev',
+            },
+            autoplay: {
+                delay: 2500,
+            },
+            speed: 1000,
+            breakpoints: {
+                300: {
+                    centeredSlides: true,
+                    slidesPerView: 1.4,
+                    spaceBetween: 12,
+                },
+                500: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 20,
+                },
+                1300: {
+                    slidesPerView: 4,
+                    spaceBetween: 20,
+                },
+            },
+        });
+    </script>
+</body>
+
+</html>
