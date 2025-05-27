@@ -26,7 +26,7 @@ const translations = {
         "menu.contribute": "기여하기",
         "section.overview.title": "개요",
         "menu.use": "활용하기",
-        "menu.api": "API 활용",
+        "menu.api": "Open-API",
         "menu.data": "데이터 신청",
         "menu.news": "주요소식",
         "menu.member": "조직 및 멤버",
@@ -175,14 +175,22 @@ const translations = {
 
         // API 활용
 
-
-        "use.api.breadcrumb": "API 활용",
-        "use.api.title": "API 활용",
-        "use.api.limitation.title": "API 사용 제한",
+        "use.api.breadcrumb": "Open-API",
+        "use.api.title": "Open-API",
+        "use.api.limitation.title": "Open-API 사용 제한",
         "use.api.limitation.desc": "자동차 테크맵 프로젝트의 사용자 API는 다음과 같은 사용 제한이 있습니다. <br> 한 시간당 최대 5,000번 이상의 API 호출 시, 'Too Many Requests' 예외가 발생합니다.",
 
         "use.api.component.title": "컴포넌트 조회",
         "use.api.component.desc": "등록된 컴포넌트 정보를 조회할 수 있는 API입니다.",
+
+        "openapi.title": "자동차 테크맵 Open-API",
+        "openapi.description": "자동차 테크맵 Open-API는 자동차 분야에서 활용되는 다양한 오픈소스 정보를 수집하고 정리하여 <br>민간 기업 및 연구기관에서 자료를 편리하게 활용할 수 있도록 공개한 인터페이스 입니다. <br>사용자는 이를 활용하여 소프트웨어 개발 및 연구 등에 활용할 수 있습니다.",
+
+        "openapi.target.title": "Open-API 사용대상",
+        "openapi.target.description": "자동차 테크맵 자료 활용을 원하는 모든 사용자",
+
+        "openapi.key.title": "Open-API Key 발급",
+        "openapi.key.description": "자동차 테크맵 Open-API 서비스를 이용하시려면 <a href=\"https://www.techmap.kr/use/api\" class=\"text-link\">자동차 테크맵 Open-API Key 발급 페이지</a>에서 키 발급을 받으셔야 합니다.<br>신청 후 <strong>관리자 승인</strong>이 완료되면, 입력하신 이메일로 키가 발송됩니다.",
 
         "use.api.query.title": "Query 파라미터",
 
@@ -363,7 +371,7 @@ const translations = {
         "section.overview.title": "Overview",
         "menu.contribute": "Contribute",
         "menu.use": "Utilization",
-        "menu.api": "API Usage",
+        "menu.api": "Open-API",
         "menu.data": "Data Request",
         "menu.news": "News",
         "menu.member": "Organization & Members",
@@ -506,8 +514,8 @@ const translations = {
         "faq.section.contact.desc.2": "For more detailed information or guidance, please <strong><a href=\"mailto:techmap@oss.kr\" class=\"text-link\">contact us</a></strong>.",
 
         // API  활용
-        "use.api.breadcrumb": "API Usage",
-        "use.api.title": "API Usage",
+        "use.api.breadcrumb": "Open-API",
+        "use.api.title": "Open-API",
         "use.api.limitation.title": "API Rate Limitation",
         "use.api.limitation.desc": "The Mobility Techmap API has a usage limit. <br> If you exceed 5,000 requests per hour, a 'Too Many Requests' exception will occur.",
 
@@ -515,6 +523,14 @@ const translations = {
         "use.api.component.desc": "This API retrieves information on registered components.",
 
         "use.api.query.title": "Query Parameters",
+        "openapi.title": "Mobility TechMap Open-API",
+        "openapi.description": "The Mobility TechMap Open-API collects and organizes various open-source software information used in the automotive field,<br>and provides an open interface so that private companies and research institutions can easily use the data.<br>Users can utilize this API for software development, research, and more.",
+
+        "openapi.target.title": "Open-API Target Users",
+        "openapi.target.description": "Anyone who wants to utilize Mobility TechMap resources",
+
+        "openapi.key.title": "Open-API Key Issuance",
+        "openapi.key.description": "To use the Mobility TechMap Open-API service, you must request a key on the <a href=\"https://www.techmap.kr/use/api\" class=\"text-link\">Mobility TechMap Open-API Key Issuance Page</a>.<br>Once approved by an administrator, the key will be sent to your registered email address.",
 
         "use.api.query.param.componentName": "Component name",
         "use.api.query.param.licenseName": "License name",
@@ -679,7 +695,7 @@ const translations = {
         // 기여 정책
 
         "contribute.oss.policy": "Open Source Contribution Policy",
-        "contribute.policy.intro": "The Auto TechMap project values your participation and collaboration, and aims for growth through open cooperation. However, to protect the intellectual property of contributing companies/developers and to prevent copyright infringement, we establish a few guidelines.",
+        "contribute.policy.intro": "The Mobility TechMap project values your participation and collaboration, and aims for growth through open cooperation. However, to protect the intellectual property of contributing companies/developers and to prevent copyright infringement, we establish a few guidelines.",
 
         "contribute.policy.doc.1": "Only contribute code or content that you have the rights to. In other words, contribute what you have written yourself.",
         "contribute.policy.doc.2": "Do not contribute sensitive information, patents, or materials that could expose a company's intellectual property.",
