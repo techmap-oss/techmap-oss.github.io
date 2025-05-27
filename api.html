@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자동차 테크맵 프로젝트 - API 가이드</title>
+    <style>
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            background-color: #ffffff;
+            color: #333;
+            margin: 0;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 30px;
+            color: #333;
+        }
+
+        .section-title {
+            font-weight: bold;
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            padding-left: 12px;
+            border-left: 4px solid #005bac;
+        }
+
+        .box {
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            padding: 16px 20px;
+            margin-bottom: 30px;
+            font-size: 0.96rem;
+            line-height: 1.7;
+        }
+
+        .box ul {
+            margin: 0;
+            padding-left: 20px;
+        }
+
+        .box li {
+            margin-bottom: 8px;
+        }
+
+
+        .breadcrumb {
+            font-size: 0.85rem;
+            color: #666;
+            margin-left: auto;
+            white-space: nowrap;
+        }
+
+        .breadcrumb a {
+            color: #0070c0;
+            text-decoration: none;
+            margin: 0 2px;
+        }
+
+        .breadcrumb span {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .breadcrumb-nav {
+            max-width: 960px;
+            margin: 40px auto 20px;
+            padding: 0 20px;
+            font-size: 0.95rem;
+            text-align: left;
+            color: #555;
+            font-weight: 400;
+            text-align: right;
+            /* ✅ 오른쪽 정렬 */
+
+        }
+
+        .breadcrumb-nav a {
+            color: #666;
+            text-decoration: none;
+            margin: 0 6px;
+            position: relative;
+            transition: color 0.2s;
+        }
+
+        .breadcrumb-nav a:hover {
+            color: #0070c0;
+            /* 주황색 강조 */
+        }
+
+        .breadcrumb-nav a:hover::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -2px;
+            width: 100%;
+            height: 2px;
+            background-color: #0070c0;
+        }
+
+        .breadcrumb-nav span {
+            color: #111;
+            font-weight: bold;
+            margin-left: 6p
+        }
+
+        .code-block {
+            background-color: #f0f4f9;
+            border: 1px solid #b7c9dc;
+            border-radius: 10px;
+            padding: 16px 20px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            white-space: pre-wrap;
+            word-break: break-word;
+            overflow-x: auto;
+            margin-bottom: 30px;
+            color: #1f2937;
+            box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.04);
+        }
+
+        .code-block pre {
+            margin: 0;
+        }
+
+        .section-title::before {
+            margin-right: 4px;
+        }
+
+        .common {
+            padding:0 0 50px
+        }
+
+        .common .head {
+            border-bottom: solid 1px #E5E5EC
+        }
+
+        .common .head h1 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0 10px;
+            font-size: 32px;
+            font-weight: 600
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 24px 16px;
+            }
+
+            h1 {
+                font-size: 1.6rem;
+            }
+
+            .box {
+                font-size: 0.94rem;
+                padding: 14px 16px;
+            }
+
+            .section-title {
+                font-size: 1rem;
+                padding-left: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="breadcrumb-nav">
+        <a href="/">Home</a> &gt;
+        <a href="/intro.html">활용하기</a> &gt;
+        <span>&nbsp;API 활용</span>
+    </div>
+
+    
+    <div class="container">
+        <section class="common">
+            <div class="head">
+                <div class="wrapper">
+                    <h1>
+                        API 활용
+                    </h1>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="container">
+        <div class="section">
+            <div class="section-title">API 사용 제한</div>
+            <div class="box">
+                자동차 테크맵 프로젝트의 사용자 API는 다음과 같은 사용 제한이 있습니다:
+                <ul>
+                    <li>한 시간당 최대 5,000번 이상의 API 호출 시, 'Too Many Requests' 예외가 발생합니다.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">컴포넌트 조회</div>
+            <div class="box">
+                <strong>GET /api/v1/component</strong><br>
+                등록된 컴포넌트 정보를 조회할 수 있는 API입니다.<br><br>
+                <strong>Query 매개변수:</strong>
+                <ul>
+                    <li><code>name</code>: 컴포넌트명 (예: zlib)</li>
+                    <li><code>License</code>: 라이선스명 (예: MIT)</li>
+                    <li><code>equalFlag</code>: 'Y'는 정확히 일치하는 결과, 'N'(기본값)은 포함된 모든 결과</li>
+                    <li><code>page</code>: 시작 페이지 숫자 (기본값: 0)</li>
+                    <li><code>size</code>: 페이지당 데이터 개수</li>
+                    <li><code>sort</code>: 정렬 기준 항목 (예: name, id)</li>
+                    <li><code>direction</code>: 정렬 방향 ('ASC' 또는 'DESC')</li>
+                </ul>
+            </div>
+        </div>
+        <!-- 사용 예제 -->
+        <div class="section">
+            <div class="section-title">사용 예제</div>
+            <div class="box">
+                <pre><code>curl --location --request GET 'https://{osori_base_url}/api/v1/oss/name/versions?searchWord=facebook'</code></pre>
+            </div>
+        </div>
+
+        <!-- 응답 HEADER -->
+        <div class="section">
+            <div class="section-title">응답 Header</div>
+            <div class="box">
+                <code>Content-Type: application/json</code>
+            </div>
+        </div>
+
+        <!-- 응답 BODY -->
+        <div class="section">
+            <div class="section-title">응답 Body</div>
+            <div class="box">
+                <pre><code>{
+            "code": "200",
+            "messageList": {
+            "detailInfo": {
+                "oss_master": {
+                "name": "facebook",
+                "download_location": "https://github.com/huandu/facebook",
+                "purl": "pkg:github/huandu/facebook"
+                },
+                "oss_version": [
+                {
+                    "version": "2.3.1-incompatible",
+                    "declaredLicenseList": ["MIT License"]
+                }
+                ]
+            }
+        }
+}
+        </code></pre>
+            </div>
+        </div>
+
+
+
+
+    </div>
+</body>
+
+</html>

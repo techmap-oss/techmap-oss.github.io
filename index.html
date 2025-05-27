@@ -44,22 +44,39 @@
                 <div class="gnb">
                     <ul>
                         <li>
-                            <a href="/about/overview" data-i18n="menu.about">소개</a>
+                            <a href="overview" data-i18n="menu.techmap">자동차 테크맵</a>
                             <ul class="depth_02">
-                                <li><a href="/overview" data-i18n="section.overview.title">개요</a></li>
-                                <li><a href="/about/organization">조직 및 멤버</a></li>
-                                <li><a href="/about/license">라이선스 정책</a></li>
-                                <li><a href="/about/faq">FAQ</a></li>
+                                <li><a href="overview" data-i18n="section.overview.title">소개</a></li>
+                                <li><a href="organization" data-i18n="menu.member">조직 및 멤버</a></li>
+                                <li><a href="license" data-i18n="menu.license">라이선스 정책</a></li>
+                                <li><a href="faq">FAQ</a></li>
                             </ul>
                         </li>
-                        <li><a href="/techmap" data-i18n="menu.techmap">자동차 테크맵</a></li>
-                        <li><a href="/contribute" data-i18n="menu.contribute">기여하기</a></li>
-                        <li>
-                            <a href="/use/api" data-i18n="menu.use">활용하기</a>
+                        <li><a href="contribute" data-i18n="menu.contribute">기여하기</a>
                             <ul class="depth_02">
-                                <li><a href="/use/api">API 활용</a></li>
-                                <li><a href="/use/data">데이터 신청</a></li>
+                                <li><a href="api" data-i18n="menu.benefit">기여 혜택</a></li>
+                                <li><a href="data" data-i18n="menu.prepare">기여 준비</a></li>
+                                <li><a href="data" data-i18n="menu.type">기여 종류</a></li>
+                                <li><a href="data" data-i18n="menu.policy">기여 정책</a></li>
                             </ul>
+                        </li>
+                        <li>
+                            <a href="api" data-i18n="menu.use">활용하기</a>
+                            <ul class="depth_02">
+                                <li><a href="api">API 활용</a></li>
+                                <li><a href="data">데이터 신청</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <!-- 구글 폼 추가 예정 -->
+                            <a href="#" data-i18n="menu.signup">회원가입</a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/techmap-oss" data-i18n="menu.github">Github</a>
+                            <!-- <ul class="depth_02">
+                                <li><a href="https://github.com/techmap-oss/techmap-oss.github.io" data-i18n="menu.github">Github</a></li>
+                                <li><a href="https://www.techmap.kr" data-i18n="menu.techmap">자동차 테크맵</a></li>
+                            </ul> -->
                         </li>
                     </ul>
                 </div>
@@ -96,8 +113,7 @@
                     </div>
                     <div class="cont">
                         <div class="list">
-                            <div class="category-item"
-                                onclick="location.href='https://www.techmap.kr/techmap?category=%ED%8C%8C%EC%9B%8C%ED%8A%B8%EB%A0%88%EC%9D%B8&sortBy=updated_at&page=1&keyword='">
+                            <div>
                                 <div class="icon">
                                     <img src="img/index_01_01.svg" alt="아이콘" />
                                 </div>
@@ -229,7 +245,8 @@
                                 <div class="swiper-slide">
                                     <div class="inner">
                                         <img src="img/index_04_05.png" alt="로고" />
-                                        <span class="tit">Autoware <span data-i18n="section.projects.desc">프로젝트</span></span>
+                                        <span class="tit">Autoware <span
+                                                data-i18n="section.projects.desc">프로젝트</span></span>
                                         <p data-i18n="project.description.2">자율주행차 개발을 위한 오픈소스 자율주행 소프트웨어 스택 프로젝트</p>
                                     </div>
                                 </div>
@@ -237,15 +254,19 @@
                                 <div class="swiper-slide">
                                     <div class="inner">
                                         <img src="img/index_04_02.png" alt="로고" />
-                                        <span class="tit">Zephyr <span data-i18n="section.projects.desc">프로젝트</span></span>
-                                        <p  data-i18n="project.description.3"> IoT 및 임베디드 시스템을 위한 <br /> 경량 실시간 운영체제(RTOS) <br>오픈소스 프로젝트</p>
+                                        <span class="tit">Zephyr <span
+                                                data-i18n="section.projects.desc">프로젝트</span></span>
+                                        <p data-i18n="project.description.3"> IoT 및 임베디드 시스템을 위한 <br /> 경량 실시간
+                                            운영체제(RTOS) <br>오픈소스 프로젝트</p>
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="inner">
                                         <img src="img/index_04_06.png" alt="로고" class="yocto" />
-                                        <span class="tit">Yocto <span data-i18n="section.projects.desc">프로젝트</span></span>
-                                        <p data-i18n="project.description.4">임베디드 리눅스 배포판을 <br />맞춤 제작하기 위한 <br />오픈소스 빌드 시스템</p>
+                                        <span class="tit">Yocto <span
+                                                data-i18n="section.projects.desc">프로젝트</span></span>
+                                        <p data-i18n="project.description.4">임베디드 리눅스 배포판을 <br />맞춤 제작하기 위한 <br />오픈소스
+                                            빌드 시스템</p>
                                     </div>
                                 </div>
 
@@ -259,8 +280,10 @@
                                 <div class="swiper-slide">
                                     <div class="inner">
                                         <img src="img/index_04_07.png" alt="로고" />
-                                        <span class="tit">COVESA <span data-i18n="section.projects.desc">프로젝트</span></span>
-                                        <p data-i18n="project.description.6"> 커넥티드 차량 소프트웨어의 상호운용성 향상을 위한<br> 오픈소스 연합 프로젝트</p>
+                                        <span class="tit">COVESA <span
+                                                data-i18n="section.projects.desc">프로젝트</span></span>
+                                        <p data-i18n="project.description.6"> 커넥티드 차량 소프트웨어의 상호운용성 향상을 위한<br> 오픈소스 연합
+                                            프로젝트</p>
                                     </div>
                                 </div>
 
@@ -503,7 +526,7 @@
             const pcImg = document.getElementById('img-overview-pc');
             const mbImg = document.getElementById('img-overview-mb');
 
-              if (lang === 'en') {
+            if (lang === 'en') {
                 pcImg.src = 'img/index_02_01_en.jpg';
                 mbImg.src = 'img/index_02_01_mb_en.jpg';
             } else {
@@ -519,8 +542,14 @@
                 "section.overview.title": "개요",
                 "menu.use": "활용하기",
                 "menu.news": "주요소식",
+                "menu.member": "조직 및 멤버",
+                "menu.license": "라이선스 정책",
+                "menu.benefit": "기여 혜택",
+                "menu.prepare": "기여 준비",
+                "menu.type": "기여 종류",
+                "menu.policy": "기여 정책",
+                "menu.signup": "회원가입",
                 "hero.slogan": '<img src="img/index_01_tit1.png" alt="Mobility TechMap"/><br class="only_mb"/>오픈소스로 그리는 <strong>새로운 길</strong>',
-
                 "category.powertrain": "파워트레인",
                 "category.chassis": "샤시",
                 "category.electric": "전장시스템",
@@ -541,21 +570,28 @@
                     `,
                 "section.projects.desc": "프로젝트",
                 "section.projects.title": "주요 오픈소스 프로젝트",
-"project.description.1": "차량 내 하드웨어에서 직접 실행되는 운영체제 및 오픈소스 플랫폼",
-"project.description.2": "자율주행차 개발을 위한 오픈소스 자율주행 소프트웨어 스택 프로젝트",
-"project.description.3": "IoT 및 임베디드 시스템을 위한 <br /> 경량 실시간 운영체제(RTOS) <br />오픈소스 프로젝트",
-"project.description.4": "임베디드 리눅스 배포판을 <br />맞춤 제작하기 위한 <br />오픈소스 빌드 시스템",
-"project.description.5": "다양한 임베디드 환경에서 사용되는 오픈소스 리눅스 운영체제",
-"project.description.6": "커넥티드 차량 소프트웨어의 상호운용성 향상을 위한<br />오픈소스 연합 프로젝트",
+                "project.description.1": "차량 내 하드웨어에서 직접 실행되는 운영체제 및 오픈소스 플랫폼",
+                "project.description.2": "자율주행차 개발을 위한 오픈소스 자율주행 소프트웨어 스택 프로젝트",
+                "project.description.3": "IoT 및 임베디드 시스템을 위한 <br /> 경량 실시간 운영체제(RTOS) <br />오픈소스 프로젝트",
+                "project.description.4": "임베디드 리눅스 배포판을 <br />맞춤 제작하기 위한 <br />오픈소스 빌드 시스템",
+                "project.description.5": "다양한 임베디드 환경에서 사용되는 오픈소스 리눅스 운영체제",
+                "project.description.6": "커넥티드 차량 소프트웨어의 상호운용성 향상을 위한<br />오픈소스 연합 프로젝트",
 
             },
             en: {
                 "menu.about": "About",
                 "menu.techmap": "Mobility Techmap",
                 "section.overview.title": "Overview",
-                "menu.contribute": "contribute",
+                "menu.contribute": "Contribute",
                 "menu.use": "Utilization",
                 "menu.news": "News",
+                "menu.member": "Organization & Members",
+                "menu.license": "License Policy",
+                "menu.benefit": "Contribution Benefits",
+                "menu.prepare": "Contribution Guide",
+                "menu.type": "Contribution Types",
+                "menu.policy": "Contribution Policy",
+                "menu.signup": "Sign Up",
                 "hero.slogan": '<img src="img/index_01_tit1.png" alt="Mobility TechMap"/><br class="only_mb"/>A New Path Drawn with <strong>Open Source</strong>',
                 "category.powertrain": "Powertrain",
                 "category.chassis": "Chassis",
@@ -577,12 +613,12 @@
                     `, "section.projects.title": "Major Open Source Projects",
                 "section.projects.desc": "Project",
                 "section.projects.title": "Major Open Source Projects",
-"project.description.1": "Operating systems and open-source platforms running directly on in-vehicle hardware",
-"project.description.2": "Open-source autonomous driving software stack projects for developing self-driving cars",
-"project.description.3": "Lightweight real-time operating system (RTOS) open-source projects for IoT and embedded systems",
-"project.description.4": "Open-source build systems for customizing embedded Linux distributions",
-"project.description.5": "Open-source Linux operating systems used across various embedded environments",
-"project.description.6": "Open-source consortium projects to enhance interoperability in connected vehicle software",
+                "project.description.1": "Operating systems and open-source platforms running directly on in-vehicle hardware",
+                "project.description.2": "Open-source autonomous driving software stack projects for developing self-driving cars",
+                "project.description.3": "Lightweight real-time operating system (RTOS) open-source projects for IoT and embedded systems",
+                "project.description.4": "Open-source build systems for customizing embedded Linux distributions",
+                "project.description.5": "Open-source Linux operating systems used across various embedded environments",
+                "project.description.6": "Open-source consortium projects to enhance interoperability in connected vehicle software",
             }
         };
 

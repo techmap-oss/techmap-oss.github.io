@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>조직 및 멤버 - 자동차테크맵</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no">
+
+    <link rel="stylesheet" href="css/jquery-ui.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style_v2.css" />
+
+    <script src="/js/jquery-3.6.0.min.js"></script>
+    <script src="/js/jquery-ui.min.js"></script>
+    <script src="/js/script.js"></script>
+
+    <link rel="stylesheet" href="/plugin/aos/aos.css" />
+    <script src="/plugin/aos/aos.js"></script>
+    <link rel="stylesheet" href="/plugin/swiper/swiper-bundle.min.css" />
+    <script src="/plugin/swiper/swiper-bundle.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- 추가 CSS/JS를 삽입할 위치 -->
+
+</head>
+
+<body>
+    <style>
+        @media (max-width: 768px) {
+            body {
+                padding: 24px 16px;
+            }
+
+            h1 {
+                font-size: 1.5rem;
+                margin-bottom: 24px;
+            }
+
+            .box {
+                font-size: 0.95rem;
+                padding: 14px 16px;
+            }
+
+            .section-title {
+                font-size: 1rem;
+                padding-left: 10px;
+            }
+        }
+    </style>
+    <header class="header">
+        <div class="wrapper">
+            <a href="/" class="logo">
+                <img src="img/logo_white.svg" id="logo" alt="자동차테크맵" />
+            </a>
+            <div class="menu_wrap">
+                <div class="menu_head">
+                    <a href="/" class="logo">
+                        <img src="img/logo.svg" alt="자동차테크맵" />
+                    </a>
+                    <button type="button" class="menu_close">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18 6L6 18M18 18L6 6" stroke="black" stroke-width="2" stroke-linecap="round" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="gnb">
+                    <ul>
+                        <li>
+                            <a href="overview" data-i18n="menu.techmap">자동차 테크맵</a>
+                            <ul class="depth_02">
+                                <li><a href="overview" data-i18n="section.overview.title">소개</a></li>
+                                <li><a href="organization" data-i18n="menu.member">조직 및 멤버</a></li>
+                                <li><a href="license" data-i18n="menu.license">라이선스 정책</a></li>
+                                <li><a href="faq">FAQ</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="contribute" data-i18n="menu.contribute">기여하기</a>
+                            <ul class="depth_02">
+                                <li><a href="/use/api" data-i18n="menu.benefit">기여 혜택</a></li>
+                                <li><a href="/use/data" data-i18n="menu.prepare">기여 준비</a></li>
+                                <li><a href="/use/data" data-i18n="menu.type">기여 종류</a></li>
+                                <li><a href="/use/data" data-i18n="menu.policy">기여 정책</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="api" data-i18n="menu.use">활용하기</a>
+                            <ul class="depth_02">
+                                <li><a href="api">API 활용</a></li>
+                                <li><a href="data">데이터 신청</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <!-- 구글 폼 추가 예정 -->
+                            <a href="#" data-i18n="menu.signup">회원가입</a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/techmap-oss" data-i18n="menu.github">Github</a>
+                            <!-- <ul class="depth_02">
+                                <li><a href="https://github.com/techmap-oss/techmap-oss.github.io" data-i18n="menu.github">Github</a></li>
+                                <li><a href="https://www.techmap.kr" data-i18n="menu.techmap">자동차 테크맵</a></li>
+                            </ul> -->
+                        </li>
+                    </ul>
+                </div>
+                <div class="lang_wrap">
+                    <ul>
+                        <li><a onclick="switchLanguage('ko')" style="cursor: pointer;" class="on korean">Korean</a></li>
+                        <li><a onclick="switchLanguage('en')" style="cursor: pointer;" class="english">English</a></li>
+                    </ul>
+                </div>
+            </div>
+            <button type="button" class="menu_open">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="3" y="5" width="18" height="2" rx="1" fill="#343434" />
+                    <rect x="3" y="11" width="9" height="2" rx="1" fill="#343434" />
+                    <rect x="3" y="17" width="18" height="2" rx="1" fill="#343434" />
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <section class="organization">
+        <section class="container">
+            <div class="breadcrumb-nav">
+                <a href="/">Home</a> &gt;
+                <a href="overview" data-i18n="menu.techmap">소개</a> &gt;
+                <span data-i18n="menu.member">&nbsp;조직 및 멤버</span>
+            </div>
+
+            <div class="container">
+                <section class="common">
+                    <div class="head">
+                        <div class="wrapper">
+                            <h1 data-i18n="menu.member">
+                                조직 및 멤버
+                            </h1>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="container">
+                <div class="section">
+                    <div class="section-title" data-i18n="member.section.title">회원</div>
+                    <div class="member-box">
+                        <h3 data-i18n="member.user.title">사용자 [User]</h3>
+                        <p data-i18n="member.user.desc">
+                            누구나 회원 가입 등 별도의 절차 없이 '자동차 테크맵 프로젝트'의 <a href="/license.html" class="text-link">라이선스 정책</a>에
+                            따라 오픈소스 정보
+                            및 콘텐츠를 자유롭게 활용할 수 있습니다.
+                        </p>
+
+                        <h3 data-i18n="member.member.title">회원 [Member]</h3>
+                        <p data-i18n="member.member.desc">
+                            '자동차 테크맵 프로젝트'에 참여하려면 멤버로 가입해야 하며, <a href="#" class="text-link">가입 신청서(개인/기업)</a> 제출 후
+                            운영위원회의 승인을 통해 등록됩니다.
+                        </p>
+
+                        <h3 data-i18n="member.board.title">보드 회원사 [Board Member]</h3>
+                        <p data-i18n="member.board.desc">
+                            프로젝트에 지속적인 기여를 한 기업 회원은 운영위원회의 승인을 거쳐 보드 회원사로 임명될 수 있습니다.
+                        </p>
+
+                        <h3 data-i18n="member.sponsor.title">후원사 [Sponsor]</h3>
+                        <p data-i18n="member.sponsor.desc">
+                            프로젝트 운영, 관련 서비스 개발 및 확산 등을 지원한 기업 또는 기관은 후원사로 인정됩니다.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <div class="section-title" data-i18n="committee.section.title">운영위원회</div>
+                    <div class="member-box">
+                        <h3 data-i18n="committee.structure.title">구성</h3>
+                        <p data-i18n="committee.structure.desc">운영위원회는 보드 회원사로 구성되며, 1년 단위로 활동 실적에 따라 재구성 됩니다.</p>
+
+                        <h3 data-i18n="committee.role.title">역할</h3>
+                        <p data-i18n="committee.role.desc.1">프로젝트의 정책 수립, 일정 관리 등 주요 의사 결정을 수행합니다.</p>
+                        <p data-i18n="committee.role.desc.2">회원, 보드 회원사, 후원사에 대한 가입 및 등록 신청을 심사하고 승인합니다.</p>
+                        <p data-i18n="committee.role.desc.3">거버넌스 정책 및 관련 문서를 작성하고 개정합니다.</p>
+
+                    </div>
+                </div>
+
+                <div class="section">
+                    <div class="section-title" data-i18n="secretariat.section.title">운영사무국</div>
+                    <div class="openup-box">
+                        <p data-i18n="secretariat.desc.1">운영사무국은 정보통신산업진흥원이 구성한 조직(오픈업)이 담당합니다.</p>
+                        <p data-i18n="secretariat.desc.2">자동차 테크맵 프로젝트의 원활한 운영을 실무적으로 지원합니다.</p>
+
+                    </div>
+                </div>
+
+                <div class="section">
+                    <div class="section-title" data-i18n="board.section.title">보드 회원사</div>
+                    <div class="board-members">
+                        <img src="img/index_05_01.jpg" alt="현대자동차">
+                        <img src="img/index_05_02.jpg" alt="기아자동차">
+                        <img src="img/index_05_03.jpg" alt="현대모비스">
+                        <img src="img/index_05_04.jpg" alt="현대오토에버">
+                    </div>
+                </div>
+
+                <div class="section">
+                    <div class="section-title" data-i18n="sponsor.section.title">후원사</div>
+                    <div class="sponsor">
+                        <img src="img/logo_nipa.svg" alt="정보통신산업진흥원">
+                    </div>
+                </div>
+            </div>
+
+            </div>
+        </section>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-wrapper">
+            <div class="footer-bottom">
+                <p>COPYRIGHT © 2025 OSS.KR & TECHMAP.KR ALL RIGHTS RESERVED.</p>
+                <p> Contact Us : <a href="mailto:techmap@oss.kr">techmap@oss.kr</a></p>
+            </div>
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <img src="img/logo_nipa.svg" alt="nipa 로고" />
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        // 다국어 변경
+        function switchLanguage(lang) {
+            document.querySelectorAll('[data-i18n]').forEach((el) => {
+                const key = el.getAttribute('data-i18n');
+                const value = translations[lang]?.[key];
+                if (value) el.innerHTML = value;
+            });
+
+            const koreanBtn = document.querySelector('.korean');
+            const englishBtn = document.querySelector('.english');
+
+            if (lang === 'ko') {
+                koreanBtn.classList.add('on');
+                englishBtn.classList.remove('on');
+            } else {
+                koreanBtn.classList.remove('on');
+                englishBtn.classList.add('on');
+            }
+
+        }
+        const translations = {
+            ko: {
+                "menu.about": "소개",
+                "menu.techmap": "자동차 테크맵",
+                "menu.contribute": "기여하기",
+                "section.overview.title": "개요",
+                "menu.use": "활용하기",
+                "menu.news": "주요소식",
+                "menu.member": "조직 및 멤버",
+                "menu.license": "라이선스 정책",
+                "menu.benefit": "기여 혜택",
+                "menu.prepare": "기여 준비",
+                "menu.type": "기여 종류",
+                "menu.policy": "기여 정책",
+                "menu.signup": "회원가입",
+
+                "member.section.title": "회원",
+                "member.user.title": "사용자 [User]",
+                "member.user.desc": "누구나 회원 가입 등 별도의 절차 없이 '자동차 테크맵 프로젝트'의 <a href=\"#\" class=\"text-link\">라이선스 정책</a>에 따라 오픈소스 정보 및 콘텐츠를 자유롭게 활용할 수 있습니다.",
+                "member.member.title": "회원 [Member]",
+                "member.member.desc": "'자동차 테크맵 프로젝트'에 참여하려면 멤버로 가입해야 하며, <a href=\"#\" class=\"text-link\">가입 신청서(개인/기업)</a> 제출 후 운영위원회의 승인을 통해 등록됩니다.",
+                "member.board.title": "보드 회원사 [Board Member]",
+                "member.board.desc": "프로젝트에 지속적인 기여를 한 기업 회원은 운영위원회의 승인을 거쳐 보드 회원사로 임명될 수 있습니다.",
+                "member.sponsor.title": "후원사 [Sponsor]",
+                "member.sponsor.desc": "프로젝트 운영, 관련 서비스 개발 및 확산 등을 지원한 기업 또는 기관은 후원사로 인정됩니다.",
+
+                "committee.section.title": "운영위원회",
+                "committee.structure.title": "구성",
+                "committee.structure.desc": "운영위원회는 보드 회원사로 구성되며, 1년 단위로 활동 실적에 따라 재구성 됩니다.",
+                "committee.role.title": "역할",
+                "committee.role.desc.1": "프로젝트의 정책 수립, 일정 관리 등 주요 의사 결정을 수행합니다.",
+                "committee.role.desc.2": "회원, 보드 회원사, 후원사에 대한 가입 및 등록 신청을 심사하고 승인합니다.",
+                "committee.role.desc.3": "거버넌스 정책 및 관련 문서를 작성하고 개정합니다.",
+
+                "secretariat.section.title": "운영사무국",
+                "secretariat.desc.1": "운영사무국은 정보통신산업진흥원이 구성한 조직(오픈업)이 담당합니다.",
+                "secretariat.desc.2": "자동차 테크맵 프로젝트의 원활한 운영을 실무적으로 지원합니다.",
+
+                "board.section.title": "보드 회원사",
+                "sponsor.section.title": "후원사"
+
+            },
+            en: {
+                "menu.about": "About",
+                "menu.techmap": "Mobility Techmap",
+                "section.overview.title": "Overview",
+                "menu.contribute": "Contribute",
+                "menu.use": "Utilization",
+                "menu.news": "News",
+                "menu.member": "Organization & Members",
+                "menu.license": "License Policy",
+                "menu.benefit": "Contribution Benefits",
+                "menu.prepare": "Contribution Guide",
+                "menu.type": "Contribution Types",
+                "menu.policy": "Contribution Policy",
+                "menu.signup": "Sign Up",
+
+                "member.section.title": "Participation",
+                "member.user.title": "User",
+                "member.user.desc": "Anyone can freely use the open source information and content in accordance with the <a href=\"#\" class=\"text-link\">license policy</a> of the Mobility Techmap Project without separate registration.",
+                "member.member.title": "Member",
+                "member.member.desc": "To participate in the Mobility Techmap Project, you must join as a member by submitting a <a href=\"#\" class=\"text-link\">membership application (individual/corporate)</a> and receiving approval from the Steering Committee.",
+                "member.board.title": "Board Member",
+                "member.board.desc": "Corporate members who continuously contribute to the project may be appointed as board members upon approval by the Steering Committee.",
+                "member.sponsor.title": "Sponsor",
+                "member.sponsor.desc": "Companies or institutions that support project operations, service development, or outreach efforts are recognized as sponsors.",
+
+                "committee.section.title": "Steering Committee",
+                "committee.structure.title": "Structure",
+                "committee.structure.desc": "The Steering Committee is composed of board members and is restructured annually based on performance.",
+                "committee.role.title": "Roles",
+                "committee.role.desc.1": "Establishes project policies, manages schedules, and makes key decisions.",
+                "committee.role.desc.2": "Reviews and approves membership and sponsor applications.",
+                "committee.role.desc.3": "Drafts and revises governance policies and related documents.",
+
+                "secretariat.section.title": "Secretariat",
+                "secretariat.desc.1": "The Secretariat is managed by OpenUP, a team organized by NIPA (National IT Industry Promotion Agency).",
+                "secretariat.desc.2": "It provides operational support for the Mobility Techmap Project.",
+
+                "board.section.title": "Board Members",
+                "sponsor.section.title": "Sponsors"
+            }
+        };
+
+    </script>
+</body>
+
+</html>

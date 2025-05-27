@@ -68,12 +68,12 @@
     <header class="header">
         <div class="wrapper">
             <a href="/" class="logo">
-                <img src="/img/logo.svg" alt="자동차테크맵" />
+                <img src="img/logo.svg" id="logo" alt="자동차테크맵" />
             </a>
             <div class="menu_wrap">
                 <div class="menu_head">
                     <a href="/" class="logo">
-                        <img src="/img/logo.svg" alt="자동차테크맵" />
+                        <img src="img/logo.svg" alt="자동차테크맵" />
                     </a>
                     <button type="button" class="menu_close">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -84,30 +84,46 @@
                 <div class="gnb">
                     <ul>
                         <li>
-                            <a href="/about/overview">소개</a>
+                            <a href="overview" data-i18n="menu.techmap">자동차 테크맵</a>
                             <ul class="depth_02">
-                                <li><a href="/about/overview">개요</a></li>
-                                <li><a href="/about/organization">조직 및 멤버</a></li>
-                                <li><a href="/about/license">라이선스 정책</a></li>
-                                <li><a href="/about/faq">FAQ</a></li>
+                                <li><a href="overview" data-i18n="section.overview.title">소개</a></li>
+                                <li><a href="organization" data-i18n="menu.member">조직 및 멤버</a></li>
+                                <li><a href="license" data-i18n="menu.license">라이선스 정책</a></li>
+                                <li><a href="faq">FAQ</a></li>
                             </ul>
                         </li>
-                        <li><a href="/techmap">자동차 테크맵</a></li>
-                        <li><a href="/contribute">기여하기</a></li>
+                        <li><a href="contribute" data-i18n="menu.contribute">기여하기</a>
+                            <ul class="depth_02">
+                                <li><a href="/use/api" data-i18n="menu.benefit">기여 혜택</a></li>
+                                <li><a href="/use/data" data-i18n="menu.prepare">기여 준비</a></li>
+                                <li><a href="/use/data" data-i18n="menu.type">기여 종류</a></li>
+                                <li><a href="/use/data" data-i18n="menu.policy">기여 정책</a></li>
+                            </ul>
+                        </li>
                         <li>
-                            <a href="/use/api">활용하기</a>
+                            <a href="api" data-i18n="menu.use">활용하기</a>
                             <ul class="depth_02">
-                                <li><a href="/use/api">API 활용</a></li>
-                                <li><a href="/use/data">데이터 신청</a></li>
+                                <li><a href="api">API 활용</a></li>
+                                <li><a href="data">데이터 신청</a></li>
                             </ul>
                         </li>
-                        <li><a href="/news">주요소식</a></li>
+                        <li>
+                            <!-- 구글 폼 추가 예정 -->
+                            <a href="#" data-i18n="menu.signup">회원가입</a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/techmap-oss" data-i18n="menu.github">Github</a>
+                            <!-- <ul class="depth_02">
+                                <li><a href="https://github.com/techmap-oss/techmap-oss.github.io" data-i18n="menu.github">Github</a></li>
+                                <li><a href="https://www.techmap.kr" data-i18n="menu.techmap">자동차 테크맵</a></li>
+                            </ul> -->
+                        </li>
                     </ul>
                 </div>
                 <div class="lang_wrap">
                     <ul>
-                        <li><a href="#" class="on">Korean</a></li>
-                        <li><a href="#">English</a></li>
+                        <li><a onclick="switchLanguage('ko')" style="cursor: pointer;" class="on korean">Korean</a></li>
+                        <li><a onclick="switchLanguage('en')" style="cursor: pointer;" class="english">English</a></li>
                     </ul>
                 </div>
             </div>
@@ -125,8 +141,8 @@
         <section class="container">
             <div class="breadcrumb-nav">
                 <a href="/">Home</a> &gt;
-                <a href="/about/overview">소개</a> &gt;
-                <span>&nbsp;개요</span>
+                <a href="/overview" data-i18n="menu.techmap">자동차 테크맵</a> &gt;
+                <span data-i18n="overview.title">&nbsp;소개</span>
             </div>
 
 
@@ -134,8 +150,8 @@
                 <section class="common">
                     <div class="head">
                         <div class="wrapper">
-                            <h1>
-                                개요
+                            <h1 data-i18n="overview.title">
+                                소개
                             </h1>
                         </div>
                     </div>
@@ -144,40 +160,40 @@
 
 
             <div class="content-section">
-                <div class="section-title">명칭</div>
-                <div class="box">자동차 테크맵 프로젝트 (Mobility Techmap Project)</div>
+                <div class="section-title" data-i18n="overview.section.name">명칭</div>
+                <div class="box" data-i18n="overview.section.name.value">자동차 테크맵 프로젝트 (Mobility Techmap Project)</div>
 
-                <div class="section-title">목적</div>
-                <img src="img/index_02_01.jpg" class="overview-img">
-                <div class="box">
+                <div class="section-title" data-i18n="overview.section.purpose">목적</div>
+                <img src="img/index_02_01.jpg" class="overview-img" id="img-overview-pc">
+                <div class="box" data-i18n="overview.section.purpose.value">
                     자동차 분야의 오픈소스 정보를 서로 공유하고 활용하여 함께 성장해 나가는 모빌리티 오픈소스 생태계 구축을 목적으로 합니다.
                 </div>
 
-                <div class="section-title">연혁</div>
+                <div class="section-title" data-i18n="overview.section.history">연혁</div>
 
                 <div class="timeline-wrapper">
 
                     <div class="timeline-item">
-                        <strong class="year">2025년</strong>
+                        <strong class="year">2025<span data-i18n="overview.section.history">년</span></strong>
                         <ul>
-                            <li><strong>06월</strong> 자동차 테크맵 설명회 개최</li>
-                            <li><strong>05월</strong> 자동차 테크맵 홈페이지 공개</li>
+                            <li><strong data-i18n="label.month.06">06월</strong> <span data-i18n="overview.timeline.2025.06">자동차 테크맵 설명회 개최</span></li>
+                            <li><strong data-i18n="label.month.05">05월</strong> <span data-i18n="overview.timeline.2025.05">자동차 테크맵 홈페이지 공개</span></li>
 
                         </ul>
                     </div>
                     <div class="timeline-item">
-                        <strong class="year">2024년</strong>
+                        <strong class="year">2024<span data-i18n="overview.section.history">년</span></strong>
                         <ul>
-                            <li><strong>12월</strong> 오픈소스SW 페스티벌 기조강연 발표 및 보도자료</li>
-                            <li><strong>11월</strong> 글로벌 OEM 및 부품사 오픈소스 정보 수집 및 정리</li>
-                            <li><strong>06월</strong> 현대자동차그룹 오픈소스 테크맵 작업 관련 워크샵</li>
-                            <li><strong>01월</strong> 자동차 분야 오픈소스 테크맵 추진계획 협의</li>
+                            <li><strong data-i18n="label.month.12">12월</strong> <span data-i18n="overview.timeline.2024.12">오픈소스SW 페스티벌 기조강연 발표 및 보도자료</span></li>
+                            <li><strong data-i18n="label.month.11">11월</strong> <span data-i18n="overview.timeline.2024.11">글로벌 OEM 및 부품사 오픈소스 정보 수집 및 정리</span></li>
+                            <li><strong data-i18n="label.month.06">06월</strong> <span data-i18n="overview.timeline.2024.06">현대자동차그룹 오픈소스 테크맵 작업 관련 워크샵</span></li>
+                            <li><strong data-i18n="label.month.01">01월</strong> <span data-i18n="overview.timeline.2024.01">자동차 분야 오픈소스 테크맵 추진계획 협의</span></li>
                         </ul>
                     </div>
                     <div class="timeline-item">
-                        <strong class="year">2023년</strong>
+                        <strong class="year">2023<span data-i18n="overview.section.history">년</span></strong>
                         <ul>
-                            <li><strong>11월</strong> 정보통신산업진흥원-현대자동차그룹, 자동차 제조업 분야 오픈소스SW 활용 지원 및 생태계 구축을 위한 업무협약 체결
+                            <li><strong data-i18n="label.month.11">11월</strong> <span data-i18n="overview.timeline.2023.11">정보통신산업진흥원-현대자동차그룹, 자동차 제조업 분야 오픈소스SW 활용 지원 및 생태계 구축을 위한 업무협약 체결</span>
                             </li>
                         </ul>
                     </div>
@@ -188,11 +204,128 @@
     </section>
 
     <footer class="footer">
-        <div class="wrapper">
-            <p class="copyright">COPYRIGHT © 2025 OSS.KR & TECHMAP. ALL RIGHTS RESERVED.</p>
-            <img src="/img/logo_nipa.svg" alt="로고" />
+        <div class="footer-wrapper">
+            <div class="footer-bottom">
+                <p>COPYRIGHT © 2025 OSS.KR & TECHMAP.KR ALL RIGHTS RESERVED.</p>
+                <p> Contact Us : <a href="mailto:techmap@oss.kr">techmap@oss.kr</a></p>
+            </div>
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <img src="img/logo_nipa.svg" alt="nipa 로고" />
+                </div>
+            </div>
         </div>
     </footer>
+
+    <script>
+        // 다국어 변경
+        function switchLanguage(lang) {
+            document.querySelectorAll('[data-i18n]').forEach((el) => {
+                const key = el.getAttribute('data-i18n');
+                const value = translations[lang]?.[key];
+                if (value) el.innerHTML = value;
+            });
+
+            const koreanBtn = document.querySelector('.korean');
+            const englishBtn = document.querySelector('.english');
+
+            if (lang === 'ko') {
+                koreanBtn.classList.add('on');
+                englishBtn.classList.remove('on');
+            } else {
+                koreanBtn.classList.remove('on');
+                englishBtn.classList.add('on');
+            }
+
+            // 이미지 교체
+            const pcImg = document.getElementById('img-overview-pc');
+
+            if (lang === 'en') {
+                pcImg.src = 'img/index_02_01_en.jpg';
+            } else {
+                pcImg.src = 'img/index_02_01.jpg';
+            }
+        }
+
+        const translations = {
+            ko: {
+                "menu.about": "소개",
+                "menu.techmap": "자동차 테크맵",
+                "menu.contribute": "기여하기",
+                "section.overview.title": "개요",
+                "menu.use": "활용하기",
+                "menu.news": "주요소식",
+                "menu.member": "조직 및 멤버",
+                "menu.license": "라이선스 정책",
+                "menu.benefit": "기여 혜택",
+                "menu.prepare": "기여 준비",
+                "menu.type": "기여 종류",
+                "menu.policy": "기여 정책",
+                "menu.signup": "회원가입",
+                "hero.slogan": '<img src="img/index_01_tit1.png" alt="Mobility TechMap"/><br class="only_mb"/>오픈소스로 그리는 <strong>새로운 길</strong>',
+
+                "overview.title": "소개",
+                "overview.section.name": "명칭",
+                "overview.section.name.value": "자동차 테크맵 프로젝트 (Mobility Techmap Project)",
+                "overview.section.purpose": "목적",
+                "overview.section.purpose.value": "자동차 분야의 오픈소스 정보를 서로 공유하고 활용하여 함께 성장해 나가는 모빌리티 오픈소스 생태계 구축을 목적으로 합니다.",
+                "overview.section.history": "연혁",
+                "overview.section.year": "년",
+                "label.month.01": "01월",
+                "label.month.05": "05월",
+                "label.month.06": "06월",
+                "label.month.11": "11월",
+                "label.month.12": "12월",
+                "overview.timeline.2025.06": "자동차 테크맵 설명회 개최",
+                "overview.timeline.2025.05": "자동차 테크맵 홈페이지 공개",
+                "overview.timeline.2024.12": "오픈소스SW 페스티벌 기조강연 발표 및 보도자료",
+                "overview.timeline.2024.11": "글로벌 OEM 및 부품사 오픈소스 정보 수집 및 정리",
+                "overview.timeline.2024.06": "현대자동차그룹 오픈소스 테크맵 작업 관련 워크샵",
+                "overview.timeline.2024.01": "자동차 분야 오픈소스 테크맵 추진계획 협의",
+                "overview.timeline.2023.11": "정보통신산업진흥원-현대자동차그룹, 자동차 제조업 분야 오픈소스SW 활용 지원 및 생태계 구축을 위한 업무협약 체결"
+
+            },
+            en: {
+                "menu.about": "About",
+                "menu.techmap": "Mobility Techmap",
+                "section.overview.title": "Overview",
+                "menu.contribute": "Contribute",
+                "menu.use": "Utilization",
+                "menu.news": "News",
+                "menu.member": "Organization & Members",
+                "menu.license": "License Policy",
+                "menu.benefit": "Contribution Benefits",
+                "menu.prepare": "Contribution Guide",
+                "menu.type": "Contribution Types",
+                "menu.policy": "Contribution Policy",
+                "menu.signup": "Sign Up",
+                "hero.slogan": '<img src="img/index_01_tit1.png" alt="Mobility TechMap"/><br class="only_mb"/>A New Path Drawn with <strong>Open Source</strong>',
+
+                "overview.title": "Overview",
+                "overview.section.name": "Name",
+                "overview.section.name.value": "Mobility Techmap Project",
+                "overview.section.purpose": "Purpose",
+                "overview.section.purpose.value": "To build an open-source mobility ecosystem where information on automotive open source is shared, utilized, and developed collaboratively.",
+                "overview.section.history": " History",
+                "overview.section.year": "",
+                "label.month.01": "Jan",
+                "label.month.05": "May",
+                "label.month.06": "Jun",
+                "label.month.11": "Nov",
+                "label.month.12": "Dec",
+                "overview.timeline.2025.06": "Mobility Techmap Introduction Session Held",
+                "overview.timeline.2025.05": "Mobility Techmap Website Launched",
+                "overview.timeline.2024.12": "Keynote Presentation at Open Source SW Festival and Press Release",
+                "overview.timeline.2024.11": "Collected and Organized Open Source Info from Global OEMs and Suppliers",
+                "overview.timeline.2024.06": "Workshop on Open Source Techmap by Hyundai Motor Group",
+                "overview.timeline.2024.01": "Discussion on Plan to Promote Automotive Open Source Techmap",
+                "overview.timeline.2023.11": "MOU Signed Between NIPA and Hyundai Motor Group for Open Source SW Support in Automotive Manufacturing"
+
+
+            }
+        };
+
+    </script>
 </body>
 
 </html>

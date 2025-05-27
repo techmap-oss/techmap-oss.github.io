@@ -1,0 +1,224 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>FAQ - 자동차테크맵</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no">
+
+    <link rel="stylesheet" href="css/jquery-ui.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style_v2.css" />
+
+    <script src="/js/jquery-3.6.0.min.js"></script>
+    <script src="/js/jquery-ui.min.js"></script>
+    <script src="/js/script.js"></script>
+
+    <link rel="stylesheet" href="/plugin/aos/aos.css" />
+    <script src="/plugin/aos/aos.js"></script>
+    <link rel="stylesheet" href="/plugin/swiper/swiper-bundle.min.css" />
+    <script src="/plugin/swiper/swiper-bundle.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+    <style>
+        @media (max-width: 768px) {
+            body {
+                padding: 24px 16px;
+            }
+
+            h1 {
+                font-size: 1.6rem;
+            }
+
+            .box,
+            .warning {
+                font-size: 0.94rem;
+                padding: 14px 16px;
+            }
+
+            .section-title {
+                font-size: 1rem;
+                padding-left: 10px;
+            }
+        }
+    </style>
+    <header class="header">
+        <div class="wrapper">
+            <a href="/" class="logo">
+        <img src="img/logo.svg" alt="자동차테크맵" />
+    </a>
+            <div class="menu_wrap">
+                <div class="menu_head">
+                    <a href="/" class="logo">
+        <img src="img/logo.svg" alt="자동차테크맵" />
+    </a>
+                    <button type="button" class="menu_close">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18 6L6 18M18 18L6 6" stroke="black" stroke-width="2" stroke-linecap="round" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="gnb">
+        <ul>
+            <li>
+                <a href="/about/overview">소개</a>
+                <ul class="depth_02">
+                    <li><a href="/about/overview">개요</a></li>
+                    <li><a href="/about/organization">조직 및 멤버</a></li>
+                    <li><a href="/about/license">라이선스 정책</a></li>
+                    <li><a href="/about/faq">FAQ</a></li>
+                </ul>
+            </li>
+            <li><a href="/techmap">자동차 테크맵</a></li>
+            <li><a href="/contribute">기여하기</a></li>
+            <li>
+                <a href="/use/api">활용하기</a>
+                <ul class="depth_02">
+                    <li><a href="/use/api">API 활용</a></li>
+                    <li><a href="/use/data">데이터 신청</a></li>
+                </ul>
+            </li>
+            <li><a href="/news">주요소식</a></li>
+        </ul>
+    </div>
+                <div class="lang_wrap">
+        <ul>
+            <li><a href="#" class="on">Korean</a></li>
+            <li><a href="#">English</a></li>
+        </ul>
+    </div>
+            </div>
+            <button type="button" class="menu_open">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="3" y="5" width="18" height="2" rx="1" fill="#343434" />
+                    <rect x="3" y="11" width="9" height="2" rx="1" fill="#343434" />
+                    <rect x="3" y="17" width="18" height="2" rx="1" fill="#343434" />
+                </svg>
+            </button>
+        </div>
+    </header>
+<section class="container">
+    <section class="faq">
+        <div class="breadcrumb-nav">
+            <a href="/">Home</a> &gt;
+            <a href="/about/overview">소개</a> &gt;
+            <span>&nbsp;FAQ</span>
+        </div>
+
+        <div class="container">
+            <section class="common">
+                <div class="head">
+                    <div class="wrapper">
+                        <h1>FAQ</h1>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="container">
+            <!-- 사용 조건 -->
+            <div class="faq-section">
+                <div class="faq-icon"><i class="fas fa-unlock-alt"></i></div>
+                <div class="faq-content">
+                    <h2>사용 조건</h2>
+                    <p>자동차 테크맵 프로젝트는 오픈소스로 제공되며, 관련 라이선스를 준수하는 조건 하에 누구나 무료로 사용할 수 있습니다.</p>
+                </div>
+            </div>
+
+            <!-- 라이선스 정책 -->
+            <div class="faq-section">
+                <div class="faq-icon"><i class="fas fa-file-contract"></i></div>
+                <div class="faq-content">
+                    <h2>라이선스 정책</h2>
+                    <p>자동차 테크맵 사이트에서 제공되는 오픈소스 정보 데이터(ODC-By 1.0), API 소스코드(Apache 2.0), 오픈소스 정보 데이터와 소스코드를 제외한 콘텐츠(CC-BY-2.0)는 각각의 라이선스 조건에 따라 사용 가능합니다.</p>
+                    <p>자세한 내용은 <a href="about/license" class="text-link">라이선스 정책</a>을 참고해주시기 바랍니다.</p>
+                </div>
+            </div>
+
+            <!-- 회원 정책 -->
+            <div class="faq-section">
+                <div class="faq-icon"><i class="fas fa-users-cog"></i></div>
+                <div class="faq-content">
+                    <h2>회원 정책</h2>
+                    <p>자동차 테크맵 프로젝트는 일반 사용자, 회원, 보드 회원사, 후원사로 구성되며, 보드 회원사로 구성된 운영위원회에서 주요 의사 결정 및 커뮤니티 운영 정책을 수립하고, 신규 가입 및 등록 신청을 심사하고 승인합니다.</p>
+                    <p>자세한 내용은 <a href="about/organization" class="text-link">조직 및 멤버</a> 페이지를 참고해주시기 바랍니다.</p>
+                </div>
+            </div>
+
+            <!-- 가입 방법 -->
+            <div class="faq-section">
+                <div class="faq-icon"><i class="fas fa-user-plus"></i></div>
+                <div class="faq-content">
+                    <h2>가입 방법</h2>
+                    <p>자동차 테크맵 프로젝트에 참여하려면 멤버로 가입해야 하며, <a href="about/organization" class="text-link">가입 신청서(개인/기업)</a> 제출 후 운영위원회의 승인을 통해 등록됩니다.</p>
+                    <p>궁금한 사항은 <a href="mailto:techmap@oss.kr" class="text-link">이메일 문의</a> 또는 <a href="about/organization" class="text-link">조직 및 멤버</a> 구성 안내를 참고해주시기 바랍니다.</p>
+                </div>
+            </div>
+
+            <!-- 기여 방법 -->
+            <div class="faq-section">
+                <div class="faq-icon"><i class="fas fa-hands-helping"></i></div>
+                <div class="faq-content">
+                    <h2>기여 방법</h2>
+                    <p>자동차 테크맵 프로젝트는 참여와 협력을 바탕으로 함께 만들어가는 오픈소스 프로젝트입니다.</p>
+                    <p>오픈소스에 관심 있는 누구나 참여 가능하며, 오픈소스 공개, 문서 기여, 피드백 제공, 개발, 테스트 등 다양한 방식으로 참여할 수 있습니다.</p>
+                    <p>참여 방법은 <a href="contribute" class="text-link">기여하기</a> 페이지를 참고하여 회원 가입 후 활동하실 수 있습니다.</p>
+                </div>
+            </div>
+
+            <!-- 활용 방법 -->
+            <div class="faq-section">
+                <div class="faq-icon"><i class="fas fa-lightbulb"></i></div>
+                <div class="faq-content">
+                    <h2>활용 방법</h2>
+                    <p>자동차 분야의 각 기술별 오픈소스 정보를 열람하고 싶으시면 <a href="techmap" class="text-link">자동차 테크맵</a> 페이지를 통해 관련 정보를 확인하실 수 있으며, 컴포넌트 검색 및 기술분류별 활용도순, 관련도순 등으로 조회 가능합니다.</p>
+                    <p>또한 전체 데이터를 이용하고 싶으시면 <a href="use/api" class="text-link">Open-API</a>를 활용하실 수 있으며, 연구목적의 상세 데이터는 <a href="use/data" class="text-link">데이터 신청하기</a> 기능을 통해 신청 가능합니다.</p>
+                </div>
+            </div>
+
+            <!-- Open-API 사용법 -->
+            <div class="faq-section">
+                <div class="faq-icon"><i class="fas fa-plug"></i></div>
+                <div class="faq-content">
+                    <h2>Open-API 사용법</h2>
+                    <p>자동차 테크맵 Open-API는 자동차 분야에서 활용되는 다양한 오픈소스 정보를 수집하고 정리하여 기업 및 연구기관에서 자료를 편리하게 활용할 수 있도록 공개한 인터페이스입니다.</p>
+                    <p>자세한 내용은 <a href="use/api" class="text-link">Open-API</a> 페이지를 참고해주시기 바랍니다.</p>
+                </div>
+            </div>
+
+            <!-- 문의하기 -->
+            <div class="faq-section">
+                <div class="faq-icon"><i class="fas fa-envelope-open-text"></i></div>
+                <div class="faq-content">
+                    <h2>문의하기</h2>
+                    <p>사이트 이용 중 문제가 발생하거나 문의사항이 있을 경우, 홈페이지 하단의 <strong>Contact Us : <a href="mailto:techmap@oss.kr" class="text-link">techmap@oss.kr</a></strong> 를 통해 연락하실 수 있습니다.</p>
+                    <p>더 자세한 정보나 특정 기능에 대한 안내가 필요하시면, 추가로 <strong><a href="mailto:techmap@oss.kr" class="text-link">문의</a></strong>해주시기 바랍니다.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</section>
+
+
+    <footer class="footer">
+        <div class="footer-wrapper">
+            <div class="footer-bottom">
+                <p>COPYRIGHT © 2025 OSS.KR & TECHMAP.KR ALL RIGHTS RESERVED.</p>
+                <p> Contact Us : <a href="mailto:techmap@oss.kr">techmap@oss.kr</a></p>
+            </div>
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <img src="img/logo_nipa.svg" alt="nipa 로고" />
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
