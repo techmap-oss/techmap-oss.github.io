@@ -14,6 +14,7 @@
     <script src="/js/jquery-3.6.0.min.js"></script>
     <script src="/js/jquery-ui.min.js"></script>
     <script src="/js/script.js"></script>
+    <script src="translations.js"></script>
 
     <link rel="stylesheet" href="/plugin/aos/aos.css" />
     <script src="/plugin/aos/aos.js"></script>
@@ -65,8 +66,8 @@
                         <li>
                             <a href="api" data-i18n="menu.use">활용하기</a>
                             <ul class="depth_02">
-                                <li><a href="api">API 활용</a></li>
-                                <li><a href="data">데이터 신청</a></li>
+                                <li><a href="api" data-i18n="menu.api">API 활용</a></li>
+                                <li><a href="data" data-i18n="menu.data">데이터 신청</a></li>
                             </ul>
                         </li>
                         <li>
@@ -184,102 +185,6 @@
             </div>
         </div>
     </footer>
-
-    <script>
-
-        // 다국어 변경
-        function switchLanguage(lang) {
-            document.querySelectorAll('[data-i18n]').forEach((el) => {
-                const key = el.getAttribute('data-i18n');
-                const value = translations[lang]?.[key];
-                if (value) el.innerHTML = value;
-            });
-
-            const koreanBtn = document.querySelector('.korean');
-            const englishBtn = document.querySelector('.english');
-
-            if (lang === 'ko') {
-                koreanBtn.classList.add('on');
-                englishBtn.classList.remove('on');
-            } else {
-                koreanBtn.classList.remove('on');
-                englishBtn.classList.add('on');
-            }
-
-        }
-        const translations = {
-            ko: {
-                "menu.about": "소개",
-                "menu.techmap": "자동차 테크맵",
-                "menu.contribute": "기여하기",
-                "section.overview.title": "개요",
-                "menu.use": "활용하기",
-                "menu.news": "주요소식",
-                "menu.member": "조직 및 멤버",
-                "menu.license": "라이선스 정책",
-                "menu.benefit": "기여 혜택",
-                "menu.prepare": "기여 준비",
-                "menu.type": "기여 종류",
-                "menu.policy": "기여 정책",
-                "menu.signup": "회원가입",
-
-                "license.breadcrumb": "라이선스 정책",
-                "license.title": "라이선스 정책",
-                "license.description": "모빌리티 테크맵 프로젝트에서 제공하는 배포물의 형태에 따른 라이선스 소개입니다.",
-
-                "license.section.distribution": "배포 라이선스",
-                "license.distribution.data": "오픈소스 정보 데이터 : ODC-By 1.0 라이선스 (Open Data Commons Attribution License v1.0)",
-                "license.distribution.api": "API 소스코드 : Apache 2.0 라이선스",
-                "license.distribution.content": "오픈소스 정보 데이터와 소스코드를 제외한 콘텐츠 : CC-BY-2.0 라이선스",
-
-                "license.section.traffic": "⚠️ 과도한 트래픽에 관한 제한",
-                "license.traffic.warning": "WARNING",
-                "license.traffic.desc.1": "자동차 테크맵 프로젝트에서 제공하는 정보는 위 라이선스에 따라 누구나 자유롭게 사용할 수 있습니다.",
-                "license.traffic.desc.2": "다만, 사용자에 의해 서버에 과도한 트래픽이 발생하는 경우에는 서비스가 중단될 수 있으며, 사전 고지 없이 특정 IP의 접속을 제한할 수 있습니다.",
-
-                "license.section.disclaimer": "보증 부인",
-                "license.disclaimer.1": "자동차 테크맵 프로젝트는 고지 검증을 통해 최대한 정확한 정보를 제공하고자 노력합니다. 그럼에도 불구하고 정확하지 않은 정보가 포함되어 있을 수 있습니다.",
-                "license.disclaimer.2": "자동차 테크맵 프로젝트의 제공되는 정보는 법적 분쟁의 근거로 사용할 수 없습니다.",
-                "license.disclaimer.3": "자동차 테크맵 프로젝트 정보의 사용으로 인해 발생한 그 어떠한 유형의 손해에 대해서도 책임지지 않습니다."
-
-            },
-            en: {
-                "menu.about": "About",
-                "menu.techmap": "Mobility Techmap",
-                "section.overview.title": "Overview",
-                "menu.contribute": "Contribute",
-                "menu.use": "Utilization",
-                "menu.news": "News",
-                "menu.member": "Organization & Members",
-                "menu.license": "License Policy",
-                "menu.benefit": "Contribution Benefits",
-                "menu.prepare": "Contribution Guide",
-                "menu.type": "Contribution Types",
-                "menu.policy": "Contribution Policy",
-                "menu.signup": "Sign Up",
-
-                "license.breadcrumb": "License Policy",
-                "license.title": "License Policy",
-                "license.description": "This is an overview of the licenses applied to the types of distributions provided by the Mobility Techmap Project.",
-
-                "license.section.distribution": "Distribution Licenses",
-                "license.distribution.data": "Open Source Information Data: ODC-By 1.0 License (Open Data Commons Attribution License v1.0)",
-                "license.distribution.api": "API Source Code: Apache 2.0 License",
-                "license.distribution.content": "Content excluding the open source data and source code: CC-BY-2.0 License",
-
-                "license.section.traffic": "⚠️ Traffic Restriction Notice",
-                "license.traffic.warning": "WARNING",
-                "license.traffic.desc.1": "The information provided by the Mobility Techmap Project may be freely used under the above licenses.",
-                "license.traffic.desc.2": "However, in the event of excessive traffic caused by users, the service may be suspended and access from certain IPs may be restricted without prior notice.",
-
-                "license.section.disclaimer": "Disclaimer",
-                "license.disclaimer.1": "The Mobility Techmap Project strives to provide accurate information through verified sources. Nevertheless, some information may be inaccurate.",
-                "license.disclaimer.2": "The information provided may not be used as a basis for legal claims.",
-                "license.disclaimer.3": "We are not responsible for any damages arising from the use of information provided by the project."
-            }
-        };
-
-    </script>
 </body>
 
 </html>

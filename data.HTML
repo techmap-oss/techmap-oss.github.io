@@ -1,230 +1,34 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>데이터 신청</title>
+    <title>데이터 신청 - 자동차테크맵</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no">
+
+    <link rel="stylesheet" href="css/jquery-ui.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style_v2.css" />
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="translations.js"></script>
+
+    <link rel="stylesheet" href="plugin/aos/aos.css" />
+    <script src="plugin/aos/aos.js"></script>
+    <link rel="stylesheet" href="plugin/swiper/swiper-bundle.min.css" />
+    <script src="plugin/swiper/swiper-bundle.min.js"></script>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <style>
-        body {
-            font-family: 'Noto Sans KR', sans-serif;
-            background-color: #ffffff;
-            color: #333;
-            margin: 0;
-            padding: 0;
-        }
-
-        .section {
-            background: linear-gradient(135deg, #005bac, #00aaff);
-            color: white;
-            text-align: center;
-            padding: 80px 20px 60px;
-            position: relative;
-        }
-
-        .section h1 {
-            font-size: 2.4rem;
-            margin-bottom: 20px;
-        }
-
-        .section p {
-            font-size: 1.05rem;
-            max-width: 700px;
-            margin: 0 auto 30px;
-            line-height: 1.7;
-        }
-
-        .button-area {
-            display: flex;
-            gap: 16px;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-
-        .btn {
-            display: inline-flex;
-            align-items: center;
-            gap: 10px;
-            padding: 14px 24px;
-            font-size: 1rem;
-            background-color: #ffffff;
-            color: #005bac;
-            border: none;
-            border-radius: 8px;
-            text-decoration: none;
-            font-weight: 600;
-            transition: all 0.3s ease;
-        }
-
-        .btn:hover {
-            background-color: #e5f2ff;
-        }
-
-        .btn i {
-            font-size: 1.2rem;
-        }
-
-        .img-bg {
-            position: absolute;
-            top: -30px;
-            right: -20px;
-            opacity: 0.1;
-            max-width: 500px;
-        }
-
-        .breadcrumb {
-            font-size: 0.85rem;
-            color: #666;
-            margin-left: auto;
-            white-space: nowrap;
-        }
-
-        .breadcrumb a {
-            color: #ffffff;
-            text-decoration: none;
-            margin: 0 2px;
-        }
-
-        .breadcrumb span {
-            font-weight: bold;
-            color: #ffffff;
-        }
-
-        .breadcrumb-nav {
-            max-width: 960px;
-            margin: 40px auto 20px;
-            padding: 0 20px;
-            font-size: 0.95rem;
-            text-align: left;
-            color: #ffffff;
-            font-weight: 400;
-            text-align: right;
-            /* ✅ 오른쪽 정렬 */
-
-        }
-
-        .breadcrumb-nav a {
-            color: #ffffff;
-            text-decoration: none;
-            margin: 0 6px;
-            position: relative;
-            transition: color 0.2s;
-        }
-
-        .breadcrumb-nav a:hover {
-            color: #0070c0;
-            /* 주황색 강조 */
-        }
-
-        .breadcrumb-nav a:hover::after {
-            content: "";
-            position: absolute;
-            left: 0;
-            bottom: -2px;
-            width: 100%;
-            height: 2px;
-            background-color: #0070c0;
-        }
-
-        .breadcrumb-nav span {
-            color: #ffffff;
-            font-weight: bold;
-            margin-left: 6p
-        }
-
-        .btn {
-            display: inline-flex;
-            align-items: center;
-            gap: 10px;
-            padding: 14px 24px;
-            font-size: 1rem;
-            background-color: #ffffff;
-            color: #005bac;
-            border: none;
-            border-radius: 8px;
-            text-decoration: none;
-            font-weight: 600;
-            box-shadow: 0 6px 14px rgba(0, 91, 172, 0.2);
-            transition: all 0.3s ease;
-            transform: scale(1);
-        }
-
-        .btn:hover {
-            background-color: #e5f2ff;
-            transform: scale(1.04);
-        }
-
-        .img-bg {
-            position: absolute;
-            bottom: -20px;
-            left: -30px;
-            opacity: 0.06;
-            max-width: 600px;
-            z-index: 0;
-            pointer-events: none;
-        }
-
-        .section>*:not(.img-bg) {
-            position: relative;
-            z-index: 1;
-        }
-
-        .contact-section {
-            background-color: #f0f4f9;
-            padding: 60px 20px;
-        }
-
-        .contact-container {
-            max-width: 700px;
-            margin: 0 auto;
-            text-align: center;
-        }
-
-        .contact-container h2 {
-            font-size: 1.8rem;
-            margin-bottom: 10px;
-            color: #005bac;
-        }
-
-        .contact-container p {
-            font-size: 1rem;
-            margin-bottom: 30px;
-            color: #555;
-        }
-
-        .contact-form {
-            display: flex;
-            flex-direction: column;
-            gap: 16px;
-        }
-
-        .contact-form input,
-        .contact-form textarea {
-            padding: 14px;
-            border: 1px solid #ccc;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            font-family: 'Noto Sans KR', sans-serif;
-        }
-
-        .contact-form button {
-            background-color: #005bac;
-            color: white;
-            border: none;
-            padding: 14px;
-            border-radius: 8px;
-            font-size: 1rem;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
-
-        .contact-form button:hover {
-            background-color: #0072ce;
-        }
-
         @media (max-width: 600px) {
             .contact-container h2 {
                 font-size: 1.4rem;
@@ -235,7 +39,6 @@
                 font-size: 0.9rem;
             }
         }
-
 
         @media (max-width: 768px) {
             .section h1 {
@@ -257,42 +60,116 @@
             }
         }
     </style>
-</head>
-
-<body>
-
-    <section class="section">
-        <div class="breadcrumb-nav">
-            <a href="/">Home</a> &gt;
-            <a href="/intro.html">활용하기</a> &gt;
-            <span>&nbsp;데이터 신청</span>
+    <header class="header">
+        <div class="wrapper">
+            <a href="/" class="logo">
+                <img src="img/logo.svg" id="logo" alt="자동차테크맵" />
+            </a>
+            <div class="menu_wrap">
+                <div class="menu_head">
+                    <a href="/" class="logo">
+                        <img src="img/logo.svg" alt="자동차테크맵" />
+                    </a>
+                    <button type="button" class="menu_close">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18 6L6 18M18 18L6 6" stroke="black" stroke-width="2" stroke-linecap="round" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="gnb">
+                    <ul>
+                        <li>
+                            <a href="overview" data-i18n="menu.techmap">자동차 테크맵</a>
+                            <ul class="depth_02">
+                                <li><a href="overview" data-i18n="section.overview.title">소개</a></li>
+                                <li><a href="organization" data-i18n="menu.member">조직 및 멤버</a></li>
+                                <li><a href="license" data-i18n="menu.license">라이선스 정책</a></li>
+                                <li><a href="FAQ">FAQ</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="contribute" data-i18n="menu.contribute">기여하기</a>
+                            <ul class="depth_02">
+                                <li><a href="contribute_01" data-i18n="menu.benefit">기여 혜택</a></li>
+                                <li><a href="contribute_02" data-i18n="menu.prepare">기여 준비</a></li>
+                                <li><a href="contribute_03" data-i18n="menu.type">기여 종류</a></li>
+                                <li><a href="contribute_04" data-i18n="menu.policy">기여 정책</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="api" data-i18n="menu.use">활용하기</a>
+                            <ul class="depth_02">
+                                <li><a href="api" data-i18n="menu.api">API 활용</a></li>
+                                <li><a href="data" data-i18n="menu.data">데이터 신청</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <!-- 구글 폼 추가 예정 -->
+                            <a href="#" data-i18n="menu.signup">회원가입</a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/techmap-oss" data-i18n="menu.github">Github</a>
+                            <!-- <ul class="depth_02">
+                                <li><a href="https://github.com/techmap-oss/techmap-oss.github.io" data-i18n="menu.github">Github</a></li>
+                                <li><a href="https://www.techmap.kr" data-i18n="menu.techmap">자동차 테크맵</a></li>
+                            </ul> -->
+                        </li>
+                    </ul>
+                </div>
+                <div class="lang_wrap">
+                    <ul>
+                        <li><a onclick="switchLanguage('ko')" style="cursor: pointer;" class="on korean">Korean</a></li>
+                        <li><a onclick="switchLanguage('en')" style="cursor: pointer;" class="english">English</a></li>
+                    </ul>
+                </div>
+            </div>
+            <button type="button" class="menu_open">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="3" y="5" width="18" height="2" rx="1" fill="#343434" />
+                    <rect x="3" y="11" width="9" height="2" rx="1" fill="#343434" />
+                    <rect x="3" y="17" width="18" height="2" rx="1" fill="#343434" />
+                </svg>
+            </button>
         </div>
+    </header>
 
-        <img src="https://cdn-icons-png.flaticon.com/512/4476/4476337.png" alt="데이터" class="img-bg">
-        <h1 class="gsap-fade">데이터 신청</h1>
-        <p class="gsap-rise">
-            자동차 테크맵 프로젝트는 데이터 제공을 위해 신청 절차를 운영하고 있습니다.<br>
-            아래 버튼을 클릭하여 신청서를 다운로드하고 작성 후 메일 또는 플랫폼을 통해 제출해주세요.
-        </p>
-        <div class="button-area gsap-slide">
-            <a href="#" class="btn"><i class="fas fa-download"></i> 데이터 신청</a>
-        </div>
+    <section class="use-data">
+        <section class="section">
+            <div class="breadcrumb-nav">
+                <a href="/">Home</a> &gt;
+                <a href="api" data-i18n="menu.use">활용하기</a> &gt;
+                <span data-i18n="data.request.breadcrumb">&nbsp;데이터 신청</span>
+            </div>
+
+            <img src="https://cdn-icons-png.flaticon.com/512/4476/4476337.png" alt="데이터" class="img-bg">
+            <h1 class="gsap-fade" data-i18n="data.request.title">데이터 신청</h1>
+            <p class="gsap-rise" data-i18n="data.request.description">
+                자동차 테크맵 중 연구&개발 목적의 상세데이터는 정보통신산업진흥원을 통해 제공되고 있습니다. <br>
+                아래 페이지로 이동 후 신청해 주시기 바랍니다.
+            </p>
+            <div class="button-area gsap-slide">
+                <a href="#" class="btn" data-i18n="data.request.button">
+                    <i class="fas fa-download"></i> 데이터 신청
+                </a>
+            </div>
+        </section>
+
     </section>
-
-    <section class="contact-section">
-        <div class="contact-container">
-            <h2>문의하기</h2>
-            <p>자동차 테크맵에 대한 궁금한 점이나 개선 요청 사항을 보내주세요.</p>
-            <form class="contact-form" action="#" method="post">
-                <input type="text" name="name" placeholder="이름" required>
-                <input type="email" name="email" placeholder="이메일" required>
-                <textarea name="message" placeholder="문의 내용을 입력해주세요." rows="5" required></textarea>
-                <button type="submit">문의 보내기</button>
-            </form>
-        </div>
-    </section>
-
 </body>
+
+<footer class="footer">
+    <div class="footer-wrapper">
+        <div class="footer-bottom">
+            <p>COPYRIGHT © 2025 OSS.KR & TECHMAP.KR ALL RIGHTS RESERVED.</p>
+            <p> Contact Us : <a href="mailto:techmap@oss.kr">techmap@oss.kr</a></p>
+        </div>
+        <div class="footer-top">
+            <div class="footer-logo">
+                <img src="img/logo_nipa.svg" alt="nipa 로고" />
+            </div>
+        </div>
+    </div>
+</footer>
+
 
 <script>
     gsap.registerPlugin(ScrollTrigger);
@@ -326,6 +203,10 @@
             ease: 'power2.out'
         });
     });
+
+
 </script>
+
+</body>
 
 </html>

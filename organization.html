@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/jquery-ui.css" />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style_v2.css" />
-
+    <script src="translations.js"></script>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
@@ -79,8 +79,8 @@
                         <li>
                             <a href="api" data-i18n="menu.use">활용하기</a>
                             <ul class="depth_02">
-                                <li><a href="api">API 활용</a></li>
-                                <li><a href="data">데이터 신청</a></li>
+                                <li><a href="api" data-i18n="menu.api">API 활용</a></li>
+                                <li><a href="data" data-i18n="menu.data">데이터 신청</a></li>
                             </ul>
                         </li>
                         <li>
@@ -220,113 +220,6 @@
         </div>
     </footer>
 
-
-    <script>
-        // 다국어 변경
-        function switchLanguage(lang) {
-            document.querySelectorAll('[data-i18n]').forEach((el) => {
-                const key = el.getAttribute('data-i18n');
-                const value = translations[lang]?.[key];
-                if (value) el.innerHTML = value;
-            });
-
-            const koreanBtn = document.querySelector('.korean');
-            const englishBtn = document.querySelector('.english');
-
-            if (lang === 'ko') {
-                koreanBtn.classList.add('on');
-                englishBtn.classList.remove('on');
-            } else {
-                koreanBtn.classList.remove('on');
-                englishBtn.classList.add('on');
-            }
-
-        }
-        const translations = {
-            ko: {
-                "menu.about": "소개",
-                "menu.techmap": "자동차 테크맵",
-                "menu.contribute": "기여하기",
-                "section.overview.title": "개요",
-                "menu.use": "활용하기",
-                "menu.news": "주요소식",
-                "menu.member": "조직 및 멤버",
-                "menu.license": "라이선스 정책",
-                "menu.benefit": "기여 혜택",
-                "menu.prepare": "기여 준비",
-                "menu.type": "기여 종류",
-                "menu.policy": "기여 정책",
-                "menu.signup": "회원가입",
-
-                "member.section.title": "회원",
-                "member.user.title": "사용자 [User]",
-                "member.user.desc": "누구나 회원 가입 등 별도의 절차 없이 '자동차 테크맵 프로젝트'의 <a href=\"#\" class=\"text-link\">라이선스 정책</a>에 따라 오픈소스 정보 및 콘텐츠를 자유롭게 활용할 수 있습니다.",
-                "member.member.title": "회원 [Member]",
-                "member.member.desc": "'자동차 테크맵 프로젝트'에 참여하려면 멤버로 가입해야 하며, <a href=\"#\" class=\"text-link\">가입 신청서(개인/기업)</a> 제출 후 운영위원회의 승인을 통해 등록됩니다.",
-                "member.board.title": "보드 회원사 [Board Member]",
-                "member.board.desc": "프로젝트에 지속적인 기여를 한 기업 회원은 운영위원회의 승인을 거쳐 보드 회원사로 임명될 수 있습니다.",
-                "member.sponsor.title": "후원사 [Sponsor]",
-                "member.sponsor.desc": "프로젝트 운영, 관련 서비스 개발 및 확산 등을 지원한 기업 또는 기관은 후원사로 인정됩니다.",
-
-                "committee.section.title": "운영위원회",
-                "committee.structure.title": "구성",
-                "committee.structure.desc": "운영위원회는 보드 회원사로 구성되며, 1년 단위로 활동 실적에 따라 재구성 됩니다.",
-                "committee.role.title": "역할",
-                "committee.role.desc.1": "프로젝트의 정책 수립, 일정 관리 등 주요 의사 결정을 수행합니다.",
-                "committee.role.desc.2": "회원, 보드 회원사, 후원사에 대한 가입 및 등록 신청을 심사하고 승인합니다.",
-                "committee.role.desc.3": "거버넌스 정책 및 관련 문서를 작성하고 개정합니다.",
-
-                "secretariat.section.title": "운영사무국",
-                "secretariat.desc.1": "운영사무국은 정보통신산업진흥원이 구성한 조직(오픈업)이 담당합니다.",
-                "secretariat.desc.2": "자동차 테크맵 프로젝트의 원활한 운영을 실무적으로 지원합니다.",
-
-                "board.section.title": "보드 회원사",
-                "sponsor.section.title": "후원사"
-
-            },
-            en: {
-                "menu.about": "About",
-                "menu.techmap": "Mobility Techmap",
-                "section.overview.title": "Overview",
-                "menu.contribute": "Contribute",
-                "menu.use": "Utilization",
-                "menu.news": "News",
-                "menu.member": "Organization & Members",
-                "menu.license": "License Policy",
-                "menu.benefit": "Contribution Benefits",
-                "menu.prepare": "Contribution Guide",
-                "menu.type": "Contribution Types",
-                "menu.policy": "Contribution Policy",
-                "menu.signup": "Sign Up",
-
-                "member.section.title": "Participation",
-                "member.user.title": "User",
-                "member.user.desc": "Anyone can freely use the open source information and content in accordance with the <a href=\"#\" class=\"text-link\">license policy</a> of the Mobility Techmap Project without separate registration.",
-                "member.member.title": "Member",
-                "member.member.desc": "To participate in the Mobility Techmap Project, you must join as a member by submitting a <a href=\"#\" class=\"text-link\">membership application (individual/corporate)</a> and receiving approval from the Steering Committee.",
-                "member.board.title": "Board Member",
-                "member.board.desc": "Corporate members who continuously contribute to the project may be appointed as board members upon approval by the Steering Committee.",
-                "member.sponsor.title": "Sponsor",
-                "member.sponsor.desc": "Companies or institutions that support project operations, service development, or outreach efforts are recognized as sponsors.",
-
-                "committee.section.title": "Steering Committee",
-                "committee.structure.title": "Structure",
-                "committee.structure.desc": "The Steering Committee is composed of board members and is restructured annually based on performance.",
-                "committee.role.title": "Roles",
-                "committee.role.desc.1": "Establishes project policies, manages schedules, and makes key decisions.",
-                "committee.role.desc.2": "Reviews and approves membership and sponsor applications.",
-                "committee.role.desc.3": "Drafts and revises governance policies and related documents.",
-
-                "secretariat.section.title": "Secretariat",
-                "secretariat.desc.1": "The Secretariat is managed by OpenUP, a team organized by NIPA (National IT Industry Promotion Agency).",
-                "secretariat.desc.2": "It provides operational support for the Mobility Techmap Project.",
-
-                "board.section.title": "Board Members",
-                "sponsor.section.title": "Sponsors"
-            }
-        };
-
-    </script>
 </body>
 
 </html>

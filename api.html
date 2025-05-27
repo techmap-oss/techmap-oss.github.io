@@ -1,164 +1,35 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>자동차 테크맵 프로젝트 - API 가이드</title>
+    <title>API 활용 - 모빌리티테크맵</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no">
+
+    <link rel="stylesheet" href="css/jquery-ui.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style_v2.css" />
+
+    <script src="/js/jquery-3.6.0.min.js"></script>
+    <script src="/js/jquery-ui.min.js"></script>
+    <script src="/js/script.js"></script>
+    <script src="translations.js"></script>
+
+    <link rel="stylesheet" href="/plugin/aos/aos.css" />
+    <script src="/plugin/aos/aos.js"></script>
+    <link rel="stylesheet" href="/plugin/swiper/swiper-bundle.min.css" />
+    <script src="/plugin/swiper/swiper-bundle.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- 추가 CSS/JS를 삽입할 위치 -->
+
+</head>
+
+<body>
     <style>
-        body {
-            font-family: 'Noto Sans KR', sans-serif;
-            background-color: #ffffff;
-            color: #333;
-            margin: 0;
-            padding: 40px 20px;
-        }
-
-        .container {
-            max-width: 960px;
-            margin: 0 auto;
-        }
-
-        h1 {
-            font-size: 2rem;
-            text-align: center;
-            margin-bottom: 30px;
-            color: #333;
-        }
-
-        .section-title {
-            font-weight: bold;
-            font-size: 1.2rem;
-            margin-bottom: 10px;
-            padding-left: 12px;
-            border-left: 4px solid #005bac;
-        }
-
-        .box {
-            background-color: #f9f9f9;
-            border: 1px solid #ddd;
-            border-radius: 6px;
-            padding: 16px 20px;
-            margin-bottom: 30px;
-            font-size: 0.96rem;
-            line-height: 1.7;
-        }
-
-        .box ul {
-            margin: 0;
-            padding-left: 20px;
-        }
-
-        .box li {
-            margin-bottom: 8px;
-        }
-
-
-        .breadcrumb {
-            font-size: 0.85rem;
-            color: #666;
-            margin-left: auto;
-            white-space: nowrap;
-        }
-
-        .breadcrumb a {
-            color: #0070c0;
-            text-decoration: none;
-            margin: 0 2px;
-        }
-
-        .breadcrumb span {
-            font-weight: bold;
-            color: #333;
-        }
-
-        .breadcrumb-nav {
-            max-width: 960px;
-            margin: 40px auto 20px;
-            padding: 0 20px;
-            font-size: 0.95rem;
-            text-align: left;
-            color: #555;
-            font-weight: 400;
-            text-align: right;
-            /* ✅ 오른쪽 정렬 */
-
-        }
-
-        .breadcrumb-nav a {
-            color: #666;
-            text-decoration: none;
-            margin: 0 6px;
-            position: relative;
-            transition: color 0.2s;
-        }
-
-        .breadcrumb-nav a:hover {
-            color: #0070c0;
-            /* 주황색 강조 */
-        }
-
-        .breadcrumb-nav a:hover::after {
-            content: "";
-            position: absolute;
-            left: 0;
-            bottom: -2px;
-            width: 100%;
-            height: 2px;
-            background-color: #0070c0;
-        }
-
-        .breadcrumb-nav span {
-            color: #111;
-            font-weight: bold;
-            margin-left: 6p
-        }
-
-        .code-block {
-            background-color: #f0f4f9;
-            border: 1px solid #b7c9dc;
-            border-radius: 10px;
-            padding: 16px 20px;
-            font-family: 'Courier New', monospace;
-            font-size: 0.95rem;
-            line-height: 1.6;
-            white-space: pre-wrap;
-            word-break: break-word;
-            overflow-x: auto;
-            margin-bottom: 30px;
-            color: #1f2937;
-            box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.04);
-        }
-
-        .code-block pre {
-            margin: 0;
-        }
-
-        .section-title::before {
-            margin-right: 4px;
-        }
-
-        .common {
-            padding:0 0 50px
-        }
-
-        .common .head {
-            border-bottom: solid 1px #E5E5EC
-        }
-
-        .common .head h1 {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 0 10px;
-            font-size: 32px;
-            font-weight: 600
-        }
-
         @media (max-width: 768px) {
-            body {
-                padding: 24px 16px;
-            }
 
             h1 {
                 font-size: 1.6rem;
@@ -175,103 +46,492 @@
             }
         }
     </style>
-</head>
-
-<body>
-
-    <div class="breadcrumb-nav">
-        <a href="/">Home</a> &gt;
-        <a href="/intro.html">활용하기</a> &gt;
-        <span>&nbsp;API 활용</span>
-    </div>
-
-    
-    <div class="container">
-        <section class="common">
-            <div class="head">
-                <div class="wrapper">
-                    <h1>
-                        API 활용
-                    </h1>
+    <header class="header">
+        <div class="wrapper">
+            <a href="/" class="logo">
+                <img src="img/logo.svg" id="logo" alt="자동차테크맵" />
+            </a>
+            <div class="menu_wrap">
+                <div class="menu_head">
+                    <a href="/" class="logo">
+                        <img src="img/logo.svg" alt="자동차테크맵" />
+                    </a>
+                    <button type="button" class="menu_close">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18 6L6 18M18 18L6 6" stroke="black" stroke-width="2" stroke-linecap="round" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="gnb">
+                    <ul>
+                        <li>
+                            <a href="overview" data-i18n="menu.techmap">자동차 테크맵</a>
+                            <ul class="depth_02">
+                                <li><a href="overview" data-i18n="section.overview.title">소개</a></li>
+                                <li><a href="organization" data-i18n="menu.member">조직 및 멤버</a></li>
+                                <li><a href="license" data-i18n="menu.license">라이선스 정책</a></li>
+                                <li><a href="FAQ">FAQ</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="contribute" data-i18n="menu.contribute">기여하기</a>
+                            <ul class="depth_02">
+                                <li><a href="contribute_01" data-i18n="menu.benefit">기여 혜택</a></li>
+                                <li><a href="contribute_02" data-i18n="menu.prepare">기여 준비</a></li>
+                                <li><a href="contribute_03" data-i18n="menu.type">기여 종류</a></li>
+                                <li><a href="contribute_04" data-i18n="menu.policy">기여 정책</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="api" data-i18n="menu.use">활용하기</a>
+                            <ul class="depth_02">
+                                <li><a href="api" data-i18n="menu.api">API 활용</a></li>
+                                <li><a href="data" data-i18n="menu.data">데이터 신청</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <!-- 구글 폼 추가 예정 -->
+                            <a href="#" data-i18n="menu.signup">회원가입</a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/techmap-oss" data-i18n="menu.github">Github</a>
+                            <!-- <ul class="depth_02">
+                                <li><a href="https://github.com/techmap-oss/techmap-oss.github.io" data-i18n="menu.github">Github</a></li>
+                                <li><a href="https://www.techmap.kr" data-i18n="menu.techmap">자동차 테크맵</a></li>
+                            </ul> -->
+                        </li>
+                    </ul>
+                </div>
+                <div class="lang_wrap">
+                    <ul>
+                        <li><a onclick="switchLanguage('ko')" style="cursor: pointer;" class="on korean">Korean</a></li>
+                        <li><a onclick="switchLanguage('en')" style="cursor: pointer;" class="english">English</a></li>
+                    </ul>
                 </div>
             </div>
-        </section>
-    </div>
-
-    <div class="container">
-        <div class="section">
-            <div class="section-title">API 사용 제한</div>
-            <div class="box">
-                자동차 테크맵 프로젝트의 사용자 API는 다음과 같은 사용 제한이 있습니다:
-                <ul>
-                    <li>한 시간당 최대 5,000번 이상의 API 호출 시, 'Too Many Requests' 예외가 발생합니다.</li>
-                </ul>
-            </div>
+            <button type="button" class="menu_open">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="3" y="5" width="18" height="2" rx="1" fill="#343434" />
+                    <rect x="3" y="11" width="9" height="2" rx="1" fill="#343434" />
+                    <rect x="3" y="17" width="18" height="2" rx="1" fill="#343434" />
+                </svg>
+            </button>
         </div>
+    </header>
 
-        <div class="section">
-            <div class="section-title">컴포넌트 조회</div>
-            <div class="box">
-                <strong>GET /api/v1/component</strong><br>
-                등록된 컴포넌트 정보를 조회할 수 있는 API입니다.<br><br>
-                <strong>Query 매개변수:</strong>
-                <ul>
-                    <li><code>name</code>: 컴포넌트명 (예: zlib)</li>
-                    <li><code>License</code>: 라이선스명 (예: MIT)</li>
-                    <li><code>equalFlag</code>: 'Y'는 정확히 일치하는 결과, 'N'(기본값)은 포함된 모든 결과</li>
-                    <li><code>page</code>: 시작 페이지 숫자 (기본값: 0)</li>
-                    <li><code>size</code>: 페이지당 데이터 개수</li>
-                    <li><code>sort</code>: 정렬 기준 항목 (예: name, id)</li>
-                    <li><code>direction</code>: 정렬 방향 ('ASC' 또는 'DESC')</li>
-                </ul>
+    <section class="use-api">
+        <section class="container">
+            <div class="breadcrumb-nav">
+                <a href="/">Home</a> &gt;
+                <a href="api" data-i18n="menu.use">활용하기</a> &gt;
+                <span data-i18n="use.api.breadcrumb">&nbsp;API 활용</span>
             </div>
-        </div>
-        <!-- 사용 예제 -->
-        <div class="section">
-            <div class="section-title">사용 예제</div>
-            <div class="box">
-                <pre><code>curl --location --request GET 'https://{osori_base_url}/api/v1/oss/name/versions?searchWord=facebook'</code></pre>
-            </div>
-        </div>
 
-        <!-- 응답 HEADER -->
-        <div class="section">
-            <div class="section-title">응답 Header</div>
-            <div class="box">
-                <code>Content-Type: application/json</code>
-            </div>
-        </div>
 
-        <!-- 응답 BODY -->
-        <div class="section">
-            <div class="section-title">응답 Body</div>
-            <div class="box">
-                <pre><code>{
-            "code": "200",
-            "messageList": {
-            "detailInfo": {
-                "oss_master": {
-                "name": "facebook",
-                "download_location": "https://github.com/huandu/facebook",
-                "purl": "pkg:github/huandu/facebook"
-                },
-                "oss_version": [
-                {
-                    "version": "2.3.1-incompatible",
-                    "declaredLicenseList": ["MIT License"]
-                }
-                ]
+            <div class="container">
+                <section class="common">
+                    <div class="head">
+                        <div class="wrapper">
+                            <h1 data-i18n="use.api.title">API 활용</h1>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <div class="container">
+                <div class="section">
+                    <div class="section-title" data-i18n="use.api.limitation.title">API 사용 제한</div>
+                    <div class="box" data-i18n="use.api.limitation.desc">
+                        자동차 테크맵 프로젝트의 사용자 API는 다음과 같은 사용 제한이 있습니다. <br>
+                        한 시간당 최대 5,000번 이상의 API 호출 시, 'Too Many Requests' 예외가 발생합니다.
+                    </div>
+                </div>
+
+                <div class="section">
+                    <div class="section-title" data-i18n="use.api.component.title">컴포넌트 조회</div>
+                    <div class="box">
+                        <strong>GET /api/v1/component</strong><br>
+                        <span data-i18n="use.api.component.desc">등록된 컴포넌트 정보를 조회할 수 있는 API입니다.</span>
+                    </div>
+                </div>
+
+
+                <h3 class="section-title" data-i18n="use.api.query.title">Query 파라미터</h3>
+                <div class="query-table-wrapper">
+                    <table class="query-table">
+                        <thead>
+                            <tr>
+                                <th data-i18n="use.api.query.th.param">파라미터</th>
+                                <th data-i18n="use.api.query.th.desc">설명</th>
+                                <th data-i18n="use.api.query.th.type">타입</th>
+                                <th data-i18n="use.api.query.th.required">필수여부</th>
+                                <th data-i18n="use.api.query.th.example">예시</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>componentName</td>
+                                <td data-i18n="use.api.query.param.componentName">컴포넌트명</td>
+                                <td>string</td>
+                                <td>N</td>
+                                <td>zlib</td>
+                            </tr>
+                            <tr>
+                                <td>licenseName</td>
+                                <td data-i18n="use.api.query.param.licenseName">라이선스명</td>
+                                <td>string</td>
+                                <td>N</td>
+                                <td>MIT License</td>
+                            </tr>
+                            <tr>
+                                <td>security</td>
+                                <td data-i18n="use.api.query.param.security">보안취약점<br>
+                                    - None, Low, Medium, High, Critical</td>
+                                <td>string</td>
+                                <td>N</td>
+                                <td>Low</td>
+                            </tr>
+                            <tr>
+                                <td>equalFlag</td>
+                                <td data-i18n="use.api.query.param.equalFlag">검색결과 대상을 지정할 때 사용합니다.
+                                    <br> - 'Y': 정확 일치 <br> - 'N': 포함 검색(기본값)
+                                </td>
+                                <td>string</td>
+                                <td>N</td>
+                                <td>Y</td>
+                            </tr>
+                            <tr>
+                                <td>page</td>
+                                <td data-i18n="use.api.query.param.page">시작 page 숫자(필수값) <br>
+                                    - 기본값: 0</td>
+                                <td>int</td>
+                                <td>Y</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>size</td>
+                                <td data-i18n="use.api.query.param.size">페이지당 결과 수<br>
+                                    - 기본값: 10</td>
+                                <td>int</td>
+                                <td>Y</td>
+                                <td>10</td>
+                            </tr>
+                            <tr>
+                                <td>sort</td>
+                                <td data-i18n="use.api.query.param.sort">
+                                    정렬 기준 항목(필수값) <br> - componentName / licenseName
+                                </td>
+                                <td>string</td>
+                                <td>Y</td>
+                                <td>name</td>
+                            </tr>
+                            <tr>
+                                <td>direction</td>
+                                <td data-i18n="use.api.query.param.direction">정렬 방향<br>
+                                    - ASC: 오름차순 (기본값)
+                                    / DESC: 내림차순</td>
+                                <td>string</td>
+                                <td>N</td>
+                                <td>DESC</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+
+                <div class="section">
+                    <div class="section-title" data-i18n="use.api.example.title">사용 예제</div>
+                    <div class="code-box-with-buttons">
+                        <div class="code-buttons">
+                            <button onclick="copyToClipboard(this)">📋 <span data-i18n="button.copy">복사</span></button>
+                            <button onclick="editCode(this)">✏️ <span data-i18n="button.edit">편집</span></button>
+                        </div>
+                        <pre><code contenteditable="false">curl --location --request GET 'https://techmap.kr/api/v1/component?componentName=zlib&amp;licenseName=MIT'</code></pre>
+                    </div>
+                </div>
+
+
+
+                <!-- 응답 HEADER -->
+                <div class="section">
+                    <div class="section-title" data-i18n="use.api.header.title">응답 Header</div>
+
+                    <div class="code-box-with-buttons">
+                        <div class="code-buttons">
+                            <button onclick="copyToClipboard(this)">📋 <span data-i18n="button.copy">복사</span></button>
+                            <button onclick="editCode(this)">✏️ <span data-i18n="button.edit">편집</span></button>
+                        </div>
+                        <pre><code contenteditable="false">Content-Type: application/json</code></pre>
+                    </div>
+                </div>
+
+                <!-- 응답 BODY -->
+                <div class="section">
+                    <div class="section-title" data-i18n="use.api.body.title">응답 Body</div>
+                    <div class="json-box">
+                        <pre><code>{
+  "code": "200",
+  "components": [
+    {
+      "component_name": "zlib",
+      "description": "Compression library used in many systems",
+      "versions": [
+        {
+          "version": "1.2.11",
+          "homepage": "https://github.com/madler/zlib",
+          "security_vuln": "low",
+          "licenses":  [
+            {
+            "name": "zlib License",
+            "license_risk": "Permissive",
             }
+           ],
+        },
+        {
+          "version": "1.2.10",
+          "homepage": "https://github.com/madler/zlib",
+          "security_vuln": "High",
+          "licenses":  [
+            {
+            "license_name": "zlib License",
+            "license_risk": "Permissive",
+            }
+           ],
         }
+      ]
+    }
+  ],
+  "equalFlag": "Y",
+  "page": 0,
+  "size": 10,
+  "sort": "name",
+  "direction": "ASC"
 }
-        </code></pre>
+                        </code></pre>
+                    </div>
+                </div>
+
+
+
+                <!-- 응답 필드 설명 -->
+                <div class="section">
+                    <div class="section-title" data-i18n="use.api.response.title">응답 필드 설명</div>
+                    <div class="response-table-wrapper">
+                        <table class="response-table">
+                            <tr>
+                                <th>Depth 1</th>
+                                <th>Depth 2</th>
+                                <th>Depth 3</th>
+                                <th>Depth 4</th>
+                                <th data-i18n="use.api.response.th.type">타입</th>
+                                <th data-i18n="use.api.response.th.desc">설명</th>
+                                <th data-i18n="use.api.response.th.note">비고</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>code</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>string</td>
+                                    <td data-i18n="use.api.response.code">응답 상태 코드</td>
+                                    <td>예: "200"</td>
+                                </tr>
+                                <tr>
+                                    <td>components</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>array</td>
+                                    <td data-i18n="use.api.response.components">컴포넌트 목록</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>component_name</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>string</td>
+                                    <td data-i18n="use.api.response.component_name">컴포넌트 이름</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>description</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>string</td>
+                                    <td data-i18n="use.api.response.description">컴포넌트 설명</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>versions</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>array</td>
+                                    <td data-i18n="use.api.response.versions">버전 리스트</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td>version</td>
+                                    <td></td>
+                                    <td>string</td>
+                                    <td data-i18n="use.api.response.version">버전명</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td>homepage</td>
+                                    <td></td>
+                                    <td>string</td>
+                                    <td data-i18n="use.api.response.homepage">홈페이지 URL</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td>security_vuln</td>
+                                    <td></td>
+                                    <td>string</td>
+                                    <td data-i18n="use.api.response.security_vuln">보안 취약점 수준</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td>licenses</td>
+                                    <td></td>
+                                    <td>array</td>
+                                    <td data-i18n="use.api.response.licenses">해당 버전의 라이선스 리스트</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>license_name</td>
+                                    <td>string</td>
+                                    <td data-i18n="use.api.response.license_name">라이선스 이름</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>license_risk</td>
+                                    <td>string</td>
+                                    <td data-i18n="use.api.response.license_risk">라이선스 위험도</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>equalFlag</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>string</td>
+                                    <td data-i18n="use.api.response.equalFlag">정확 일치 여부</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>page</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>int</td>
+                                    <td data-i18n="use.api.response.page">페이지 번호</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>size</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>int</td>
+                                    <td data-i18n="use.api.response.size">페이지당 결과 수</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>sort</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>string</td>
+                                    <td data-i18n="use.api.response.sort">정렬 기준 필드</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>direction</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>string</td>
+                                    <td data-i18n="use.api.response.direction">정렬 방향</td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </section>
+    <footer class="footer">
+        <div class="footer-wrapper">
+            <div class="footer-bottom">
+                <p>COPYRIGHT © 2025 OSS.KR & TECHMAP.KR ALL RIGHTS RESERVED.</p>
+                <p> Contact Us : <a href="mailto:techmap@oss.kr">techmap@oss.kr</a></p>
+            </div>
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <img src="img/logo_nipa.svg" alt="nipa 로고" />
+                </div>
             </div>
         </div>
-
-
-
-
-    </div>
+    </footer>
 </body>
 
 </html>
+
+
+<script>
+    function getLang() {
+        const activeLang = document.querySelector('.lang_wrap .on');
+        return activeLang?.classList.contains('english') ? 'en' : 'ko';
+    }
+
+    function copyToClipboard(button) {
+        const codeElement = button.closest('.code-box-with-buttons').querySelector('code');
+        const text = codeElement.innerText;
+        const lang = getLang();
+
+        const copiedText = lang === 'en' ? '✅ Copied!' : '✅ 복사됨!';
+        const defaultKey = 'button.copy';
+
+        navigator.clipboard.writeText(text).then(() => {
+            button.innerText = copiedText;
+            setTimeout(() => {
+                button.innerHTML = translations[lang]?.[defaultKey] || '📋 Copy';
+            }, 1500);
+        });
+    }
+
+    function editCode(button) {
+        const code = button.closest('.code-box-with-buttons').querySelector('code');
+        const isEditable = code.getAttribute('contenteditable') === 'true';
+        const lang = getLang();
+
+        code.setAttribute('contenteditable', isEditable ? 'false' : 'true');
+        code.focus();
+
+        button.innerHTML = isEditable
+            ? translations[lang]?.['button.edit'] || (lang === 'en' ? '✏️ Edit' : '✏️ 편집')
+            : translations[lang]?.['button.done'] || (lang === 'en' ? '🔒 Done' : '🔒 완료');
+    }
+
+
+</script>
