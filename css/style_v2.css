@@ -1247,87 +1247,90 @@ body {
 
 /* 0523 리스트 바 추가 */
 .techmap.license-risk-badges {
-  display: flex;
-  gap: 8px;
-  flex-wrap: wrap;
-  align-items: center;
-  margin-top: 2px; /* 또는 vertical-align 조정 */
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 2px;
+    /* 또는 vertical-align 조정 */
 
 }
 
 .techmap.badge {
-  display: flex;
-  align-items: center;
-  gap: 4px;
-  font-size: 13px;
-  font-weight: 500;
-  border-radius: 20px;
-  padding: 4px 10px;
-  background: #f1f1f1;
-  color: #333;
-  line-height: 1.2;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 13px;
+    font-weight: 500;
+    border-radius: 20px;
+    padding: 4px 10px;
+    background: #f1f1f1;
+    color: #333;
+    line-height: 1.2;
 }
 
 .techmap.badge-safe {
-  background-color: #d4f4e2;
-  color: #2e7d32;
+    background-color: #d4f4e2;
+    color: #2e7d32;
 }
 
 .techmap .badge-caution {
-  background-color: #fff5d1;
-  color: #e67e22;
+    background-color: #fff5d1;
+    color: #e67e22;
 }
 
 .techmap.badge-danger {
-  background-color: #fde0e0;
-  color: #c0392b;
+    background-color: #fde0e0;
+    color: #c0392b;
 }
 
 .techmap.badge .icon {
-  font-size: 14px;
-  line-height: 1;
+    font-size: 14px;
+    line-height: 1;
 }
+
 .techmap .license-tooltip-wrapper {
-  position: relative;
+    position: relative;
 }
 
 
 .techmap .license-tooltip {
-  display: inline-flex;
-  align-items: center;
-  height: 36px;
-  background: #343434;
-  border-radius: 5px;
-  font-size: 13px;
-  color: var(--white);
-  padding: 0 12px;
-  white-space: nowrap;
-  position: absolute;
-  top: calc(-36px - 12px); /* 뱃지 위로 띄우기 */
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 10;
-  opacity: 0;
-  transition: all 0.2s;
-  pointer-events: none;
+    display: inline-flex;
+    align-items: center;
+    height: 36px;
+    background: #343434;
+    border-radius: 5px;
+    font-size: 13px;
+    color: var(--white);
+    padding: 0 12px;
+    white-space: nowrap;
+    position: absolute;
+    top: calc(-36px - 12px);
+    /* 뱃지 위로 띄우기 */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    opacity: 0;
+    transition: all 0.2s;
+    pointer-events: none;
 }
 
 /* 삼각형 포인트 */
 .techmap .license-tooltip::before {
-  content: '';
-  display: block;
-  width: 16px;
-  height: 8px;
-  background: url('../img/tri.svg') no-repeat center bottom/100%;
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  transform: translateX(-50%);
+    content: '';
+    display: block;
+    width: 16px;
+    height: 8px;
+    background: url('../img/tri.svg') no-repeat center bottom/100%;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 /* hover 시 보여지게 */
 .techmap .license-tooltip-wrapper:hover .license-tooltip {
-  opacity: 1;
+    opacity: 1;
 }
 
 
@@ -1878,6 +1881,19 @@ body {
     line-height: 1.6;
 }
 
+.faq .text-link {
+    color: #1a1a1a;
+    text-decoration: underline;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.faq .text-link:hover {
+    color: #3b82f6;
+    text-decoration: none;
+    border-bottom: 1px dashed #3b82f6;
+}
+
 .faq .breadcrumb {
     font-size: 0.85rem;
     color: #666;
@@ -1939,7 +1955,7 @@ body {
 }
 
 .faq .common {
-    padding: 0 0 50px
+    padding: 0 0 60px
 }
 
 .faq .common .head {
@@ -2144,7 +2160,6 @@ body {
 
 .organization .text-link:hover {
     color: #3b82f6;
-    /* 노란 계열 포인트 컬러 (수정 가능) */
     text-decoration: none;
     border-bottom: 1px dashed #3b82f6;
 }
@@ -2382,9 +2397,7 @@ body {
     content: "";
     position: absolute;
     left: -47px;
-    /* ✅ 선 중심에 맞춰 조절 */
     top: 5px;
-    /* ✅ 텍스트와 세로 정렬 */
     width: 14px;
     height: 14px;
     background-color: #fff;
@@ -2492,16 +2505,12 @@ body {
 .contribute-request {
     padding: 150px 0 100px;
     background: linear-gradient(135deg, #005bac, #00aaff);
-    min-height: 100vh;
-    /* height 대신 min-height로 바꿔야 푸터 안 밀림 */
+    min-height: 130vh;
     height: 100vh;
-    /* 뷰포트 높이 100% */
     box-sizing: border-box;
-    /* padding 포함 계산 */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-
 }
 
 
@@ -2705,6 +2714,276 @@ body {
     color: #ffffff;
     font-weight: bold;
     margin-left: 6p
+}
+
+/* Github - 기여하기 */
+.contribute_use {
+    padding: 150px 0 100px;
+}
+
+.contribute_use .container {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.contribute_use .breadcrumb-nav {
+    font-size: 0.95rem;
+    margin-bottom: 32px;
+    color: #666;
+}
+
+.contribute_use .page-title {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 32px;
+    color: #005bac;
+}
+
+.contribute_use .intro {
+    font-size: 1rem;
+    line-height: 1.7;
+    text-align: center;
+    max-width: 1500px;
+    margin: 0 auto 60px auto;
+    color: #333;
+}
+
+.contribute_use .contribute-section {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 24px 32px;
+    margin-bottom: 32px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+}
+
+.contribute_use .contribute-section .icon-title {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+.contribute_use .contribute-section .icon-title i {
+    font-size: 22px;
+    color: #005bac;
+}
+
+.contribute_use .contribute-section h2 {
+    font-size: 1.2rem;
+    margin: 0;
+    color: #005bac;
+}
+
+.contribute_use .contribute-section .title {
+    font-size: 1.2rem;
+    margin: 0;
+    color: #005bac;
+}
+
+.contribute_use .contribute-section p {
+    font-size: 0.95rem;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.contribute_use .text-link {
+    color: #1a1a1a;
+    text-decoration: underline;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.contribute_use .text-link:hover {
+    color: #3b82f6;
+    text-decoration: none;
+    border-bottom: 1px dashed #3b82f6;
+}
+
+/* Github-기여 혜택 */
+
+.contribute_benefit {
+    padding: 150px 0 100px;
+}
+
+.contribute_benefit .container {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.contribute_benefit h1 {
+    margin-bottom: 40px;
+}
+
+.contribute_benefit-section {
+    margin-top: 40px;
+}
+
+.contribute_benefit-subtitle {
+    font-size: 1.4rem;
+    color: #333;
+    margin-bottom: 24px;
+}
+
+.contribute_benefit .text_desc {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.7;
+    margin-bottom: 24px;
+    font-weight: 500;
+}
+
+.contribute_benefit-item {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+    padding: 20px;
+    margin-bottom: 24px;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
+    background-color: #fff;
+}
+
+.contribute_benefit-icon {
+    flex-shrink: 0;
+    font-size: 24px;
+    color: #005bac;
+    margin-top: 5px;
+}
+
+.contribute_benefit-content {
+    flex-grow: 1;
+}
+
+.contribute_benefit-content h3 {
+    margin: 0 0 8px 0;
+    font-size: 1.1rem;
+    color: #005bac;
+}
+
+.contribute_benefit-content p {
+    margin: 0;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #444;
+}
+
+.contribute_benefit .text-link {
+    color: #1a1a1a;
+    text-decoration: underline;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.contribute_benefit .text-link:hover {
+    color: #3b82f6;
+    text-decoration: none;
+    border-bottom: 1px dashed #3b82f6;
+}
+
+
+/* Github - 기여 준비 */
+
+.contribute_prepare {
+    padding: 150px 0 100px;
+}
+
+.contribute_prepare .container {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.contribute_prepare h1 {
+    margin-bottom: 40px;
+}
+
+.contribute_prepare .contribute_prepare-title{
+    font-size: 1.4rem;
+    color: #333;
+    margin-bottom: 24px;
+}
+.contribute_prepare-section {
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 24px 28px 20px; 
+  margin-bottom: 24px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
+}
+
+.contribute_prepare-title {
+  font-size: 1.9rem;
+  margin: 40px 0 28px;
+  font-weight: 700;
+  color: #222;
+}
+
+.contribute_prepare-subtitle {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: #005bac;
+}
+
+.contribute_prepare-section p,
+.contribute_prepare-list li,
+.text_desc {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.contribute_prepare-list {
+  padding-left: 1.2em;
+  margin: 16px 0 14px;
+}
+
+.contribute_prepare-list li {
+  list-style-type: disc;
+}
+
+.contribute_prepare-source {
+  font-size: 0.9rem;
+  margin-top: 32px;
+  color: #666;
+}
+
+
+.contribute_prepare .text-link {
+    color: #1a1a1a;
+    text-decoration: underline;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.contribute_prepare .text-link:hover {
+    color: #3b82f6;
+    text-decoration: none;
+    border-bottom: 1px dashed #3b82f6;
+}
+
+/* 기여 종류 */
+.contribute_prepare .text_desc {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.7;
+    margin-bottom: 24px;
+    font-weight: 500;
+}
+
+
+.contribute_prepare-subtitle .subtitle-icon {
+  font-size: 1.1em;
+  margin-right: 5px;
 }
 
 /* API 활용 */
@@ -4423,7 +4702,11 @@ body {
 
     .news {
         padding: 80px 0 60px;
-        /* 모바일에선 여백 줄임 */
+    }
+
+
+    .contribute_benefit {
+        padding: 80px 0 60px;
     }
 
     .news .news-table td:nth-child(2) {
@@ -4530,6 +4813,15 @@ body {
         /* 모바일에선 여백 줄임 */
     }
 
+     .contribute_prepare {
+        padding: 80px 0 60px;
+        /* 모바일에선 여백 줄임 */
+    }
+
+    .contribute_use {
+        padding: 80px 0 60px;
+    }
+
     .news-detail {
         padding: 60px 0;
     }
@@ -4546,9 +4838,8 @@ body {
         padding: 80px 0 100px;
         background-position: center top;
         position: relative;
-        min-height: calc(var(--vh, 1vh) * 100);
+        min-height: 130vh;
         height: auto;
-        padding-bottom: 120px;
         position: relative;
     }
 
@@ -4567,7 +4858,7 @@ body {
 
     .contribute-request .intro-cta {
         font-size: 1.3rem;
-        margin: 32px 0 24px;
+        margin: 32px 0 15px;
     }
 
     .contribute-request .contribute-item {
@@ -4578,6 +4869,8 @@ body {
     .contribute-request .button-area {
         flex-direction: column;
         gap: 12px;
+        flex-shrink: 0;
+
     }
 
     .contribute-request .btn {
