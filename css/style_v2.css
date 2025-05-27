@@ -3025,6 +3025,19 @@ body {
     line-height: 1.7;
 }
 
+.use-api .text-link {
+    color: #1a1a1a;
+    text-decoration: underline;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.use-api .text-link:hover {
+    color: #3b82f6;
+    text-decoration: none;
+    border-bottom: 1px dashed #3b82f6;
+}
 
 .use-api .box ul {
     margin: 0;
