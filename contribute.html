@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>소개 - 자동차테크맵</title>
+    <title>기여하기 - 자동차테크맵</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="format-detection" content="telephone=no">
@@ -11,50 +11,41 @@
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style_v2.css" />
 
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/script.js"></script>
     <script src="translations.js"></script>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-    <!-- 추가 CSS/JS를 삽입할 위치 -->
+    <link rel="stylesheet" href="plugin/aos/aos.css" />
+    <script src="plugin/aos/aos.js"></script>
+    <link rel="stylesheet" href="plugin/swiper/swiper-bundle.min.css" />
+    <script src="plugin/swiper/swiper-bundle.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 </head>
 
 <body>
     <style>
         @media (max-width: 768px) {
-            .intro-section h1 {
-                font-size: 1.8rem;
+            body {
+                padding: 24px 16px;
             }
 
-            .intro-section p {
-                font-size: 0.95rem;
+            h1 {
+                font-size: 1.6rem;
             }
 
-            .section-title {
-                font-size: 1rem;
-            }
-
-            .box {
+            .box,
+            .warning {
                 font-size: 0.94rem;
                 padding: 14px 16px;
             }
 
-            .breadcrumb {
-                margin-top: 8px;
-                width: 100%;
-                text-align: right;
-            }
-
-            .nav-container {
-                flex-direction: column;
-                align-items: flex-start;
-            }
-
-            .breadcrumb {
-                margin-top: 8px;
-                text-align: left;
-                width: 100%;
-                font-size: 0.9rem;
+            .section-title {
+                font-size: 1rem;
+                padding-left: 10px;
             }
         }
     </style>
@@ -130,79 +121,84 @@
         </div>
     </header>
 
-    <section class="overview">
-        <section class="container">
+
+    <section class="container">
+        <section class="contribute_use">
             <div class="breadcrumb-nav">
                 <a href="/">Home</a> &gt;
-                <a href="overview" data-i18n="menu.techmap">자동차 테크맵</a> &gt;
-                <span data-i18n="overview.title">&nbsp;소개</span>
+                <span data-i18n="menu.contribute">&nbsp;기여하기</span>
             </div>
-
 
             <div class="container">
                 <section class="common">
                     <div class="head">
                         <div class="wrapper">
-                            <h1 data-i18n="overview.title">
-                                소개
-                            </h1>
+                            <h1 class="page-title" data-i18n="contribute_use.title">자동차 테크맵 프로젝트에 기여하기</h1>
                         </div>
                     </div>
                 </section>
             </div>
 
+            <div class="container">
+                <p class="intro" data-i18n="contribute_use.intro">
+                    자동차 테크맵 프로젝트는 자사의 오픈소스 정보를 공유하거나 <br> 기존 자동차 테크맵 프로젝트의 잘못된 정보를 찾았다면
+                    언제든지 프로젝트에 참여하고 기여할 수 있습니다.<br>
+                    기여하기에 앞서 알아두면 좋은 기여하기 사전 지식을 <a herf="#" class="text-link">"NIPA 기업 오픈소스SW 거버넌스 가이드"</a>를 참고하여 안내합니다.
+                </p>
 
-            <div class="content-section">
-                <div class="section-title" data-i18n="overview.section.name">명칭</div>
-                <div class="box" data-i18n="overview.section.name.value">자동차 테크맵 프로젝트 (Mobility Techmap Project)</div>
-
-                <div class="section-title" data-i18n="overview.section.purpose">목적</div>
-                <img src="img/index_02_01.jpg" class="overview-img" id="img-overview-pc">
-                <div class="box" data-i18n="overview.section.purpose.value">
-                    자동차 분야의 오픈소스 정보를 서로 공유하고 활용하여 함께 성장해 나가는 모빌리티 오픈소스 생태계 구축을 목적으로 합니다.
+                <div class="contribute-section">
+                    <div class="icon-title">
+                        <i class="fas fa-gift"></i>
+                        <h2 data-i18n="contribute_use.benefit.title"><a href="contribute_01.html" class="title">기여 혜택</a></h2>
+                    </div>
+                    <p data-i18n="contribute_use.benefit.desc">
+                        기업과 개발자가 기여하기를 통해 얻을 수 있는 이점에 대해 설명합니다.
+                    </p>
                 </div>
 
-                <div class="section-title" data-i18n="overview.section.history">연혁</div>
-
-                <div class="timeline-wrapper">
-
-                    <div class="timeline-item">
-                        <strong class="year">2025<span data-i18n="overview.section.history">년</span></strong>
-                        <ul>
-                            <li><strong data-i18n="label.month.06">06월</strong> <span
-                                    data-i18n="overview.timeline.2025.06">자동차 테크맵 설명회 개최</span></li>
-                            <li><strong data-i18n="label.month.05">05월</strong> <span
-                                    data-i18n="overview.timeline.2025.05">자동차 테크맵 홈페이지 공개</span></li>
-
-                        </ul>
+                <div class="contribute-section">
+                    <div class="icon-title">
+                        <i class="fas fa-tools"></i>
+                        <h2 data-i18n="contribute_use.prepare.title"><a href="contribute_02.html" class="title">기여 준비</a></h2>
                     </div>
-                    <div class="timeline-item">
-                        <strong class="year">2024<span data-i18n="overview.section.history">년</span></strong>
-                        <ul>
-                            <li><strong data-i18n="label.month.12">12월</strong> <span
-                                    data-i18n="overview.timeline.2024.12">오픈소스SW 페스티벌 기조강연 발표 및 보도자료</span></li>
-                            <li><strong data-i18n="label.month.11">11월</strong> <span
-                                    data-i18n="overview.timeline.2024.11">글로벌 OEM 및 부품사 오픈소스 정보 수집 및 정리</span></li>
-                            <li><strong data-i18n="label.month.06">06월</strong> <span
-                                    data-i18n="overview.timeline.2024.06">현대자동차그룹 오픈소스 테크맵 작업 관련 워크샵</span></li>
-                            <li><strong data-i18n="label.month.01">01월</strong> <span
-                                    data-i18n="overview.timeline.2024.01">자동차 분야 오픈소스 테크맵 추진계획 협의</span></li>
-                        </ul>
-                    </div>
-                    <div class="timeline-item">
-                        <strong class="year">2023<span data-i18n="overview.section.history">년</span></strong>
-                        <ul>
-                            <li><strong data-i18n="label.month.11">11월</strong> <span
-                                    data-i18n="overview.timeline.2023.11">정보통신산업진흥원-현대자동차그룹, 자동차 제조업 분야 오픈소스SW 활용 지원 및
-                                    생태계 구축을 위한 업무협약 체결</span>
-                            </li>
-                        </ul>
-                    </div>
+                    <p data-i18n="contribute_use.prepare.desc">
+                        기여에 앞서 기본 준비사항을 소개합니다.
+                    </p>
                 </div>
-            </div>
-            </div>
+
+                <div class="contribute-section">
+                    <div class="icon-title">
+                        <i class="fas fa-layer-group"></i>
+                        <h2 data-i18n="contribute_use.type.title"><a href="contribute_03.html" class="title">기여 종류</a></h2>
+                    </div>
+                    <p data-i18n="contribute_use.type.desc">
+                        개발자들의 소스코드 기여는 물론 문서/번역, 테스트, 디자인, 마케팅, 이벤트 등 다양한 방법의 기여가 있습니다.
+                    </p>
+                </div>
+
+                <div class="contribute-section">
+                    <div class="icon-title">
+                        <i class="fas fa-scroll"></i>
+                        <h2 data-i18n="contribute_use.policy.title"><a href="contribute_04.html" class="title">기여 정책</a></h2>
+                    </div>
+                    <p data-i18n="contribute_use.policy.desc">
+                        자동차 테크맵 프로젝트에 기여하기 위한 기본 정책을 설명합니다.
+                    </p>
+                </div>
+
+                <div class="contribute-section">
+                    <div class="icon-title">
+                        <i class="fas fa-envelope-open-text"></i>
+                        <h2 data-i18n="contribute_use.contact.title"><a href="mailto:techmap@oss.kr" class="title">문의하기</a></h2>
+                    </div>
+                    <p data-i18n="contribute_use.contact.desc">
+                        기여하기에 문의사항이 있을 경우, <strong>Contact Us : <a href="mailto:techmap@oss.kr">techmap@oss.kr</a></strong> 를 통해 문의하시기 바랍니다.
+                    </p>
+
+                </div>
         </section>
     </section>
+
 
     <footer class="footer">
         <div class="footer-wrapper">
