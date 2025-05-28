@@ -335,6 +335,10 @@
     </footer>
 
     <script>
+        window.addEventListener('DOMContentLoaded', () => {
+                switchLanguage('ko'); // 저장 여부와 무관하게 무조건 한글로
+        });
+
         //sec_01에서 이동되는 슬라이드 효과let isScrolling = false;
         // 모바일 기기에서 가로모드 여부 확인 (모바일 화면에서 가로모드인 경우)
         function isMobileLandscape() {
