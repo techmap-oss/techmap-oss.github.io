@@ -167,11 +167,11 @@ const translations = {
 
         "faq.section.license.title": "라이선스 정책",
         "faq.section.license.desc.1": "자동차 테크맵 사이트에서 제공되는 오픈소스 정보 데이터(ODC-By 1.0), API 소스코드(Apache 2.0), 오픈소스 정보 데이터와 소스코드를 제외한 콘텐츠(CC-BY-2.0)는 각각의 라이선스 조건에 따라 사용 가능합니다.",
-        "faq.section.license.desc.2": "자세한 내용은 <a href=\"about/license\" class=\"text-link\">라이선스 정책</a>을 참고해주시기 바랍니다.",
+        "faq.section.license.desc.2": "자세한 내용은 <a href=\"/license\" class=\"text-link\">라이선스 정책</a>을 참고해주시기 바랍니다.",
 
         "faq.section.member.title": "회원 정책",
         "faq.section.member.desc.1": "자동차 테크맵 프로젝트는 일반 사용자, 회원, 보드 회원사, 후원사로 구성되며, 보드 회원사로 구성된 운영위원회에서 주요 의사 결정 및 커뮤니티 운영 정책을 수립하고, 신규 가입 및 등록 신청을 심사하고 승인합니다.",
-        "faq.section.member.desc.2": "자세한 내용은 <a href=\"about/organization\" class=\"text-link\">조직 및 멤버</a> 페이지를 참고해주시기 바랍니다.",
+        "faq.section.member.desc.2": "자세한 내용은 <a href=\"/organization\" class=\"text-link\">조직 및 멤버</a> 페이지를 참고해주시기 바랍니다.",
 
         "faq.section.join.title": "가입 방법",
         "faq.section.join.desc.1": "자동차 테크맵 프로젝트에 참여하려면 멤버로 가입해야 하며, <a href=\"about/organization\" class=\"text-link\">가입 신청서(개인/기업)</a> 제출 후 운영위원회의 승인을 통해 등록됩니다.",
@@ -184,11 +184,11 @@ const translations = {
 
         "faq.section.use.title": "활용 방법",
         "faq.section.use.desc.1": "자동차 분야의 각 기술별 오픈소스 정보를 열람하고 싶으시면 <a href=\"techmap\" class=\"text-link\">자동차 테크맵</a> 페이지를 통해 관련 정보를 확인하실 수 있으며, 컴포넌트 검색 및 기술분류별 활용도순, 관련도순 등으로 조회 가능합니다.",
-        "faq.section.use.desc.2": "또한 전체 데이터를 이용하고 싶으시면 <a href=\"use/api\" class=\"text-link\">Open-API</a>를 활용하실 수 있으며, 연구목적의 상세 데이터는 <a href=\"use/data\" class=\"text-link\">데이터 신청하기</a> 기능을 통해 신청 가능합니다.",
+        "faq.section.use.desc.2": "또한 전체 데이터를 이용하고 싶으시면 <a href=\"api\" class=\"text-link\">Open-API</a>를 활용하실 수 있으며, 연구목적의 상세 데이터는 <a href=\"use/data\" class=\"text-link\">데이터 신청하기</a> 기능을 통해 신청 가능합니다.",
 
         "faq.section.api.title": "Open-API 사용법",
         "faq.section.api.desc.1": "자동차 테크맵 Open-API는 자동차 분야에서 활용되는 다양한 오픈소스 정보를 수집하고 정리하여 기업 및 연구기관에서 자료를 편리하게 활용할 수 있도록 공개한 인터페이스입니다.",
-        "faq.section.api.desc.2": "자세한 내용은 <a href=\"use/api\" class=\"text-link\">Open-API</a> 페이지를 참고해주시기 바랍니다.",
+        "faq.section.api.desc.2": "자세한 내용은 <a href=\"api\" class=\"text-link\">Open-API</a> 페이지를 참고해주시기 바랍니다.",
 
         "faq.section.contact.title": "문의하기",
         "faq.section.contact.desc.1": "사이트 이용 중 문제가 발생하거나 문의사항이 있을 경우, 홈페이지 하단의 <strong>Contact Us : <a href=\"mailto:techmap@oss.kr\" class=\"text-link\">techmap@oss.kr</a></strong> 를 통해 연락하실 수 있습니다.",
@@ -510,14 +510,14 @@ const translations = {
 
         "faq.section.license.title": "License Policy",
         "faq.section.license.desc.1": "Open source data (ODC-By 1.0), API source code (Apache 2.0), and other content (CC-BY-2.0) on the Mobility Techmap site are each subject to their respective licenses.",
-        "faq.section.license.desc.2": "For more details, please refer to the <a href=\"about/license\" class=\"text-link\">License Policy</a>.",
+        "faq.section.license.desc.2": "For more details, please refer to the <a href=\"license\" class=\"text-link\">License Policy</a>.",
 
         "faq.section.member.title": "Membership Policy",
         "faq.section.member.desc.1": "The project consists of users, members, board members, and sponsors. The Steering Committee, composed of board members, makes key decisions and approves new registrations.",
-        "faq.section.member.desc.2": "For details, please see the <a href=\"about/organization\" class=\"text-link\">Organization & Members</a> page.",
+        "faq.section.member.desc.2": "For details, please see the <a href=\"organization\" class=\"text-link\">Organization & Members</a> page.",
 
         "faq.section.join.title": "How to Join",
-        "faq.section.join.desc.1": "To participate, submit a <a href=\"about/organization\" class=\"text-link\">membership application (individual or corporate)</a> and receive approval from the Steering Committee.",
+        "faq.section.join.desc.1": "To participate, submit a <a href=\"organization\" class=\"text-link\">membership application (individual or corporate)</a> and receive approval from the Steering Committee.",
         "faq.section.join.desc.2": "If you have questions, please <a href=\"mailto:techmap@oss.kr\" class=\"text-link\">email us</a> or refer to the <a href=\"about/organization\" class=\"text-link\">Organization & Members</a> page.",
 
         "faq.section.contribute.title": "How to Contribute",
@@ -527,11 +527,11 @@ const translations = {
 
         "faq.section.use.title": "How to Use",
         "faq.section.use.desc.1": "To browse open source information by automotive technology, visit the <a href=\"techmap\" class=\"text-link\">Mobility Techmap</a> page. You can search components by relevance or usage.",
-        "faq.section.use.desc.2": "To access full datasets, use the <a href=\"use/api\" class=\"text-link\">Open API</a>. For detailed research data, use the <a href=\"use/data\" class=\"text-link\">Data Request</a> function.",
+        "faq.section.use.desc.2": "To access full datasets, use the <a href=\"api\" class=\"text-link\">Open API</a>. For detailed research data, use the <a href=\"use/data\" class=\"text-link\">Data Request</a> function.",
 
         "faq.section.api.title": "Open API Guide",
         "faq.section.api.desc.1": "The Open API provides access to organized open source information for use by companies and researchers.",
-        "faq.section.api.desc.2": "Please refer to the <a href=\"use/api\" class=\"text-link\">Open API</a> page for more information.",
+        "faq.section.api.desc.2": "Please refer to the <a href=\"api\" class=\"text-link\">Open API</a> page for more information.",
 
         "faq.section.contact.title": "Contact Us",
         "faq.section.contact.desc.1": "If you have any problems or inquiries, you can contact us at the bottom of the site via <strong>Contact Us : <a href=\"mailto:techmap@oss.kr\" class=\"text-link\">techmap@oss.kr</a></strong>.",
