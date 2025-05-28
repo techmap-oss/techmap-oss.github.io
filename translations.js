@@ -183,7 +183,7 @@ const translations = {
         "faq.section.contribute.desc.3": "참여 방법은 <a href=\"contribute\" class=\"text-link\">기여하기</a> 페이지를 참고하여 회원 가입 후 활동하실 수 있습니다.",
 
         "faq.section.use.title": "활용 방법",
-        "faq.section.use.desc.1": "자동차 분야의 각 기술별 오픈소스 정보를 열람하고 싶으시면 <a href=\"techmap\" class=\"text-link\">자동차 테크맵</a> 페이지를 통해 관련 정보를 확인하실 수 있으며, 컴포넌트 검색 및 기술분류별 활용도순, 관련도순 등으로 조회 가능합니다.",
+        "faq.section.use.desc.1": "자동차 분야의 각 기술별 오픈소스 정보를 열람하고 싶으시면 <a href=\"https://www.techmap.kr/techmap\" class=\"text-link\">자동차 테크맵</a> 페이지를 통해 관련 정보를 확인하실 수 있으며, 컴포넌트 검색 및 기술분류별 활용도순, 관련도순 등으로 조회 가능합니다.",
         "faq.section.use.desc.2": "또한 전체 데이터를 이용하고 싶으시면 <a href=\"api\" class=\"text-link\">Open-API</a>를 활용하실 수 있으며, 연구목적의 상세 데이터는 <a href=\"use/data\" class=\"text-link\">데이터 신청하기</a> 기능을 통해 신청 가능합니다.",
 
         "faq.section.api.title": "Open-API 사용법",
@@ -526,7 +526,7 @@ const translations = {
         "faq.section.contribute.desc.3": "See the <a href=\"contribute\" class=\"text-link\">Contribute</a> page to learn how to join and start participating.",
 
         "faq.section.use.title": "How to Use",
-        "faq.section.use.desc.1": "To browse open source information by Mobility technology, visit the <a href=\"techmap\" class=\"text-link\">Mobility Techmap</a> page. You can search components by relevance or usage.",
+        "faq.section.use.desc.1": "To browse open source information by Mobility technology, visit the <a href=\"https://www.techmap.kr/techmap\" class=\"text-link\">Mobility Techmap</a> page. You can search components by relevance or usage.",
         "faq.section.use.desc.2": "To access full datasets, use the <a href=\"api\" class=\"text-link\">Open API</a>. For detailed research data, use the <a href=\"use/data\" class=\"text-link\">Data Request</a> function.",
 
         "faq.section.api.title": "Open API Guide",
