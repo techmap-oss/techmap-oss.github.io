@@ -336,7 +336,8 @@
 
     <script>
         window.addEventListener('DOMContentLoaded', () => {
-                switchLanguage('ko'); // 저장 여부와 무관하게 무조건 한글로
+            localStorage.setItem('selectedLanguage', 'ko'); // 먼저 저장
+            switchLanguage('ko'); // 저장 여부와 무관하게 무조건 한글로
         });
 
         //sec_01에서 이동되는 슬라이드 효과let isScrolling = false;
