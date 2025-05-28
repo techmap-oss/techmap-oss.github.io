@@ -23,12 +23,13 @@ function switchLanguage(lang) {
     const pcImg = document.getElementById('img-overview-pc');
     const mbImg = document.getElementById('img-overview-mb');
 
+
     if (lang === 'en') {
-        pcImg.src = 'img/index_02_01_en.jpg';
-        mbImg.src = 'img/index_02_01_mb_en.jpg';
+        if (pcImg) pcImg.src = 'img/index_02_01_en.jpg';
+        if (mbImg) mbImg.src = 'img/index_02_02_en.jpg';
     } else {
-        pcImg.src = 'img/index_02_01.jpg';
-        mbImg.src = 'img/index_02_01_mb.jpg';
+        if (pcImg) pcImg.src = 'img/index_02_01_ko.jpg';
+        if (mbImg) mbImg.src = 'img/index_02_02_ko.jpg';
     }
 
 }
