@@ -17,6 +17,18 @@ function switchLanguage(lang) {
         englishBtn.classList.add('on');
     }
 
+    // 이미지 교체
+    const pcImg = document.getElementById('img-overview-pc');
+    const mbImg = document.getElementById('img-overview-mb');
+
+    if (lang === 'en') {
+        pcImg.src = 'img/index_02_01_en.jpg';
+        mbImg.src = 'img/index_02_01_mb_en.jpg';
+    } else {
+        pcImg.src = 'img/index_02_01.jpg';
+        mbImg.src = 'img/index_02_01_mb.jpg';
+    }
+
 }
 
 const translations = {
@@ -581,7 +593,7 @@ const translations = {
         // 데이터 신청
         "data.request.breadcrumb": "Data Request",
         "data.request.title": "Data Request",
-        "data.request.description": "Detailed data for R&D purposes within the Mobility Techmap is provided through the National IT Industry Promotion Agency (NIPA).<br>Please go to the page below to apply.",
+        "data.request.description": "Detailed data for R&D purposes within the Mobility Techmap is provided through <br> the National IT Industry Promotion Agency (NIPA).<br>Please go to the page below to apply.",
         "data.request.button": "Request Data",
 
         // 기여 하기
