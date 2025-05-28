@@ -387,6 +387,8 @@ const translations = {
 
     },
     en: {
+        "ex": "ex",
+
         "menu.about": "About",
         "menu.techmap": "Mobility Techmap",
         "section.overview.title": "Overview",

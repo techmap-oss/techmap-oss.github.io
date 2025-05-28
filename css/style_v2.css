@@ -207,7 +207,9 @@ body {
     align-items: center;
     justify-content: space-between;
     max-width: 1760px;
-    height: var(--header-height)
+    height: var(--header-height);
+    padding: 0 24px; /* 여백 추가하면 깔끔 */
+
 }
 
 .header .logo {
@@ -294,19 +296,19 @@ body {
     display: flex;
     align-items: center;
     background: #E3E6EB;
-    border-radius: 50px
+    border-radius: 50px;
 }
 
 .header .lang_wrap a {
     display: flex;
     align-items: center;
-    height: 44px;
+    height: 40px; 
     border-radius: 50px;
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 600;
     color: #7D7D7D;
-    padding: 0 24px;
-    transition: color .2s
+    padding: 0 18px; 
+    transition: color .2s;
 }
 
 .header .lang_wrap a:not(.on):hover {
