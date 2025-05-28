@@ -65,7 +65,6 @@ const translations = {
         "project.description.6": "커넥티드 차량 소프트웨어의 상호운용성 향상을 위한<br />오픈소스 연합 프로젝트",
 
         // 소개
-
         "overview.title": "소개",
         "overview.section.name": "명칭",
         "overview.section.name.value": "자동차 테크맵 프로젝트 (Mobility Techmap Project)",

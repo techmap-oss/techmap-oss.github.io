@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>기여하기 - 자동차테크맵</title>
+    <title>기여종류 - 자동차테크맵</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="format-detection" content="telephone=no">
@@ -17,10 +17,6 @@
     <script src="translations.js"></script>
 
 
-    <link rel="stylesheet" href="plugin/aos/aos.css" />
-    <script src="plugin/aos/aos.js"></script>
-    <link rel="stylesheet" href="plugin/swiper/swiper-bundle.min.css" />
-    <script src="plugin/swiper/swiper-bundle.min.js"></script>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
@@ -123,82 +119,105 @@
 
 
     <section class="container">
-        <section class="contribute_use">
+        <section class="contribute_prepare">
             <div class="breadcrumb-nav">
                 <a href="/">Home</a> &gt;
-                <span data-i18n="menu.contribute">&nbsp;기여하기</span>
+                <a href="contribute" data-i18n="menu.contribute">기여하기</a> &gt;
+                <span data-i18n="menu.type">&nbsp;기여 종류</span>
             </div>
 
             <div class="container">
                 <section class="common">
                     <div class="head">
                         <div class="wrapper">
-                            <h1 class="page-title" data-i18n="contribute_use.title">자동차 테크맵 프로젝트에 기여하기</h1>
+                            <h1 class="page-title" data-i18n="menu.type">기여 종류</h1>
                         </div>
                     </div>
                 </section>
             </div>
 
             <div class="container">
-                <div class="section">
-
-                    <p class="intro" data-i18n="contribute_use.intro">
-                        자동차 테크맵 프로젝트는 자사의 오픈소스 정보를 공유하거나 <br> 기존 자동차 테크맵 프로젝트의 잘못된 정보를 찾았다면
-                        언제든지 프로젝트에 참여하고 기여할 수 있습니다.<br>
-                        기여하기에 앞서 알아두면 좋은 기여하기 사전 지식을 <a herf="#" class="text-link">"NIPA 기업 오픈소스SW 거버넌스 가이드"</a>를 참고하여 안내합니다.
-                    </p>
-
-                    <div class="contribute-section">
-                        <div class="icon-title">
-                            <i class="fas fa-gift"></i>
-                            <h2 data-i18n="contribute_use.benefit.title"><a href="contribute_01.html" class="title">기여 혜택</a></h2>
-                        </div>
-                        <p data-i18n="contribute_use.benefit.desc">
-                            기업과 개발자가 기여하기를 통해 얻을 수 있는 이점에 대해 설명합니다.
-                        </p>
+                <h2 class="contribute_prepare-title" data-i18n="contribute.oss.type">오픈소스SW 기여 종류</h2>
+                <p class="text_desc" data-i18n="contribute.type.intro">
+                    오픈소스SW 프로젝트는 주로 소프트웨어 개발자들이 오픈소스SW의 소스 코드를 수정하여 버그를 고치거나, 기능 개선 등 소스 코드 작성을 통해 프로젝트에 기여한다. 그러나 개발자들만
+                    오픈소스SW 프로젝트에 기여할 수 있는 것은 아니다. 오픈소스SW 프로젝트는 다음과 같이 문서화, 디자인 등 다양한 유형의 기여를 필요로 한다.
+                </p>
+                <section class="contribute_type">
+                    <div class="contribute_prepare-section">
+                        <h2 class="contribute_prepare-subtitle">
+                            <i class="fas fa-file-alt subtitle-icon"></i>
+                            <span data-i18n="contribute.type.doc.title">문서 작성 / 번역</span>
+                        </h2>
+                        <ul class="contribute_prepare-list">
+                            <li data-i18n="contribute.type.doc.1">프로젝트 문서, 튜토리얼을 작성한다.</li>
+                            <li data-i18n="contribute.type.doc.2">프로젝트의 뉴스레터를 작성하거나 메일링 리스트의 중요 사항을 요약한다.</li>
+                            <li data-i18n="contribute.type.doc.3">프로젝트 문서를 자국어로 번역한다.</li>
+                        </ul>
                     </div>
 
-                    <div class="contribute-section">
-                        <div class="icon-title">
-                            <i class="fas fa-tools"></i>
-                            <h2 data-i18n="contribute_use.prepare.title"><a href="contribute_02.html" class="title">기여 준비</a></h2>
-                        </div>
-                        <p data-i18n="contribute_use.prepare.desc">
-                            기여에 앞서 기본 준비사항을 소개합니다.
-                        </p>
+                    <div class="contribute_prepare-section">
+                        <h2 class="contribute_prepare-subtitle">
+                            <i class="fas fa-bug subtitle-icon"></i>
+                            <span data-i18n="contribute.type.test.title">테스트 / 이슈 생성</span>
+                        </h2>
+                        <ul class="contribute_prepare-list">
+                            <li data-i18n="contribute.type.test.1">소프트웨어가 정상적으로 동작하는지 테스트한다.</li>
+                            <li data-i18n="contribute.type.test.2">문서에 기재된 대로 빌드 / 설치되는지 테스트한다.</li>
+                            <li data-i18n="contribute.type.test.3">문서, API가 일관성 있게 작성되었는지 확인한다.</li>
+                        </ul>
                     </div>
 
-                    <div class="contribute-section">
-                        <div class="icon-title">
-                            <i class="fas fa-layer-group"></i>
-                            <h2 data-i18n="contribute_use.type.title"><a href="contribute_03.html" class="title">기여 종류</a></h2>
-                        </div>
-                        <p data-i18n="contribute_use.type.desc">
-                            개발자들의 소스코드 기여는 물론 문서/번역, 테스트, 디자인, 마케팅, 이벤트 등 다양한 방법의 기여가 있습니다.
-                        </p>
+                    <div class="contribute_prepare-section">
+                        <h2 class="contribute_prepare-subtitle">
+                            <i class="fas fa-paint-brush subtitle-icon"></i>
+                            <span data-i18n="contribute.type.design.title">디자인</span>
+                        </h2>
+                        <ul class="contribute_prepare-list">
+                            <li data-i18n="contribute.type.design.1">프로젝트 웹사이트의 레이아웃, 메뉴 등을 개선한다.</li>
+                            <li data-i18n="contribute.type.design.2">프로젝트가 일관성 있는 디자인을 가질 수 있도록 스타일 가이드를 만든다.</li>
+                            <li data-i18n="contribute.type.design.3">새로운 로고 또는 티셔츠를 만드는 데 기여한다.</li>
+                        </ul>
                     </div>
 
-                    <div class="contribute-section">
-                        <div class="icon-title">
-                            <i class="fas fa-scroll"></i>
-                            <h2 data-i18n="contribute_use.policy.title"><a href="contribute_04.html" class="title">기여 정책</a></h2>
-                        </div>
-                        <p data-i18n="contribute_use.policy.desc">
-                            자동차 테크맵 프로젝트에 기여하기 위한 기본 정책을 설명합니다.
-                        </p>
+                    <div class="contribute_prepare-section">
+                        <h2 class="contribute_prepare-subtitle">
+                            <i class="fas fa-code subtitle-icon"></i>
+                            <span data-i18n="contribute.type.code.title">코드 작성</span>
+                        </h2>
+                        <ul class="contribute_prepare-list">
+                            <li data-i18n="contribute.type.code.1">해결할 수 있는 오픈된 이슈를 찾는다.</li>
+                            <li data-i18n="contribute.type.code.2">새로운 기능을 추가한다.</li>
+                            <li data-i18n="contribute.type.code.3">자동화를 위한 도구와 테스팅을 개선한다.</li>
+                        </ul>
                     </div>
 
-                    <div class="contribute-section">
-                        <div class="icon-title">
-                            <i class="fas fa-envelope-open-text"></i>
-                            <h2 data-i18n="contribute_use.contact.title"><a href="mailto:techmap@oss.kr" class="title">문의하기</a></h2>
-                        </div>
-                        <p data-i18n="contribute_use.contact.desc">
-                            기여하기에 문의사항이 있을 경우, <strong>Contact Us : <a href="mailto:techmap@oss.kr">techmap@oss.kr</a></strong> 를 통해 문의하시기 바랍니다.
-                        </p>
-
+                    <div class="contribute_prepare-section">
+                        <h2 class="contribute_prepare-subtitle">
+                            <i class="fas fa-bullhorn subtitle-icon"></i>
+                            <span data-i18n="contribute.type.marketing.title">마케팅</span>
+                        </h2>
+                        <ul class="contribute_prepare-list">
+                            <li data-i18n="contribute.type.marketing.1">SNS, 세미나 발표 등 다양한 방법으로 프로젝트의 목적과 효용성을 홍보한다.</li>
+                        </ul>
                     </div>
-                </div>
+
+                    <div class="contribute_prepare-section">
+
+                        <h2 class="contribute_prepare-subtitle">
+                            <i class="fas fa-users subtitle-icon"></i>
+                            <span data-i18n="contribute.type.event.title">이벤트 행사</span>
+                        </h2>
+                        <ul class="contribute_prepare-list">
+                            <li data-i18n="contribute.type.event.1">프로젝트의 콘퍼런스, 워크숍, 밋업 등 다양한 모임을 기획하고 주관한다.</li>
+                        </ul>
+                    </div>
+                </section>
+
+
+                <p class="contribute_benefit-source"><a
+                        href="https://www.oss.kr/oss_guide/show/7feb1eb9-ec4f-4140-a34c-e2bd141400a8" class="text-link"
+                        data-i18n="contribute_benefit.source">출처 : 2025년 기업 오픈소스SW 거버넌스 가이드</a></p>
+            </div>
         </section>
     </section>
 
