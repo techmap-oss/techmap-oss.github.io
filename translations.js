@@ -174,8 +174,8 @@ const translations = {
         "faq.section.member.desc.2": "자세한 내용은 <a href=\"/organization\" class=\"text-link\">조직 및 멤버</a> 페이지를 참고해주시기 바랍니다.",
 
         "faq.section.join.title": "가입 방법",
-        "faq.section.join.desc.1": "자동차 테크맵 프로젝트에 참여하려면 멤버로 가입해야 하며, <a href=\"about/organization\" class=\"text-link\">가입 신청서(개인/기업)</a> 제출 후 운영위원회의 승인을 통해 등록됩니다.",
-        "faq.section.join.desc.2": "궁금한 사항은 <a href=\"mailto:techmap@oss.kr\" class=\"text-link\">이메일 문의</a> 또는 <a href=\"about/organization\" class=\"text-link\">조직 및 멤버</a> 구성 안내를 참고해주시기 바랍니다.",
+        "faq.section.join.desc.1": "자동차 테크맵 프로젝트에 참여하려면 멤버로 가입해야 하며, <a href=\"organization\" class=\"text-link\">가입 신청서(개인/기업)</a> 제출 후 운영위원회의 승인을 통해 등록됩니다.",
+        "faq.section.join.desc.2": "궁금한 사항은 <a href=\"mailto:techmap@oss.kr\" class=\"text-link\">이메일 문의</a> 또는 <a href=\"organization\" class=\"text-link\">조직 및 멤버</a> 구성 안내를 참고해주시기 바랍니다.",
 
         "faq.section.contribute.title": "기여 방법",
         "faq.section.contribute.desc.1": "자동차 테크맵 프로젝트는 참여와 협력을 바탕으로 함께 만들어가는 오픈소스 프로젝트입니다.",
@@ -415,7 +415,7 @@ const translations = {
         "category.autonomous": "Autonomous Driving",
         "category.connected": "Connected Car",
         "description.techmap": `
-                    <strong class="blue">Mobility Techmap</strong> is an open-source initiative in the automotive field, 
+                    <strong class="blue">Mobility Techmap</strong> is an open-source initiative in the Mobility field, 
                     <br class="only_mb" />designed to share technical information 
                     <br />
                     <strong>
@@ -439,7 +439,7 @@ const translations = {
         "overview.section.name": "Name",
         "overview.section.name.value": "Mobility Techmap Project",
         "overview.section.purpose": "Purpose",
-        "overview.section.purpose.value": "To build an open-source mobility ecosystem where information on automotive open source is shared, utilized, and developed collaboratively.",
+        "overview.section.purpose.value": "To build an open-source mobility ecosystem where information on Mobility open source is shared, utilized, and developed collaboratively.",
         "overview.section.history": " History",
         "overview.section.year": "",
         "label.month.01": "Jan",
@@ -452,8 +452,8 @@ const translations = {
         "overview.timeline.2024.12": "Keynote Presentation at Open Source SW Festival and Press Release",
         "overview.timeline.2024.11": "Collected and Organized Open Source Info from Global OEMs and Suppliers",
         "overview.timeline.2024.06": "Workshop on Open Source Techmap by Hyundai Motor Group",
-        "overview.timeline.2024.01": "Discussion on Plan to Promote Automotive Open Source Techmap",
-        "overview.timeline.2023.11": "MOU Signed Between NIPA and Hyundai Motor Group for Open Source SW Support in Automotive Manufacturing",
+        "overview.timeline.2024.01": "Discussion on Plan to Promote Mobility Open Source Techmap",
+        "overview.timeline.2023.11": "MOU Signed Between NIPA and Hyundai Motor Group for Open Source SW Support in Mobility Manufacturing",
 
         // 조직 및 멤버
 
@@ -518,7 +518,7 @@ const translations = {
 
         "faq.section.join.title": "How to Join",
         "faq.section.join.desc.1": "To participate, submit a <a href=\"organization\" class=\"text-link\">membership application (individual or corporate)</a> and receive approval from the Steering Committee.",
-        "faq.section.join.desc.2": "If you have questions, please <a href=\"mailto:techmap@oss.kr\" class=\"text-link\">email us</a> or refer to the <a href=\"about/organization\" class=\"text-link\">Organization & Members</a> page.",
+        "faq.section.join.desc.2": "If you have questions, please <a href=\"mailto:techmap@oss.kr\" class=\"text-link\">email us</a> or refer to the <a href=\"organization\" class=\"text-link\">Organization & Members</a> page.",
 
         "faq.section.contribute.title": "How to Contribute",
         "faq.section.contribute.desc.1": "This is an open source project built on collaboration and participation.",
@@ -526,7 +526,7 @@ const translations = {
         "faq.section.contribute.desc.3": "See the <a href=\"contribute\" class=\"text-link\">Contribute</a> page to learn how to join and start participating.",
 
         "faq.section.use.title": "How to Use",
-        "faq.section.use.desc.1": "To browse open source information by automotive technology, visit the <a href=\"techmap\" class=\"text-link\">Mobility Techmap</a> page. You can search components by relevance or usage.",
+        "faq.section.use.desc.1": "To browse open source information by Mobility technology, visit the <a href=\"techmap\" class=\"text-link\">Mobility Techmap</a> page. You can search components by relevance or usage.",
         "faq.section.use.desc.2": "To access full datasets, use the <a href=\"api\" class=\"text-link\">Open API</a>. For detailed research data, use the <a href=\"use/data\" class=\"text-link\">Data Request</a> function.",
 
         "faq.section.api.title": "Open API Guide",
@@ -548,7 +548,7 @@ const translations = {
 
         "use.api.query.title": "Query Parameters",
         "openapi.title": "Mobility TechMap Open-API",
-        "openapi.description": "The Mobility TechMap Open-API collects and organizes various open-source software information used in the automotive field,<br>and provides an open interface so that private companies and research institutions can easily use the data.<br>Users can utilize this API for software development, research, and more.",
+        "openapi.description": "The Mobility TechMap Open-API collects and organizes various open-source software information used in the Mobility field,<br>and provides an open interface so that private companies and research institutions can easily use the data.<br>Users can utilize this API for software development, research, and more.",
 
         "openapi.target.title": "Open-API Target Users",
         "openapi.target.description": "Anyone who wants to utilize Mobility TechMap resources",
