@@ -1,8 +1,5 @@
 // 다국어 변경
 function switchLanguage(lang) {
-
-    localStorage.setItem('selectedLanguage', lang); // 언어 설정 저장
-
     document.querySelectorAll('[data-i18n]').forEach((el) => {
         const key = el.getAttribute('data-i18n');
         const value = translations[lang]?.[key];
@@ -33,13 +30,6 @@ function switchLanguage(lang) {
     }
 
 }
-
-
-// 페이지 로드시 이전 언어 설정 적용
-window.addEventListener('DOMContentLoaded', () => {
-    const savedLang = localStorage.getItem('selectedLanguage') || 'ko';
-    switchLanguage(savedLang);
-});
 
 const translations = {
     ko: {
