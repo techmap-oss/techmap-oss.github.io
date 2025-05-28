@@ -41,6 +41,8 @@ window.addEventListener('DOMContentLoaded', () => {
 
 const translations = {
     ko: {
+        "ex": "예",
+
         "menu.about": "소개",
         "menu.techmap": "자동차 테크맵",
         "menu.contribute": "기여하기",
