@@ -28,8 +28,8 @@ function switchLanguage(lang) {
         if (pcImg) pcImg.src = 'img/index_02_01_en.jpg';
         if (mbImg) mbImg.src = 'img/index_02_02_en.jpg';
     } else {
-        if (pcImg) pcImg.src = 'img/index_02_01_ko.jpg';
-        if (mbImg) mbImg.src = 'img/index_02_02_ko.jpg';
+        if (pcImg) pcImg.src = 'img/index_02_01.jpg';
+        if (mbImg) mbImg.src = 'img/index_02_02.jpg';
     }
 
 }
@@ -114,7 +114,7 @@ const translations = {
         "member.user.title": "사용자 [User]",
         "member.user.desc": "누구나 회원 가입 등 별도의 절차 없이 '자동차 테크맵 프로젝트'의 <a href=\"license\" class=\"text-link\">라이선스 정책</a>에 따라 오픈소스 정보 및 콘텐츠를 자유롭게 활용할 수 있습니다.",
         "member.member.title": "회원 [Member]",
-        "member.member.desc": "'자동차 테크맵 프로젝트'에 참여하려면 멤버로 가입해야 하며, <a href=\"#\" class=\"text-link\">가입 신청서(개인/기업)</a> 제출 후 운영위원회의 승인을 통해 등록됩니다.",
+        "member.member.desc": "'자동차 테크맵 프로젝트'에 참여하려면 멤버로 가입해야 하며, <a href=\"https://forms.gle/av7jWKRr2uP46xAY8\" class=\"text-link\">가입 신청서(개인/기업)</a> 제출 후 운영위원회의 승인을 통해 등록됩니다.",
         "member.board.title": "보드 회원사 [Board Member]",
         "member.board.desc": "프로젝트에 지속적인 기여를 한 기업 회원은 운영위원회의 승인을 거쳐 보드 회원사로 임명될 수 있습니다.",
         "member.sponsor.title": "후원사 [Sponsor]",
@@ -174,7 +174,7 @@ const translations = {
         "faq.section.member.desc.2": "자세한 내용은 <a href=\"/organization\" class=\"text-link\">조직 및 멤버</a> 페이지를 참고해주시기 바랍니다.",
 
         "faq.section.join.title": "가입 방법",
-        "faq.section.join.desc.1": "자동차 테크맵 프로젝트에 참여하려면 멤버로 가입해야 하며, <a href=\"organization\" class=\"text-link\">가입 신청서(개인/기업)</a> 제출 후 운영위원회의 승인을 통해 등록됩니다.",
+        "faq.section.join.desc.1": "자동차 테크맵 프로젝트에 참여하려면 멤버로 가입해야 하며, <a href=\"https://forms.gle/av7jWKRr2uP46xAY8\" class=\"text-link\">가입 신청서(개인/기업)</a> 제출 후 운영위원회의 승인을 통해 등록됩니다.",
         "faq.section.join.desc.2": "궁금한 사항은 <a href=\"mailto:techmap@oss.kr\" class=\"text-link\">이메일 문의</a> 또는 <a href=\"organization\" class=\"text-link\">조직 및 멤버</a> 구성 안내를 참고해주시기 바랍니다.",
 
         "faq.section.contribute.title": "기여 방법",
@@ -461,7 +461,7 @@ const translations = {
         "member.user.title": "User",
         "member.user.desc": "Anyone can freely use the open source information and content in accordance with the <a href=\"license\" class=\"text-link\">license policy</a> of the Mobility Techmap Project without separate registration.",
         "member.member.title": "Member",
-        "member.member.desc": "To participate in the Mobility Techmap Project, you must join as a member by submitting a <a href=\"#\" class=\"text-link\">membership application (individual/corporate)</a> and receiving approval from the Steering Committee.",
+        "member.member.desc": "To participate in the Mobility Techmap Project, you must join as a member by submitting a <a href=\"https://forms.gle/av7jWKRr2uP46xAY8\" class=\"text-link\">membership application (individual/corporate)</a> and receiving approval from the Steering Committee.",
         "member.board.title": "Board Member",
         "member.board.desc": "Corporate members who continuously contribute to the project may be appointed as board members upon approval by the Steering Committee.",
         "member.sponsor.title": "Sponsor",
@@ -517,7 +517,7 @@ const translations = {
         "faq.section.member.desc.2": "For details, please see the <a href=\"organization\" class=\"text-link\">Organization & Members</a> page.",
 
         "faq.section.join.title": "How to Join",
-        "faq.section.join.desc.1": "To participate, submit a <a href=\"organization\" class=\"text-link\">membership application (individual or corporate)</a> and receive approval from the Steering Committee.",
+        "faq.section.join.desc.1": "To participate, submit a <a href=\"https://forms.gle/av7jWKRr2uP46xAY8\" class=\"text-link\">membership application (individual or corporate)</a> and receive approval from the Steering Committee.",
         "faq.section.join.desc.2": "If you have questions, please <a href=\"mailto:techmap@oss.kr\" class=\"text-link\">email us</a> or refer to the <a href=\"organization\" class=\"text-link\">Organization & Members</a> page.",
 
         "faq.section.contribute.title": "How to Contribute",
