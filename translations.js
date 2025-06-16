@@ -194,6 +194,18 @@ const translations = {
         "faq.section.contact.desc.1": "사이트 이용 중 문제가 발생하거나 문의사항이 있을 경우, 홈페이지 하단의 <strong>Contact Us : <a href=\"mailto:techmap@oss.kr\" class=\"text-link\">techmap@oss.kr</a></strong> 를 통해 연락하실 수 있습니다.",
         "faq.section.contact.desc.2": "더 자세한 정보나 특정 기능에 대한 안내가 필요하시면, 추가로 <strong><a href=\"mailto:techmap@oss.kr\" class=\"text-link\">문의</a></strong>해주시기 바랍니다.",
 
+        "faq.section.restriction.title": "사용 주의 및 제약 사항",
+        "faq.section.restriction.desc.1": "오픈소스 소프트웨어(OSS) 또는 해당 라이선스에 따라 사용 및 배포에 대한 제약이 존재할 수 있습니다. 사용 전에 반드시 확인이 필요합니다.",
+        "faq.section.restriction.desc.2": "라이선스 위험도(Level)는 상업적 사용 및 배포 시 주의 필요도에 따라 1~5로 나뉘며, 색상으로 구분된 신호등 형태로 표시됩니다:",
+        "faq.section.restriction.level.1": "Level 1 (🟢 초록): 제약 거의 없음",
+        "faq.section.restriction.level.2": "Level 2~3 (🟡 노랑): 일부 조건/주의 필요",
+        "faq.section.restriction.level.3": "Level 4~5 (🔴 빨강): 소스코드 공개, 배포 제한, 설치 정보 제공 등 강한 제약 존재",
+        "faq.section.restriction.desc.3": "또한, 라이선스 조건 외에도 다음 사항들을 종합적으로 고려하여 오픈소스를 사용할 필요가 있습니다:",
+        "faq.section.restriction.license": "<strong>라이선스 위험도</strong>: 조건 위반 시 법적 책임 발생 가능",
+        "faq.section.restriction.source": "<strong>소스코드 공개 이슈</strong>: 자사 코드 공개 의무 발생 가능",
+        "faq.section.restriction.security": "<strong>보안 취약점</strong>: 알려진 CVE나 업데이트 중단 여부 확인 필수",
+        "faq.section.restriction.usability": "<strong>활용정도</strong>: 해당 오픈소스의 사용 빈도를 기준으로 상·중·하 수준으로 구분됨",
+
 
         // API 활용
 
@@ -514,6 +526,19 @@ const translations = {
         "faq.section.contact.title": "Contact Us",
         "faq.section.contact.desc.1": "If you have any problems or inquiries, you can contact us at the bottom of the site via <strong>Contact Us : <a href=\"mailto:techmap@oss.kr\" class=\"text-link\">techmap@oss.kr</a></strong>.",
         "faq.section.contact.desc.2": "For more detailed information or guidance, please <strong><a href=\"mailto:techmap@oss.kr\" class=\"text-link\">contact us</a></strong>.",
+
+        "faq.section.restriction.title": "Usage Cautions and Restrictions",
+        "faq.section.restriction.desc.1": "There may be usage and distribution restrictions depending on the open source software (OSS) or its license. Please be sure to review them before use.",
+        "faq.section.restriction.desc.2": "The license risk level is categorized from 1 to 5 based on the level of caution required for commercial use and distribution, and is displayed using a traffic light color scheme:",
+        "faq.section.restriction.level.1": "Level 1 (🟢 Green): Almost no restrictions",
+        "faq.section.restriction.level.2": "Level 2~3 (🟡 Yellow): Some conditions/caution required",
+        "faq.section.restriction.level.3": "Level 4~5 (🔴 Red): Strong restrictions such as mandatory source disclosure, distribution limitations, and installation information provision",
+        "faq.section.restriction.desc.3": "In addition to license terms, the following factors should also be considered when using open source software:",
+        "faq.section.restriction.license": "License Risk: Legal liability may arise if license terms are violated",
+        "faq.section.restriction.source": "Source Code Disclosure: May require disclosure of proprietary code depending on license type",
+        "faq.section.restriction.security": "Security Vulnerabilities: Check for known CVEs or discontinued updates",
+        "faq.section.restriction.usability": "Usage Frequency: Indicates how widely the OSS is used, classified into High / Medium / Low levels",
+
 
         // API  활용
         "use.api.breadcrumb": "Open-API",

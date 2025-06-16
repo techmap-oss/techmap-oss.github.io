@@ -1973,6 +1973,19 @@ body {
     font-weight: 600
 }
 
+
+.faq .faq-content ul {
+  padding-left: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.faq .faq-content ul li {
+  margin-bottom: 6px;
+  line-height: 1.6;
+}
+
+
 /* 라이센스 */
 .license {
     padding: 150px 0 100px
