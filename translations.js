@@ -56,7 +56,7 @@ const translations = {
         "menu.license": "라이선스 정책",
         "menu.benefit": "기여 혜택",
         "menu.prepare": "기여 준비",
-        "menu.type": "기여 종류",
+        "menu.type": "기여 유형",
         "menu.policy": "기여 정책",
         "menu.signup": "회원가입",
         "hero.slogan": '<img src="img/index_01_tit1.png" alt="Mobility TechMap"/><br class="only_mb"/>오픈소스로 그리는 <strong>새로운 길</strong>',
@@ -271,120 +271,98 @@ const translations = {
 
         // 기여하기
         "contribute_use.title": "자동차 테크맵 프로젝트에 기여하기",
-        "contribute_use.intro": `자동차 테크맵 프로젝트는 자사의 오픈소스 정보를 공유하거나 <br> 기존 자동차 테크맵 프로젝트의 잘못된 정보를 찾았다면
-        언제든지 프로젝트에 참여하고 기여할 수 있습니다.<br>
-        기여하기에 앞서 알아두면 좋은 기여하기 사전 지식을 <a href="https://www.oss.kr/oss_guide/show/7feb1eb9-ec4f-4140-a34c-e2bd141400a8" class="text-link">"NIPA 기업 오픈소스SW 거버넌스 가이드"</a>를 참고하여 안내합니다.`,
+        "contribute_use.intro": `컨트리뷰션 (Contribution: 기여)은 오픈소스 프로젝트에 자발적으로 참여하고 가치있는 작업을 수행하는 모든 활동을 의미합니다. <br>
+        기여활동은 단순한 코드 작성에 국한되지 않고, <strong> 문서화, 데이터 정리, 제안, 리뷰, 커뮤니티 운영 </strong> 등 다양한 형태로 이루어집니다.<br>
+        자동차 테크맵 프로젝트 역시 다양한 컨트리뷰션 활동을 통해 데이터를 발전시키고자 하는 목적이 있습니다. <br>
+        이 가이드는 프로젝트에 기여자(Contributor)로서 참여하는 방법을 설명합니다.
+        .`,
 
-        "contribute_use.benefit.title": "기여 혜택",
-        "contribute_use.benefit.desc": "기업과 개발자가 기여하기를 통해 얻을 수 있는 이점에 대해 설명합니다.",
+        "contribute_use.benefit.title": `<a href="contribute_01.html" class="title">기여 혜택</a>`,
+        "contribute_use.benefit.desc": `<a href="contribute_01.html">자동차 테크맵 기여자에게 제공되는 혜택을 설명합니다</a>`,
 
-        "contribute_use.prepare.title": "기여 준비",
-        "contribute_use.prepare.desc": "기여에 앞서 기본 준비사항을 소개합니다.",
+        "contribute_use.prepare.title": `<a href="contribute_02.html" class="title">기여 준비`,
+        "contribute_use.prepare.desc": `<a herf="contribute_02.html">기여에 앞서 기본 준비사항을 소개합니다.</a>`,
 
-        "contribute_use.type.title": "기여 종류",
-        "contribute_use.type.desc": "개발자들의 소스코드 기여는 물론 문서/번역, 테스트, 디자인, 마케팅, 이벤트 등 다양한 방법의 기여가 있습니다.",
+        "contribute_use.type.title": `<a href="contribute_03.html" class="title">기여 유형`,
+        "contribute_use.type.desc": `<a herf="contribute_03.html">오픈소스SW 프로젝트 기여는 물론 기존 데이터 정보 수정 및 추가, 실제 적용사례, 기술 가이드 등 문서/번역, 오타 수정, 기능 제안 등 다양한 방법의 기여가 있습니다.</a>`,
 
-        "contribute_use.policy.title": "기여 정책",
-        "contribute_use.policy.desc": "자동차 테크맵 프로젝트에 기여하기 위한 기본 정책을 설명합니다.",
+        "contribute_use.policy.title": `<a href="contribute_04.html" class="title">기여 정책`,
+        "contribute_use.policy.desc": `<a herf="contribute_04.html">자동차 테크맵 프로젝트에 기여하기 위한 기본 정책을 설명합니다.</a>`,
 
         "contribute_use.contact.title": "문의하기",
         "contribute_use.contact.desc": `기여하기에 문의사항이 있을 경우, <strong>Contact Us : <a href="mailto:techmap@oss.kr">techmap@oss.kr</a></strong> 를 통해 문의하시기 바랍니다.`,
 
         // 기여 혜택
-        "contribute_benefit.company.subtitle": "기업에서 얻는 이점",
-        "contribute_benefit.company.desc":
-            "기업이 오픈소스에 기여하는 목적과 이익은 무엇인가? 기업은 왜 구성원의 오픈소스 기여 활동을 장려해야 하나? 기업의 비즈니스 관점에서도 오픈소스에 기여해야 하는 이유는 다음과 같다.",
-        "contribute_benefit.company.title.1": "1. 유지 관리 비용을 절감할 수 있다",
-        "contribute_benefit.company.desc.1": "기업은 오픈소스를 사용하여 제품을 만들면서 버그를 수정하거나 새로운 기능을 추가한다. 그런데 이를 다시 오픈소스 프로젝트로 기여하지 않는다면 어떻게 될까? 오픈소스 프로젝트는 중요한 보안 패치 등 새로운 버전을 계속해서 릴리즈할 텐데, 그때마다 기업은 새로운 버전을 적용하기 전에 자체적으로 수정한 사항을 다시 새로운 버전에 반영한 후, 기능은 이상 없이 동작하는지, 성능에는 영향이 없는지 매번 테스트해야 하는 노력이 필요하다. 이러한 수고가 반복된다면 이에 투입해야 하는 인력과 시간 등의 관리 비용은 악몽과도 같이 크게 증가할 것이다. 만약 수정 사항을 오픈소스 프로젝트에 기여했다면 향후 새로운 버전이 릴리즈될 때 수정 사항이 이미 포함되어 있기 때문에 추가로 유지 관리해야 할 필요가 없게 된다. 따라서 오픈소스를 사용하는 기업은 기여의 중요성을 개발자들에게 교육해야 한다. 물론, 오픈소스 프로젝트에 기여하는 것은 적지 않은 수고와 시간이 들어갈 수 있다. 개발자들은 타이트한 개발 일정 때문에 패치를 만들어도 당장 제품에만 적용하려고 하지, 이를 오픈소스 프로젝트에 기여하지 않으려고 할 수 있다. 그러나 패치를 기여하지 않으면 신규 버전의 오픈소스가 새롭게 릴리즈될 때마다 개발자는 자기가 만든 패치를 재적용해야 한다는 점을 재차 강조하는 바이다. 이러한 작업이 반복될수록 더 많은 시간과 노력을 쏟는 악순환이 된다.",
-        "contribute_benefit.company.title.2": "2. 오픈소스 프로젝트의 방향에 영향을 미칠 수 있다",
-        "contribute_benefit.company.desc.2": "기업이 제품 개발에 중요하게 사용하는 오픈소스 프로젝트에서 기업에 꼭 필요한 기능을 추가해주기를 바라는가? 그렇다면 그 오픈소스 프로젝트에 바라는 기능을 제안하고, 경우에 따라서는 일부분을 직접 개발하고 기여하는 등, 활발히 활동할 것을 권한다. 기업에서 이렇게 기여한 이후에는 여러 사람의 참여를 통해 해당 기능을 안정화하고 고도화하여 결과적으로는 기업이 원하는 방향으로 성장하게 된다.",
-        "contribute_benefit.company.title.3": "3. 우수한 개발자를 고용할 수 있다",
-        "contribute_benefit.company.desc.3": "우수한 오픈소스 개발자를 찾을 수 있는 가장 좋은 장소는 바로 오픈소스 커뮤니티이다. 오픈소스에 적극적으로 기여하는 기업은 오픈소스 커뮤니티에서 좋은 평판을 쌓게 된다. 오픈소스 커뮤니티의 우수한 개발자는 오픈소스에 적극적으로 기여하는 기업이 어디인지 알고 있고, 그런 기업에서 일하고 싶어 한다. 오픈소스 기여 활동을 전혀 하지 않는 기업이 우수한 오픈소스 개발자를 채용하기는 쉽지 않다.",
+        "contribute_benefit.company.subtitle": "자동차 테크맵 기여자에게 다음과 같은 혜택을 제공합니다.",
+        "contribute_benefit.company.title.1": "1. 주요 기여자 리스트(자동차 테크맵 사이트 메인화면)에 등록",
+        "contribute_benefit.company.desc.1": "자동차 테크맵 웹사이트의 메인 페이지에 ‘주요 기여자’로 이름 또는 소속이 공개되어 소개됩니다. 프로젝트에 특별히 기여하거나 영향력 있는 활동을 한 분들을 대상으로 하며, 사이트 방문자들이 쉽게 확인할 수 있도록 메인 화면에 배치됩니다.",
 
-        "contribute_benefit.developer.subtitle": "개발자가 얻는 이점",
-        "contribute_benefit.developer.title.1": "1. 공공의 이익에 기여할 수 있다",
-        "contribute_benefit.developer.title.2": "2. 실력을 키울 수 있다",
-        "contribute_benefit.developer.title.3": "3. 오픈소스를 깊은 수준에서 이해하고 기술을 습득할 수 있다",
-        "contribute_benefit.developer.title.4": "4. 협업을 배울 수 있다",
-        "contribute_benefit.developer.title.5": "5. 새로운 사람을 만날 수 있다",
-        "contribute_benefit.developer.title.6": "6. 평판과 경력을 키울 수 있다",
-        "contribute_benefit.developer.title.7": "7. 리더쉽을 배울 수 있다",
-
-        "contribute_benefit.developer.desc.1": "사용 중인 오픈소스의 버그를 직접 수정하거나 새로운 기능을 추가하면 소프트웨어가 개선될 뿐만 아니라 이 소프트웨어를 사용하는 모두에게 이익을 제공하게 된다. 작은 기여로 글로벌 커뮤니티에 공헌하는 것이다.",
-        "contribute_benefit.developer.desc.2": "오픈소스에 기여하는 활동을 통해 새로운 기술을 배울 수 있다. 그뿐만 아니라 반복적인 연습과 훈련을 통해 역량을 향상할 수 있다. 버전 관리, Unit Test, Integration Test, CI/CD 등은 오픈소스 프로젝트 개발에서 탄생하여 지금은 거의 모든 소프트웨어 개발 시 사용되고 있는 개발방법론이다. 이들을 오픈소스 프로젝트에서 배울 수 있다. 더구나, 오픈소스 프로젝트는 회사 업무와는 달리 오픈소스 프로젝트에서는 초보자의 실수에 비교적 관대하여 본인의 의지만 확고하다면 기술 역량을 향상할 수 있는 최고의 공간이다. 오픈소스 프로젝트에서는 코딩뿐만 아니라 UI, 그래픽 디자인, 문서 작성 등의 실무를 배울 수 있다.",
-        "contribute_benefit.developer.desc.3": "단순히 오픈소스를 사용하는 수준을 넘어 오픈소스 기여를 위해 이슈를 이해하고, 문제를 해결하게 되면 보다 더 깊은 수준으로 오픈소스 기술을 습득하게 된다. 이러한 활동은 오픈소스의 향후 변경 사항을 쉽게 식별하여 유연하게 대응할 수 있게 하며, 오픈소스 활용을 더 확장해나갈 수도 있다.",
-        "contribute_benefit.developer.desc.4": "오픈소스 커뮤니티는 전 세계의 다양한 지역, 다른 시간대의 사람들이 모여 있는 공간이다. 이러한 제약 가운데 공통 과제를 수행하기 위해서는 고도의 협업 능력이 필요하다. 오픈소스 프로젝트에서는 분업, 위험관리를 고려한 진정한 협업이 이뤄진다. 이와 더불어 협업을 가능하게 하는 여러 도구에도 익숙해질 수 있다. 이슈 트래커, 버전 관리 시스템, 메일링리스트와 같은 도구가 대표적이다.",
-        "contribute_benefit.developer.desc.5": "오픈소스에는 커뮤니티가 있다. 공통 관심사가 있는 사람들이 참여하고 만남으로써 관계를 만들어 갈 수 있다. 어떤 사람을 만나느냐가 경력의 방향에 큰 영향을 미칠 수 있다. 신뢰할 수 있는 관계가 되고 나면 서로 새로운 업무나 직장으로 이끌어줄 수 있다. 오픈소스 커뮤니티에서는 항상 전문적으로 협업하면서 서로 업무 스타일과 인성을 깊이 있게 파악할 수 있어서 가능한 일이다. 이처럼 오픈소스 프로젝트에 기여하면서 형성된 관계야말로 왜 기여해야 하는지를 설명하는 분명한 답변 중 하나이다.",
-        "contribute_benefit.developer.desc.6": "오픈소스 작업은 모두에게 공개된다. 오픈소스에서 수행한 작업은 어디에서나 누구에게든 보여줄 수 있으며, 이는 개인의 평판을 높이는 데 큰 도움이 된다.",
-        "contribute_benefit.developer.desc.7": "오픈소스에서는 팀 구성, 갈등 해결 및 우선순위 조정과 같은 리더십과 관리 기술을 배울 수 있다. 오픈소스 프로젝트에서 공동 작업을 하려면 누군가에게 업무 수행 방식을 설명해야 하고, 다른 사람들에게 도움을 요청해야 할 일이 있다. 이렇게 배우고 가르치는 일을 통해 리더쉽을 경험하고, 성취감을 맛보게 된다.",
-
-
-        "contribute_benefit.source": "출처 : 2025년 기업 오픈소스SW 거버넌스 가이드",
+        "contribute_benefit.company.title.2": "2. 자동차 테크맵 프로젝트에서 진행하는 세미나, 밋업 등의 우선 참여 기회 제공",
+        "contribute_benefit.company.desc.2": "자동차 테크맵 프로젝트에서 주최하는 세미나, 밋업 등 각종 오프라인/온라인 행사에 대해 일반 참가자보다 먼저 신청하거나 우선적으로 참여할 수 있는 기회가 제공됩니다. 이를 통해 기술 교류, 네트워킹, 최신 정보 공유 등의 혜택을 남들보다 빠르게 누릴 수 있습니다.",
+        "contribute_benefit.company.title.3": "3. 관련 산업체나 연구 기관과의 네트워킹 연계 등 제공(예정)",
+        "contribute_benefit.company.desc.3": "자동차 테크맵 프로젝트를 통해 관련 산업체나 연구 기관과의 연결 기회를 제공할 예정입니다. 기여자 분들께는 자동차, 모빌리티, 소프트웨어 등 관련 분야의 기업이나 연구기관과 교류하거나 협력할 수 있도록 네트워킹 연계 지원이 추진될 예정입니다.",
 
         // 기여 준비
-        "contribute.oss.prepare": "오픈소스SW 기여 준비",
-
-        "contribute.prepare.1.title": "1. 오픈소스SW 프로젝트의 문서를 숙지하라",
-        "contribute.prepare.1.desc": "오픈소스SW 프로젝트마다 기여자에게 요구하는 절차가 다르다.",
-        "contribute.prepare.1.list.1": "코딩 스타일, language, formatting, bug/ticket 관리, 릴리즈 시기 등에 대해 다양한 가이드라인을 갖고 있다.",
-        "contribute.prepare.1.list.2": "어떤 프로젝트는 CLA(Contributor License Agreement)를 요구하는 반면, 어떤 프로젝트는 DCO(Developer Certificate of Origin)를 요구한다.",
-        "contribute.prepare.1.list.3": "Patch를 받는 방식도 대부분 Github의 Pull Request지만, 일부는 메일링 리스트를 사용하기도 한다.",
-        "contribute.prepare.1.footer": "따라서 기여하고자 하는 프로젝트의 프로세스를 이해하기 위해 해당 프로젝트의 CONTRIBUTING 또는 README 파일을 확인하자. 예를 들어, Kubernetes는 기여자를 위한 자세한 가이드를 제공하며, 요구사항을 잘 준수할수록 기여가 수락될 가능성이 높아진다.",
-
-        "contribute.prepare.2.title": "2. CLA / DCO 서명은 주의하라",
-        "contribute.prepare.2.desc.1": "일부 오픈소스SW 프로젝트는 CLA나 DCO에 서명할 것을 요구한다. 이 문서들은 기여자가 기여하려는 저작물의 저작권을 보유하고 있음을 보장해야 한다고 명시한다.",
-        "contribute.prepare.2.desc.2": "기업 구성원이라면 저작권은 일반적으로 기업에 귀속되므로, 서명 전 반드시 회사의 정책을 확인하거나 법무, OSPO에 문의해야 한다. 요즘은 대부분의 프로젝트가 서면 대신 bot 기반 클릭 서명을 제공하므로 더욱 주의가 필요하다.",
-
-        "contribute.prepare.3.title": "3. 기여 코드를 점검하라",
-        "contribute.prepare.3.list.1": "기여할 권리가 있는 코드인가? 본인이 작성하지 않은 코드가 포함되어 있다면 기여 권리를 반드시 확인할 것.",
-        "contribute.prepare.3.list.2": "민감하거나 기업의 독점 정보가 포함되어 있는 코드는 기여하지 말 것.",
-        "contribute.prepare.3.list.3": "특허가 포함된 코드인지 확인하고, 해당 오픈소스 라이선스와 기업의 정책이 충돌하지 않는지 사전 검토할 것.",
-        "contribute.prepare.3.list.4": "모호한 부분은 OSPO, 법무 조직, 또는 상사에게 문의할 것.",
-
-        "contribute.prepare.4.title": "4. 기업 내부 승인을 받아라",
-        "contribute.prepare.4.desc.1": "기업의 오픈소스SW 정책이 요구하는 내부 승인 절차를 반드시 따르자. 오픈소스는 저작권 기반이므로 기여 전에도 저작권 관련 절차가 필요하다.",
-        "contribute.prepare.4.desc.2": "정책이 없을 경우에는 조직 내 의사결정권자에게 기여 의사를 전달하고 승인받아야 한다. 이는 개발자가 안정적으로 기여에 집중할 수 있는 환경을 만드는 중요한 과정이다.",
-
-        // 기여 종류
-        "contribute.oss.type": "오픈소스SW 기여 종류",
-        "contribute.type.doc.title": "문서 작성 / 번역",
-        "contribute.type.doc.1": "프로젝트 문서, 튜토리얼을 작성한다.",
-        "contribute.type.doc.2": "프로젝트의 뉴스레터를 작성하거나 메일링 리스트의 중요 사항을 요약한다.",
-        "contribute.type.doc.3": "프로젝트 문서를 자국어로 번역한다.",
-
-        "contribute.type.test.title": "테스트 / 이슈 생성",
-        "contribute.type.test.1": "소프트웨어가 정상적으로 동작하는지 테스트한다.",
-        "contribute.type.test.2": "문서에 기재된 대로 빌드 / 설치되는지 테스트한다.",
-        "contribute.type.test.3": "문서, API가 일관성 있게 작성되었는지 확인한다.",
-
-        "contribute.type.design.title": "디자인",
-        "contribute.type.design.1": "프로젝트 웹사이트의 레이아웃, 메뉴 등을 개선한다.",
-        "contribute.type.design.2": "프로젝트가 일관성 있는 디자인을 가질 수 있도록 스타일 가이드를 만든다.",
-        "contribute.type.design.3": "새로운 로고 또는 티셔츠를 만드는 데 기여한다.",
-
-        "contribute.type.code.title": "코드 작성",
-        "contribute.type.code.1": "해결할 수 있는 오픈된 이슈를 찾는다.",
-        "contribute.type.code.2": "새로운 기능을 추가한다.",
-        "contribute.type.code.3": "자동화를 위한 도구와 테스팅을 개선한다.",
-
-        "contribute.type.marketing.title": "마케팅",
-        "contribute.type.marketing.1": "SNS, 세미나 발표 등 다양한 방법으로 프로젝트의 목적과 효용성을 홍보한다.",
-
-        "contribute.type.event.title": "이벤트 행사",
-        "contribute.type.event.1": "프로젝트의 콘퍼런스, 워크숍, 밋업 등 다양한 모임을 기획하고 주관한다.",
+        "contribute.oss.prepare": "기여 준비",
+        "contribute.oss.prepare.desc": "자동차 테크맵에 기여에 앞서 기본 준비사항은 다음과 같습니다.",
+        "contribute.prepare.1.title": "1. 자동차 테크맵 프로젝트에 기여하기 위해서는 자동차 테크맵 프로젝트에 가입하여야 합니다. <br> <br> 가입 신청서에는 프로젝트 활동을 위한 조건이 명시되어있으므로, 반드시 숙지한 후 활동하여야 합니다.",
+        "contribute.prepare.2.title": "2. 자동차 테크맵 프로젝트에 기여하기 위해서는 기여 유형, 기여 정책 등의 내용을 반드시 숙지한 후 기여 활동을 진행하여야 합니다.",
+        "contribute.prepare.3.title": "3. 데이터 기여의 경우, 개인 또는 기업의 자산에 대한 저작권을 확인후 저작권 동의 절차를 거쳐 기여를 진행합니다. ",
 
 
-        "contribute.type.intro": "오픈소스SW 프로젝트는 주로 소프트웨어 개발자들이 오픈소스SW의 소스 코드를 수정하여 버그를 고치거나, 기능 개선 등 소스 코드 작성을 통해 프로젝트에 기여한다. 그러나 개발자들만 오픈소스SW 프로젝트에 기여할 수 있는 것은 아니다. 오픈소스SW 프로젝트는 다음과 같이 문서화, 디자인 등 다양한 유형의 기여를 필요로 한다.",
+        // 기여 유형
+        "contribute.type.doc.title": " 기업 내부 오픈소스 프로젝트 등록(기여)",
+        "contribute.type.doc.1": "기업 내부에 활용중이거나 개발중인 오픈소스SW에 대한 정보를 자동차 테크맵을 통해 공개하고 관련 내용을 소개한다.",
+
+        "contribute.type.test.title": " 기존 오픈소스 데이터 정보 수정 및 추가 등록",
+        "contribute.type.test.1": "테크맵에 수록된 오픈소스 프로젝트 정보(설명, 라이선스, 분류 등)를 보완하거나 새로운 오픈소스 정보를 추가한다.",
+
+        "contribute.type.design.title": " 문서 기여",
+        "contribute.type.design.1": "자동차 테크맵에 수록된 오픈소스 프로젝트의 실제 적용 사례, 활용 방안, 기술 가이드 등 정리하여 사용자들이 해당 기술을 보다 쉽게 이해하고 활용할 수 있도록 제공한다.",
+
+        "contribute.type.code.title": " 버그 리포트",
+        "contribute.type.code.1": "자동차 테크맵에 대한 오타 수정, 잘못된 정보, UI 오류, 기능 오류, 기능 제안 등 버그 리포트를 제출한다.",
+
+        "contribute.type.marketing.title": " 번역 기여",
+        "contribute.type.marketing.1": "자동차 테크맵의 사이트 및 기술 정보에 대한 사용성 확대 및 편의성을 위해 다양한 언어로의 번역한다.",
+
+
+        "contribute.type.intro": "자동차 테크맵 프로젝트에 다음과 같이 다양한 방식으로 기여할 수 있습니다.",
 
         // 기여 정책
-        "contribute.oss.policy": "오픈소스SW 기여 정책",
-        "contribute.policy.intro": "자동차 테크맵 프로젝트는 여러분의 참여와 공유를 존중하고 프로젝트 협업을 통한 성장을 지향합니다. 하지만 기여하는 기업/개발자의 지식재산 보호와 저작권 침해를 방지하기 위한 몇가지 규칙을 정합니다.",
+        "contribute.oss.policy": "우리 프로젝트는 협력과 참여를 바탕으로 성장합니다. <br> 자동차 테크맵 프로젝트에 기여하기 위한 기본 정책을 설명합니다.",
 
-        "contribute.policy.doc.1": "기여할 권리가 있는 코드(정보)만 기여하라. 즉, 직접 작성한 코드(정보)를 기여한다.",
-        "contribute.policy.doc.2": "민감한 정보, 특허 등 기업의 지식재산 노출이 우려되는 코드, 문서, 정보는 기여하지 마라.",
-        "contribute.policy.doc.3": "가능한 프로젝트의 기여 프로세스 (CONTRIBUTING.md) 에서 요구하는 바를 준수한다.",
-        "contribute.policy.doc.4": "수준 이하의 코드(정보)는 기여하지 마라. 이는 기업의 평판에도 영향을 미칠 수 있다.",
-        "contribute.policy.doc.5": "이외 어느 것이라도 무언가 바람직하지 않아 보이는 상황이 있다면 주저하지 말고 문의한다."
+        "contribute.policy.1.title": "1. 기여 유형",
+        "contribute.policy.1.desc": "자동차 테크맵 프로젝트에 다양한 방식으로 기여할 수 있습니다.",
+        "contribute.policy.list.1": "기업 내부 오픈소스 프로젝트 등록(기여)",
+        "contribute.policy.list.2": "기존 오픈소스 데이터 정보 수정 및 추가 등록",
+        "contribute.policy.list.3": "자동차 테크맵 실제 적용 사례, 활용 방안, 기술 가이드 등 문서 기여",
+        "contribute.policy.list.4": "오타 수정, 기능 제안 등 버그 리포트",
+        "contribute.policy.list.5": "사이트 및 기술 정보 등 번역 기여",
+        "contribute.policy.2.desc": "기여 유형에 대한 자세한 설명은 기여 유형 페이지에서 확인하세요",
+
+        "contribute.check.1.title": "2. 기여 전 체크리스트",
+        "contribute.check.1.desc": "프로젝트에 기여 신청하기 전에 반드시 아래 체크리스트를 확인하여 제출하려는 기여 내용이 아래 기준을 충족하는지 점검해주세요!",
+        "contribute.check.list.1": "기여 내용이 자동차·모빌리티 분야에 적절한가요?",
+        "contribute.check.list.2": "등록 또는 수정하려는 내용이 중복 정보는 아닌가요?",
+        "contribute.check.list.3": "기여 내용이 저작권을 침해하지 않나요? (명시적으로 저작권자의 허가 없이 사용된 자료가 포함되어서는 안 됩니다.)",
+        "contribute.check.list.4": "기여 내용을 오픈소스로 제공이 가능한가요?",
+        "contribute.check.list.5": "데이터는 ODC-By 1.0, 문서는 CC-BY-2.0 허용 라이선스 하에 사용 가능한가요?",
+        "contribute.check.list.6": "데이터 기여의 경우, 데이터 포맷 구조(오픈소스 컴포넌트 명, 버전, 라이선스, 다운로드 저장소 주소 등)를 준수하고 있나요?",
+
+        "contribute.cla.1.title": "3. 기여 동의 및 저작권 정책 (간편 CLA)",
+        "contribute.cla.1.desc": "기여자는 다음 사항에 동의한 것으로 간주됩니다.",
+        "contribute.cla.list.1": "기여물의 유형에 따라 자동차 테크맵이 제공하는 라이선스로 적용되는 것을 동의합니다.\n- 데이터: ODC-By 1.0 license\n- 문서: CC-BY 2.0 license",
+        "contribute.cla.list.2": "기여자는 제공한 기여물이 전부 또는 일부가 본인이 직접 작성한 것이며, 해당 오픈소스 라이선스 하에 제출할 권리를 보유하고 있음을 인증합니다.",
+        "contribute.cla.list.3": "기여자는 본 프로젝트에 기여물이 공개된다는 점을 이해하며, 프로젝트에서 자유롭게 사용할 수 있도록 비독점적 사용 허락을 부여합니다.",
+        "contribute.cla.list.4": "기여자는 저작권을 유지하되, 기여물은 있는 그대로(As-Is) 제공되며, 책임이나 보증이 없음을 확인합니다.",
+        "contribute.cla.2.desc": "⚠️ 기여 신청 시 반드시 아래 사항을 유의해 주세요.",
+        "contribute.cla.notice.1": "타인의 저작물을 무단으로 등록하여 제출하면 안 됩니다.",
+        "contribute.cla.notice.2": "명확한 출처와 라이선스를 확인한 뒤 제출해 주세요.",
+
+        "contribute.participate.1.title": "4. 기여 참여 방법",
+        "contribute.participate.1.desc": "프로젝트에 기여하고 싶으신 경우, techmap@oss.kr 로 메일을 보내주세요. 내부 검토를 거쳐 반영 여부를 결정하고 개별적으로 안내드립니다."
+
 
     },
     en: {
@@ -401,7 +379,7 @@ const translations = {
         "menu.member": "Organization & Members",
         "menu.license": "License Policy",
         "menu.benefit": "Contribution Benefits",
-        "menu.prepare": "Contribution Guide",
+        "menu.prepare": "Contribution Preparation",
         "menu.type": "Contribution Types",
         "menu.policy": "Contribution Policy",
         "menu.signup": "Sign Up",
@@ -631,101 +609,86 @@ const translations = {
         "contribute_use.contact.desc": `If you have any questions about contributing, please contact us at <strong>Contact Us : <a href="mailto:techmap@oss.kr">techmap@oss.kr</a></strong>.`,
 
         // 기여 혜택
-        "contribute_benefit.company.subtitle": "Benefits for Companies",
-        "contribute_benefit.company.desc":
-            "Why do companies contribute to open source? Why should organizations encourage their members to participate? From a business perspective, here’s why companies should contribute to open source.",
-        "contribute_benefit.company.title.1": "1. Reduce maintenance costs",
-        "contribute_benefit.company.desc.1": "Companies often use open source software to build their products while fixing bugs or adding new features. But what happens if they don’t contribute those changes back to the original project?\n\nOpen source projects continue to release new versions, including critical security patches. Every time a new version is released, companies must manually reapply their custom changes, verify that everything works as expected, and test for regressions or performance issues. This repetitive process dramatically increases maintenance overhead and resource costs.\n\nIf companies instead contributed their changes upstream, those modifications would be included in future releases — eliminating the need to manage and reapply patches each time.\n\nTherefore, organizations using open source should actively educate their developers about the value of contribution. While contributing upstream requires time and effort, especial_",
-        "contribute_benefit.company.title.2": "2. Influence the direction of open source projects",
-        "contribute_benefit.company.desc.2": "Does your company rely on an open source project for product development and hope that specific features are added? If so, you’re encouraged to propose those features to the project—and in some cases, actively develop and contribute them yourself. Once your contributions are accepted, the community can help stabilize and enhance the features, ultimately allowing the project to evolve in a direction aligned with your business needs.",
-        "contribute_benefit.company.title.3": "3. Attract top-tier developers",
-        "contribute_benefit.company.desc.3": "The best place to find top open source developers is within the open source community itself. Companies that actively contribute to open source projects gain a strong reputation in the community. Skilled developers in the open source world are aware of which companies contribute meaningfully—and they often prefer to work for those organizations. In contrast, companies that never engage in open source will find it difficult to attract such talent.",
+        "contribute_benefit.company.subtitle": "Mobility Techmap contributors are offered the following benefits",
 
+        "contribute_benefit.company.title.1": "1. Inclusion in the list of key contributors on the main page of the Mobility Techmap website",
+        "contribute_benefit.company.desc.1": "Key contributors will be highlighted on the main page of the Mobility Techmap website. This public recognition serves to acknowledge your efforts and promote your involvement in the project.",
 
-        "contribute_benefit.developer.subtitle": "Benefits for Developers",
-        "contribute_benefit.developer.title.1": "1. Contribute to the public good",
-        "contribute_benefit.developer.title.2": "2. Improve technical skills",
-        "contribute_benefit.developer.title.3": "3. Gain deep understanding and mastery of open source",
-        "contribute_benefit.developer.title.4": "4. Learn collaboration",
-        "contribute_benefit.developer.title.5": "5. Meet new people",
-        "contribute_benefit.developer.title.6": "6. Build reputation and career",
-        "contribute_benefit.developer.title.7": "7. Develop leadership skills",
+        "contribute_benefit.company.title.2": "2. Priority access to seminars, meetups, and other events hosted by the Mobility Techmap project",
+        "contribute_benefit.company.desc.2": "Contributors will receive priority invitations to various online and offline events such as seminars and meetups hosted by the Mobility Techmap project. These opportunities allow you to network, exchange technical insights, and stay up to date on the latest developments.",
 
-        "contribute_benefit.developer.desc.1": "By fixing bugs or adding features to the open source software you use, you not only improve the software itself but also benefit everyone else using it. Even small contributions are meaningful acts of giving back to the global community.",
-        "contribute_benefit.developer.desc.2": "Contributing to open source allows you to learn new technologies and improve your skills through repetition and hands-on experience. Many modern development practices like version control, unit testing, integration testing, and CI/CD originated from open source. These skills can be honed by actively participating in projects. Unlike corporate settings, open source communities are often more tolerant of mistakes, making them an ideal environment for beginners to grow. Beyond coding, you can also gain practical experience in areas like UI, graphic design, and documentation.",
-        "contribute_benefit.developer.desc.3": "Going beyond mere usage, contributing to open source by understanding issues and solving problems helps you gain a deeper technical understanding. These experiences make it easier to adapt to future changes and expand how you use open source in other projects.",
-        "contribute_benefit.developer.desc.4": "Open source communities bring together people from around the world, often working across time zones. Collaborating effectively in this environment requires strong teamwork skills. Projects rely on thoughtful division of labor and risk management. Through this, contributors also become familiar with essential collaboration tools like issue trackers, version control systems, and mailing lists.",
-        "contribute_benefit.developer.desc.5": "Open source communities are filled with people who share common interests. Through participation, contributors naturally form relationships that can influence the direction of their careers. Trusted relationships often lead to new job opportunities or collaborative ventures. Since open source work involves close professional collaboration, people get to know each other's work styles and personalities deeply. These meaningful connections are one of the most compelling reasons to contribute to open source.",
-        "contribute_benefit.developer.desc.6": "Open source work is public and transparent. The contributions you make are visible to anyone, anywhere—helping you build your reputation and credibility as a developer.",
-        "contribute_benefit.developer.desc.7": "In open source, you can learn leadership and management skills like team building, conflict resolution, and prioritization. Working collaboratively often requires explaining your approach to others or asking for support. Through this process of teaching and learning, contributors develop leadership qualities and gain a strong sense of accomplishment.",
+        "contribute_benefit.company.title.3": "3. Opportunities for networking with related industries and research institutions (planned)",
+        "contribute_benefit.company.desc.3": "We are planning to offer contributors the opportunity to connect with companies, startups, and research institutions in the automotive and mobility sectors. These connections aim to support collaboration and further innovation in the ecosystem.",
 
 
         "contribute_benefit.source": "Source: 2025 Open Source Software Governance Guide for Companies",
 
         // 기여 준비
-        "contribute.oss.prepare": "Preparing to Contribute to Open Source",
+        "contribute.oss.prepare.desc": "The following are the basic preparations required before contributing to the Mobility Techmap.",
 
-        "contribute.prepare.1.title": "1. Read the documentation of the OSS project",
-        "contribute.prepare.1.desc": "Each open source software project has different contribution procedures.",
-        "contribute.prepare.1.list.1": "They may have various guidelines on coding style, language, formatting, bug/ticket management, and release cycles.",
-        "contribute.prepare.1.list.2": "Some projects require a CLA (Contributor License Agreement), while others require a DCO (Developer Certificate of Origin).",
-        "contribute.prepare.1.list.3": "Most projects accept patches via GitHub Pull Requests, but some still use mailing lists.",
-        "contribute.prepare.1.footer": "Therefore, to understand the contribution process, check the CONTRIBUTING or README file of the project. For example, Kubernetes provides a detailed guide for contributors, and complying with these requirements increases the likelihood of your contribution being accepted.",
+        "contribute.prepare.1.title": "1. To contribute to the Mobility Techmap project, you must first join the project. The application form includes the terms and conditions for participation, which must be fully understood and accepted before taking part in any activities.",
+        "contribute.prepare.1.desc": "",
 
-        "contribute.prepare.2.title": "2. Be cautious when signing CLA / DCO",
-        "contribute.prepare.2.desc.1": "Some OSS projects require you to sign a CLA or DCO, which state that you own the copyright to the contributions you submit.",
-        "contribute.prepare.2.desc.2": "If you are an employee, your company may own the copyright. So, you must check your company’s policy or consult legal/OSPO before signing. Today, many projects use bot-based click-signing instead of paper, which requires extra caution.",
+        "contribute.prepare.2.title": "2. Before contributing to the Mobility Techmap project, you are required to carefully review and understand the types of contributions, contribution policies, and other relevant guidelines.",
 
-        "contribute.prepare.3.title": "3. Review your contribution code",
-        "contribute.prepare.3.list.1": "Do you have the right to contribute the code? If the code includes work you didn’t write, ensure you have the rights to contribute it.",
-        "contribute.prepare.3.list.2": "Do not contribute sensitive or proprietary information.",
-        "contribute.prepare.3.list.3": "Check if the code includes patented technology, and verify that it does not conflict with the OSS license or your company’s policy.",
-        "contribute.prepare.3.list.4": "If in doubt, consult your OSPO, legal team, or manager.",
+        "contribute.prepare.3.title": "3. For data contributions, contributors must verify the copyright status of any personal or corporate assets and complete the necessary copyright consent procedures prior to submission.",
 
-        "contribute.prepare.4.title": "4. Get internal company approval",
-        "contribute.prepare.4.desc.1": "Follow your company’s OSS policy and obtain the required internal approval. OSS is based on copyright law, so proper approval is essential even before contribution.",
-        "contribute.prepare.4.desc.2": "If there’s no policy, notify a decision maker in your organization and get their approval. This helps create a safe environment for contributors to focus on OSS work.",
 
-        // 기여 종류
-        "contribute.oss.type": "Types of Open Source Contributions",
-        "contribute.type.doc.title": "Documentation / Translation",
-        "contribute.type.doc.1": "Write project documentation and tutorials.",
-        "contribute.type.doc.2": "Create newsletters or summarize key points from the mailing list.",
-        "contribute.type.doc.3": "Translate project documents into your native language.",
+        // 기여 유형
+        "contribute.type.intro": "You can contribute to the Mobility Techmap project in a variety of ways, including the following:",
 
-        "contribute.type.test.title": "Testing / Issue Reporting",
-        "contribute.type.test.1": "Test whether the software functions properly.",
-        "contribute.type.test.2": "Verify that it builds/installs as described in the documentation.",
-        "contribute.type.test.3": "Check for consistency in documentation and APIs.",
+        "contribute.type.doc.title": "Registering Internal Open Source Projects from Your Organization",
+        "contribute.type.doc.1": "Share information about open source software that is currently in use or under development within your organization through the Mobility Techmap and introduce related details to the public.",
 
-        "contribute.type.design.title": "Design",
-        "contribute.type.design.1": "Improve layout and menus of the project website.",
-        "contribute.type.design.2": "Create a style guide to maintain visual consistency.",
-        "contribute.type.design.3": "Contribute to new logo or T-shirt design.",
+        "contribute.type.test.title": "Editing or Adding Information to Existing Open Source Data",
+        "contribute.type.test.1": "Enhance the descriptions, licenses, categories, and other details of existing open source projects listed in the Techmap, or contribute new open source entries.",
 
-        "contribute.type.code.title": "Code Contributions",
-        "contribute.type.code.1": "Find and resolve open issues.",
-        "contribute.type.code.2": "Add new features.",
-        "contribute.type.code.3": "Enhance tools and testing for automation.",
+        "contribute.type.design.title": "Documentation Contributions",
+        "contribute.type.design.1": "Provide case studies, usage scenarios, technical guides, and other documentation related to open source projects listed on the Mobility Techmap, so that users can better understand and apply the technologies.",
 
-        "contribute.type.marketing.title": "Marketing",
-        "contribute.type.marketing.1": "Promote the project's value through social media, talks, and more.",
+        "contribute.type.code.title": "Bug Reports",
+        "contribute.type.code.1": "Submit reports to fix typos, incorrect information, UI issues, feature errors, or suggest improvements related to the Mobility Techmap.",
 
-        "contribute.type.event.title": "Events & Conferences",
-        "contribute.type.event.1": "Plan and organize conferences, workshops, and meetups for the project.",
+        "contribute.type.marketing.title": "Translation Contributions",
+        "contribute.type.marketing.1": "Help expand accessibility and usability by translating the website and technical information of the Mobility Techmap into various languages.",
 
-        "contribute.type.intro": "Open source software (OSS) projects are often contributed to by software developers who fix bugs or improve features by modifying the source code. However, developers are not the only ones who can contribute. OSS projects also need contributions in documentation, design, and other areas as shown below.",
+        "contribute.type.intro": "You can contribute to the Mobility Techmap project in a variety of ways, including the following",
 
         // 기여 정책
 
-        "contribute.oss.policy": "Open Source Contribution Policy",
-        "contribute.policy.intro": "The Mobility TechMap project values your participation and collaboration, and aims for growth through open cooperation. However, to protect the intellectual property of contributing companies/developers and to prevent copyright infringement, we establish a few guidelines.",
+        "contribute.oss.policy": "Our project grows through collaboration and participation. This section outlines the core policies for contributing to the Mobility Techmap project.",
 
-        "contribute.policy.doc.1": "Only contribute code or content that you have the rights to. In other words, contribute what you have written yourself.",
-        "contribute.policy.doc.2": "Do not contribute sensitive information, patents, or materials that could expose a company's intellectual property.",
-        "contribute.policy.doc.3": "Follow the project's contribution process (e.g., CONTRIBUTING.md) as much as possible.",
-        "contribute.policy.doc.4": "Do not contribute low-quality code or content. It could negatively impact your organization’s reputation.",
-        "contribute.policy.doc.5": "If anything feels unclear or questionable, don’t hesitate to ask."
+        "contribute.policy.1.title": "1. Types of Contributions",
+        "contribute.policy.1.desc": "You can contribute to the Mobility Techmap project in various ways:",
+        "contribute.policy.list.1": "Registering internal open-source projects from within your organization",
+        "contribute.policy.list.2": "Editing or adding to existing open-source data",
+        "contribute.policy.list.3": "Providing documentation such as real-world applications, usage cases, and technical guides related to Mobility Techmap",
+        "contribute.policy.list.4": "Submitting bug reports for typos, UI/feature issues, or suggestions",
+        "contribute.policy.list.5": "Translating the website and technical content into different languages",
+        "contribute.policy.2.desc": "For more details, please visit the Contribution Types page.",
+
+        "contribute.check.1.title": "2. Pre-Contribution Checklist",
+        "contribute.check.1.desc": "Before submitting a contribution to the project, please make sure your content meets the following requirements:",
+        "contribute.check.list.1": "Is your contribution relevant to the automotive or mobility domain?",
+        "contribute.check.list.2": "Is the content you are registering or modifying not already listed or duplicated?",
+        "contribute.check.list.3": "Does the content not violate copyright? (Any material used without explicit permission from the copyright holder is not allowed.)",
+        "contribute.check.list.4": "Can your contribution be shared as open source?",
+        "contribute.check.list.5": "Is the data licensed under ODC-By 1.0, and the documentation under CC-BY 2.0 or compatible open licenses?",
+        "contribute.check.list.6": "For data contributions, does your submission follow the required data format structure? (e.g., component name, version, license, download repository URL, etc.)",
+
+        "contribute.cla.1.title": "3. Contribution Agreement & Copyright Policy (Simple CLA)",
+        "contribute.cla.1.desc": "By contributing, you are considered to agree to the following:",
+        "contribute.cla.list.1": "You agree that your contributions will be provided under the licenses used by the Mobility Techmap:\n- DATA: ODC-By 1.0 license\n- Documents: CC-BY 2.0 license",
+        "contribute.cla.list.2": "You certify that all or part of your contribution was written by you, and that you have the right to submit it under the open-source license stated in the file.",
+        "contribute.cla.list.3": "You acknowledge that your contribution will be made publicly available by this project, and you grant a non-exclusive license allowing the project to freely use the content.",
+        "contribute.cla.list.4": "You retain the copyright of your contribution, but it is provided as-is, with no warranty or liability.",
+        "contribute.cla.2.desc": "⚠️ Notes When Submitting a Contribution",
+        "contribute.cla.notice.1": "Do not submit content that includes someone else's copyrighted material without permission.",
+        "contribute.cla.notice.2": "Make sure the source and license of your content are clearly identified before submission.",
+
+        "contribute.participate.1.title": "4. How to Participate as a Contributor",
+        "contribute.participate.1.desc": "To participate in the project as a contributor, please send an email to techmap@oss.kr. Your request will be reviewed internally, and a decision will be made regarding its acceptance."
 
     }
+
 };
