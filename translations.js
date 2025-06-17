@@ -37,7 +37,7 @@ function switchLanguage(lang) {
 // 페이지 로드시 이전 언어 설정 적용
 window.addEventListener('DOMContentLoaded', () => {
     const savedLang = localStorage.getItem('selectedLanguage') || 'ko';
-    switchLanguage(savedLang);
+    //switchLanguage(savedLang);
 });
 
 const translations = {
@@ -201,10 +201,10 @@ const translations = {
         "faq.section.restriction.level.2": "Level 2~3 (🟡 노랑): 일부 조건/주의 필요",
         "faq.section.restriction.level.3": "Level 4~5 (🔴 빨강): 소스코드 공개, 배포 제한, 설치 정보 제공 등 강한 제약 존재",
         "faq.section.restriction.desc.3": "또한, 라이선스 조건 외에도 다음 사항들을 종합적으로 고려하여 오픈소스를 사용할 필요가 있습니다:",
-        "faq.section.restriction.license": "<strong>라이선스 위험도</strong>: 조건 위반 시 법적 책임 발생 가능",
-        "faq.section.restriction.source": "<strong>소스코드 공개 이슈</strong>: 자사 코드 공개 의무 발생 가능",
-        "faq.section.restriction.security": "<strong>보안 취약점</strong>: 알려진 CVE나 업데이트 중단 여부 확인 필수",
-        "faq.section.restriction.usability": "<strong>활용정도</strong>: 해당 오픈소스의 사용 빈도를 기준으로 상·중·하 수준으로 구분됨",
+        "faq.section.restriction.license": "<strong>라이선스 위험도</strong>: 조건 위반 시 법적 책임 발생 가능 (상세 페이지 '라이선스 위험도' 물음표 참고)  <span class='question-icon' onclick='openLicenseModal()'>?</span>",
+        "faq.section.restriction.source": "<strong>소스코드 공개 이슈</strong>: 자사 코드 공개 의무 발생 가능 (상세 페이지 '소스코드 공개이슈' 물음표 참고)  <span class='question-icon' onclick='openSourceModal()'>?</span>",
+        "faq.section.restriction.security": "<strong>보안 취약점</strong>: 알려진 CVE나 업데이트 중단 여부 확인 필수 (보안취약점 참고)",
+        "faq.section.restriction.usability": "<strong>활용정도</strong>: 해당 오픈소스의 사용 빈도를 기준으로 상·중·하 수준으로 구분됨 (활용정도 참고)",
 
 
         // API 활용
@@ -534,10 +534,46 @@ const translations = {
         "faq.section.restriction.level.2": "Level 2~3 (🟡 Yellow): Some conditions/caution required",
         "faq.section.restriction.level.3": "Level 4~5 (🔴 Red): Strong restrictions such as mandatory source disclosure, distribution limitations, and installation information provision",
         "faq.section.restriction.desc.3": "In addition to license terms, the following factors should also be considered when using open source software:",
-        "faq.section.restriction.license": "License Risk: Legal liability may arise if license terms are violated",
-        "faq.section.restriction.source": "Source Code Disclosure: May require disclosure of proprietary code depending on license type",
+        "faq.section.restriction.license": "License Risk: Legal liability may arise if license terms are violated  <span class='question-icon' onclick='openLicenseModal()'>?</span>",
+        "faq.section.restriction.source": "Source Code Disclosure: May require disclosure of proprietary code depending on license type  <span class='question-icon' onclick='openSourceModal()'>?</span>",
         "faq.section.restriction.security": "Security Vulnerabilities: Check for known CVEs or discontinued updates",
         "faq.section.restriction.usability": "Usage Frequency: Indicates how widely the OSS is used, classified into High / Medium / Low levels",
+
+        "faq.modal.license.title": "License Risk Restrictions (Traffic Light Level)",
+        "faq.modal.license.header.name": "Restriction Name",
+        "faq.modal.license.header.desc": "Description",
+        "faq.modal.license.header.level": "LEVEL",
+        "faq.modal.license.header.signal": "Signal",
+        "faq.modal.license.desc.nonCommercial": "Commercial use prohibited<br>(Free software from companies not allowed)",
+        "faq.modal.license.desc.internalUse": "Internal use only",
+        "faq.modal.license.desc.noCharge": "Prohibited from charging or selling",
+        "faq.modal.license.desc.noMod": "Modification not allowed",
+        "faq.modal.license.desc.noRename": "Name change not allowed",
+        "faq.modal.license.desc.platform": "Usable only on specific platforms",
+        "faq.modal.license.desc.purpose": "Restricted for certain purposes",
+        "faq.modal.license.desc.spec": "Limited use based on specification or standards",
+        "faq.modal.license.desc.redistribute": "Redistribution of components (source/binary) restricted",
+        "faq.modal.license.desc.contract": "Separate contract required",
+        "faq.modal.license.desc.installInfo": "Mandatory to provide installation info",
+        "faq.modal.license.desc.patent": "Possible patent issues",
+        "faq.modal.license.desc.network": "Obligations exist when used on server environments",
+        "faq.modal.license.desc.semi": "May require source disclosure depending on copyright holder",
+
+        "faq.modal.source.title": "Source Disclosure Scope",
+        "faq.modal.source.header.range": "Disclosure Scope",
+        "faq.modal.source.header.meaning": "Disclosure Obligation",
+        "faq.modal.source.desc.none": "No disclosure obligation",
+        "faq.modal.source.desc.original": "Original open source",
+        "faq.modal.source.desc.file": "Source code per file",
+        "faq.modal.source.desc.module": "Source code per module",
+        "faq.modal.source.desc.library": "Source code per library",
+        "faq.modal.source.desc.derive": "Legally considered derivative works",
+        "faq.modal.source.desc.executable": "Source code for components in executable",
+        "faq.modal.source.desc.data": "The data itself",
+        "faq.modal.source.desc.software": "All software using this software",
+        "faq.modal.source.desc.unspecified": "Disclosure required, but scope unclear",
+
+        "faq.modal.button.close": "Close",
 
 
         // API  활용
