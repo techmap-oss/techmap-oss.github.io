@@ -432,7 +432,7 @@ const translations = {
         "overview.section.purpose": "Purpose",
         "overview.section.purpose.value": "To build an open-source mobility ecosystem where information on Mobility open source is shared, utilized, and developed collaboratively.",
         "overview.section.history": " History",
-        "overview.section.year": "",
+        "overview.section.year": "year",
         "label.month.01": "Jan",
         "label.month.05": "May",
         "label.month.06": "Jun",
