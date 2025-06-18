@@ -37,7 +37,7 @@ function switchLanguage(lang) {
 // 페이지 로드시 이전 언어 설정 적용
 window.addEventListener('DOMContentLoaded', () => {
     const savedLang = localStorage.getItem('selectedLanguage') || 'ko';
-    //switchLanguage(savedLang);
+    switchLanguage(savedLang);
 });
 
 const translations = {
@@ -201,6 +201,7 @@ const translations = {
         "faq.section.restriction.level.2": "Level 2~3 (🟡 노랑): 일부 조건/주의 필요",
         "faq.section.restriction.level.3": "Level 4~5 (🔴 빨강): 소스코드 공개, 배포 제한, 설치 정보 제공 등 강한 제약 존재",
         "faq.section.restriction.desc.3": "또한, 라이선스 조건 외에도 다음 사항들을 종합적으로 고려하여 오픈소스를 사용할 필요가 있습니다:",
+        "faq.section.restriction.desc.4": "라이선스 위험도 및 소스코드 공개이슈 정보는 ODC-By 1.0 라이선스 (Open Data Commons Attribution License v1.0)에 따라 사용 및 배포하고 있습니다.<br>ⓒ 2024 OSORI. All Rights Reserved.",
         "faq.section.restriction.license": "<strong>라이선스 위험도</strong>: 조건 위반 시 법적 책임 발생 가능 (상세 페이지 '라이선스 위험도' 물음표 참고)  <span class='question-icon' onclick='openLicenseModal()'>?</span>",
         "faq.section.restriction.source": "<strong>소스코드 공개 이슈</strong>: 자사 코드 공개 의무 발생 가능 (상세 페이지 '소스코드 공개이슈' 물음표 참고)  <span class='question-icon' onclick='openSourceModal()'>?</span>",
         "faq.section.restriction.security": "<strong>보안 취약점</strong>: 알려진 CVE나 업데이트 중단 여부 확인 필수 (보안취약점 참고)",
@@ -534,6 +535,7 @@ const translations = {
         "faq.section.restriction.level.2": "Level 2~3 (🟡 Yellow): Some conditions/caution required",
         "faq.section.restriction.level.3": "Level 4~5 (🔴 Red): Strong restrictions such as mandatory source disclosure, distribution limitations, and installation information provision",
         "faq.section.restriction.desc.3": "In addition to license terms, the following factors should also be considered when using open source software:",
+        "faq.section.restriction.desc.4": "Information on license risk level and source code disclosure issues is used and distributed under the ODC-By 1.0 License (Open Data Commons Attribution License v1.0).<br>ⓒ 2024 OSORI. All Rights Reserved.",
         "faq.section.restriction.license": "License Risk: Legal liability may arise if license terms are violated  <span class='question-icon' onclick='openLicenseModal()'>?</span>",
         "faq.section.restriction.source": "Source Code Disclosure: May require disclosure of proprietary code depending on license type  <span class='question-icon' onclick='openSourceModal()'>?</span>",
         "faq.section.restriction.security": "Security Vulnerabilities: Check for known CVEs or discontinued updates",
