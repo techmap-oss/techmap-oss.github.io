@@ -287,8 +287,7 @@ const translations = {
         "contribute_use.intro": `컨트리뷰션 (Contribution: 기여)은 오픈소스 프로젝트에 자발적으로 참여하고 가치있는 작업을 수행하는 모든 활동을 의미합니다. <br>
         기여활동은 단순한 코드 작성에 국한되지 않고, <strong> 문서화, 데이터 정리, 제안, 리뷰, 커뮤니티 운영 </strong> 등 다양한 형태로 이루어집니다.<br>
         자동차 테크맵 프로젝트 역시 다양한 컨트리뷰션 활동을 통해 데이터를 발전시키고자 하는 목적이 있습니다. <br>
-        이 가이드는 프로젝트에 기여자(Contributor)로서 참여하는 방법을 설명합니다.
-        .`,
+        이 가이드는 프로젝트에 기여자(Contributor)로서 참여하는 방법을 설명합니다.`,
 
         "contribute_use.benefit.title": `<a href="contribute_01.html" class="title">기여 혜택</a>`,
         "contribute_use.benefit.desc": `<a href="contribute_01.html">자동차 테크맵 기여자에게 제공되는 혜택을 설명합니다</a>`,
@@ -653,9 +652,7 @@ const translations = {
         // 기여 하기
 
         "contribute_use.title": "Contributing to the Mobility Techmap Project",
-        "contribute_use.intro": `You can participate and contribute to the project at any time by sharing your company’s open source information or identifying errors in the existing Mobility Techmap.<br>
-        Before contributing, we recommend referring to the <a href="https://www.oss.kr/oss_guide/show/7feb1eb9-ec4f-4140-a34c-e2bd141400a8" class="text-link">"NIPA Open Source Governance Guide for Companies"</a> as useful preliminary material.`,
-
+        "contribute_use.intro": "Contribution refers to any voluntary participation and meaningful work in open source projects. <br> It is not limited to writing code, but also includes documentation, data organization, suggestions, reviews, and community management. <br> The Mobility TechMap project also aims to improve its data through various types of contribution activities. <br> This guide explains how to participate as a contributor in the project.",
         "contribute_use.benefit.title": "Benefits of Contribution",
         "contribute_use.benefit.desc": "Describes the advantages companies and developers can gain through contributing.",
 
