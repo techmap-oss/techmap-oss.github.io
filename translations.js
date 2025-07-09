@@ -167,7 +167,7 @@ const translations = {
 
         "faq.section.license.title": "라이선스 정책",
         "faq.section.license.desc.1": "자동차 테크맵 사이트에서 제공되는 오픈소스 정보 데이터(ODC-By 1.0), API 소스코드(Apache 2.0), 오픈소스 정보 데이터와 소스코드를 제외한 콘텐츠(CC-BY-2.0)는 각각의 라이선스 조건에 따라 사용 가능합니다.",
-        "faq.section.license.desc.2": "자세한 내용은 <a href=\"/license\" class=\"text-link\">라이선스 정책</a>을 참고해주시기 바랍니다.",
+        "faq.section.license.desc.2": "자세한 내용은 <a href=\"/license_info\" class=\"text-link\">라이선스 정책</a>을 참고해주시기 바랍니다.",
 
         "faq.section.member.title": "회원 정책",
         "faq.section.member.desc.1": "자동차 테크맵 프로젝트는 일반 사용자, 회원, 보드 회원사, 후원사로 구성되며, 보드 회원사로 구성된 운영위원회에서 주요 의사 결정 및 커뮤니티 운영 정책을 수립하고, 신규 가입 및 등록 신청을 심사하고 승인합니다.",
@@ -449,7 +449,7 @@ const translations = {
 
         "member.section.title": "Participation",
         "member.user.title": "User",
-        "member.user.desc": "Anyone can freely use the open source information and content in accordance with the <a href=\"license\" class=\"text-link\">license policy</a> of the Mobility Techmap Project without separate registration.",
+        "member.user.desc": "Anyone can freely use the open source information and content in accordance with the <a href=\"license_info\" class=\"text-link\">license policy</a> of the Mobility Techmap Project without separate registration.",
         "member.member.title": "Member",
         "member.member.desc": "To participate in the Mobility Techmap Project, you must join as a member by submitting a <a href=\"https://forms.gle/av7jWKRr2uP46xAY8\" class=\"text-link\">membership application (individual/corporate)</a> and receiving approval from the Steering Committee.",
         "member.board.title": "Board Member",
@@ -500,7 +500,7 @@ const translations = {
 
         "faq.section.license.title": "License Policy",
         "faq.section.license.desc.1": "Open source data (ODC-By 1.0), API source code (Apache 2.0), and other content (CC-BY-2.0) on the Mobility Techmap site are each subject to their respective licenses.",
-        "faq.section.license.desc.2": "For more details, please refer to the <a href=\"license\" class=\"text-link\">License Policy</a>.",
+        "faq.section.license.desc.2": "For more details, please refer to the <a href=\"license_info\" class=\"text-link\">License Policy</a>.",
 
         "faq.section.member.title": "Membership Policy",
         "faq.section.member.desc.1": "The project consists of users, members, board members, and sponsors. The Steering Committee, composed of board members, makes key decisions and approves new registrations.",
