@@ -73,7 +73,7 @@ const translations = {
                     <br class="only_mb" />오픈소스 기술 정보를 서로 공유하여 
                     <br />
                     <strong>
-                        모빌리티 공급망내 모든기업들이 
+                        모빌리티 공급망 내 모든기업들이 
                         <br class="only_mb" />함께 활용하고 기여하며 성장하는 
                         <br class="only_mb" />에코 시스템
                     </strong> 입니다
