@@ -188,22 +188,22 @@
                                 <td>componentName</td>
                                 <td data-i18n="use.api.query.param.componentName">컴포넌트명</td>
                                 <td>string</td>
-                                <td>N</td>
+                                <td>Y</td>
                                 <td>zlib</td>
                             </tr>
                             <tr>
                                 <td>licenseName</td>
                                 <td data-i18n="use.api.query.param.licenseName">라이선스명</td>
                                 <td>string</td>
-                                <td>N</td>
-                                <td>MIT License</td>
+                                <td>Y</td>
+                                <td>zlib</td>
                             </tr>
                             <tr>
                                 <td>security</td>
                                 <td data-i18n="use.api.query.param.security">보안취약점<br>
                                     - None, Low, Medium, High, Critical</td>
                                 <td>string</td>
-                                <td>N</td>
+                                <td>Y</td>
                                 <td>Low</td>
                             </tr>
                             <tr>
@@ -217,16 +217,14 @@
                             </tr>
                             <tr>
                                 <td>page</td>
-                                <td data-i18n="use.api.query.param.page">시작 page 숫자(필수값) <br>
-                                    - 기본값: 0</td>
+                                <td data-i18n="use.api.query.param.page">시작 page 숫자(필수값) </td>
                                 <td>int</td>
                                 <td>Y</td>
                                 <td>0</td>
                             </tr>
                             <tr>
                                 <td>size</td>
-                                <td data-i18n="use.api.query.param.size">페이지당 결과 수<br>
-                                    - 기본값: 10</td>
+                                <td data-i18n="use.api.query.param.size">페이지당 결과 수<br> </td>
                                 <td>int</td>
                                 <td>Y</td>
                                 <td>10</td>
@@ -238,7 +236,7 @@
                                 </td>
                                 <td>string</td>
                                 <td>Y</td>
-                                <td>name</td>
+                                <td>componentName</td>
                             </tr>
                             <tr>
                                 <td>direction</td>
@@ -261,7 +259,7 @@
                             <button onclick="copyToClipboard(this)">📋 <span data-i18n="button.copy">복사</span></button>
                             <button onclick="editCode(this)">✏️ <span data-i18n="button.edit">편집</span></button>
                         </div>
-                        <pre><code contenteditable="false">curl --location --request GET 'https://techmap.kr/api/v1/component?componentName=zlib&licenseName=MIT' ^ --header "Authorization: Bearer krhxnqw3jPMkdqYsbVQQMVKZ85p2RWWqa8KFlfmZA80"</code></pre>
+                        <pre><code contenteditable="false">curl --location --request GET 'https://techmap.kr/api/v1/component?componentName=zlib&licenseName=zlib&security=Low&equalFlag=Y&page=0&size=10&sort=componentName&direction=DESC' ^ --header "Authorization: Bearer krhxnqw3jPMkdqYsbVQQMVKZ85p2RWWqa8KFlfmZA80"</code></pre>
                     </div>
                 </div>
 
@@ -289,23 +287,23 @@
   "components": [
     {
       "component_name": "zlib",
-      "description": "Compression library used in many systems",
+      "description": "zlib is designed to be a free, general-purpose, legally unencumbered -- that is, not covered by any patents -- lossless data-compression library for use on virtually any computer hardware and operating system. The zlib data format is itself portable across platforms. Unlike the LZW compression method used in Unix compress(1) and in the GIF image format, the compression method currently used in zlib essentially never expands the data. (LZW can double or triple the file size in extreme cases.) zlib's memory footprint is also independent of the input data and can be reduced, if necessary, at some cost in compression.",
       "versions": [
         {
           "version": "1.2.11",
-          "homepage": "https://github.com/madler/zlib",
-          "security_vuln": "low",
+          "homepage": "https://zlib.net",
+          "security_vuln": "Critical",
           "licenses":  [
             {
-            "name": "zlib License",
+            "license_name": "zlib License",
             "license_risk": "Permissive",
             }
            ],
         },
         {
-          "version": "1.2.10",
-          "homepage": "https://github.com/madler/zlib",
-          "security_vuln": "High",
+          "version": "1.2.1",
+          "homepage": "https://zlib.net",
+          "security_vuln": "Critical",
           "licenses":  [
             {
             "license_name": "zlib License",
@@ -319,8 +317,8 @@
   "equalFlag": "Y",
   "page": 0,
   "size": 10,
-  "sort": "name",
-  "direction": "ASC"
+  "sort": "componentName",
+  "direction": "DESC"
 }
                         </code></pre>
                     </div>

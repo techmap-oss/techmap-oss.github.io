@@ -233,8 +233,8 @@ const translations = {
         "use.api.query.param.licenseName": "라이선스명",
         "use.api.query.param.security": "보안취약점 <br> - None, Low, Medium, High, Critical",
         "use.api.query.param.equalFlag": "검색결과 대상을 지정할 때 사용합니다.<br> - 'Y': 정확 일치 <br> - 'N': 포함 검색(기본값)",
-        "use.api.query.param.page": "시작 page 숫자(필수값) <br> - 기본값: 0",
-        "use.api.query.param.size": "페이지당 결과 수(필수값) <br> - 기본값: 10",
+        "use.api.query.param.page": "시작 page 숫자(필수값)",
+        "use.api.query.param.size": "페이지당 결과 수(필수값)",
         "use.api.query.param.sort": "정렬 기준 항목(필수값) <br> - componentName / licenseName",
         "use.api.query.param.direction": "정렬 방향 <br> - ASC: 오름차순 (기본값) / DESC: 내림차순",
 
