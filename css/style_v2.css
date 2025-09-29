@@ -3517,23 +3517,25 @@ body {
     padding: 16px 20px;
     font-family: 'Courier New', monospace;
     font-size: 0.95rem;
-    line-height: 0.5;
-    white-space: pre-wrap;
-    word-break: break-word;
-    overflow-x: auto;
+    line-height: 1.4;
     margin-bottom: 30px;
     color: #333;
     /* ✅ 글자색 차분한 회색 */
 }
 
+/* 스크롤은 pre에만 적용 */
 .use-api .code-box-with-buttons pre {
     margin: 0;
+    overflow-x: auto;   /* ✅ 코드만 좌우 스크롤 */
+    white-space: pre;   /* ✅ 코드 줄바꿈 방지 → 긴 줄이면 스크롤 */
+    padding-top: 30px;
 }
 
+/* 버튼을 항상 오른쪽 상단에 고정 */
 .use-api .code-box-with-buttons .code-buttons {
     position: absolute;
     top: 10px;
-    right: 16px;
+    right: 10px; /* ✅ 왼쪽 기준 대신 오른쪽 기준 */
     display: flex;
     gap: 8px;
     z-index: 2;
